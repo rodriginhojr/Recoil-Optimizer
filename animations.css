@@ -1,0 +1,551 @@
+/* ============================================================================
+   RECOIL OPTIMIZER — AWWWARDS / SWISS TECHNICAL HUD MOTION & CHOREOGRAPHY
+   File: animations.css
+   ============================================================================ */
+
+:root {
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --spotlight-size: 520px;
+  --spotlight-border-size: 340px;
+}
+
+/* ----------------------------------------------------------------------------
+   1. TOP VIEWPORT SCROLL PROGRESS LASER BAR (#scroll-laser-bar)
+   ---------------------------------------------------------------------------- */
+#scroll-laser-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2.5px;
+  z-index: 100000;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary-glow, rgba(245, 158, 11, 0.28)) 15%,
+    var(--primary, #f59e0b) 82%,
+    #ffffff 100%
+  );
+  box-shadow:
+    0 0 10px var(--primary, #f59e0b),
+    0 0 22px var(--primary-glow, rgba(245, 158, 11, 0.28));
+  transform-origin: left center;
+  will-change: width;
+  transition: opacity 0.3s ease;
+}
+
+/* Glowing laser head at the leading edge */
+#scroll-laser-bar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  width: 64px;
+  height: 5px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary, #f59e0b) 60%,
+    #ffffff 100%
+  );
+  box-shadow:
+    0 0 8px #ffffff,
+    0 0 16px var(--primary, #f59e0b),
+    0 0 32px var(--primary, #f59e0b),
+    0 0 48px var(--primary-glow, rgba(245, 158, 11, 0.28));
+  opacity: var(--laser-active, 0);
+  transition: opacity 0.25s ease;
+}
+
+/* Subtle vertical lens flare spark on the leading laser tip */
+#scroll-laser-bar::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0;
+  width: 6px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow:
+    0 0 10px #ffffff,
+    0 0 20px var(--primary, #f59e0b);
+  opacity: var(--laser-active, 0);
+  transition: opacity 0.25s ease;
+}
+
+/* ----------------------------------------------------------------------------
+   2. DYNAMIC SPOTLIGHT CARD EFFECT & 3D TILT SURFACE ARCHITECTURE
+   ---------------------------------------------------------------------------- */
+:is(
+  .feature-card,
+  .download-card,
+  .tweak-card,
+  .agent-card,
+  .os-card,
+  .app-window,
+  .spotlight-card
+) {
+  position: relative;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-opacity: 0;
+  --border-spotlight-opacity: 0;
+  --tilt-rx: 0deg;
+  --tilt-ry: 0deg;
+  --tilt-scale: 1;
+}
+
+/* Radial Surface Illumination Layer */
+:is(
+  .feature-card,
+  .download-card,
+  .tweak-card,
+  .agent-card,
+  .os-card,
+  .app-window,
+  .spotlight-card
+)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(
+    var(--spotlight-size, 520px) circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    var(--primary-glow, rgba(245, 158, 11, 0.28)),
+    transparent 45%
+  );
+  opacity: var(--spotlight-opacity, 0);
+  transition: opacity 0.4s var(--ease-out-expo);
+  mix-blend-mode: screen;
+}
+
+/* Radial Precision Border Spotlight Layer (XOR Mask) */
+:is(
+  .feature-card,
+  .download-card,
+  .tweak-card,
+  .agent-card,
+  .os-card,
+  .app-window,
+  .spotlight-card
+)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  pointer-events: none;
+  z-index: 2;
+  background: radial-gradient(
+    var(--spotlight-border-size, 340px) circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    var(--primary, #f59e0b) 0%,
+    var(--primary-glow, rgba(245, 158, 11, 0.28)) 32%,
+    transparent 70%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: var(--border-spotlight-opacity, 0);
+  transition: opacity 0.35s var(--ease-out-expo);
+}
+
+/* Direct hover fallback and boost */
+:is(
+  .feature-card,
+  .download-card,
+  .tweak-card,
+  .agent-card,
+  .os-card,
+  .app-window,
+  .spotlight-card
+):hover {
+  --spotlight-opacity: 1;
+  --border-spotlight-opacity: 0.95;
+}
+
+/* Keep direct card content above the ambient ::before spotlight */
+:is(
+  .feature-card,
+  .download-card,
+  .tweak-card,
+  .agent-card,
+  .os-card
+) > * {
+  position: relative;
+  z-index: 3;
+}
+
+/* 3D Perspective Tilt States */
+:is(.feature-card, .download-card).recoil-tilt-ready {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition:
+    transform 0.55s var(--ease-out-expo),
+    box-shadow 0.45s var(--ease-out-expo),
+    border-color 0.35s ease;
+}
+
+:is(.feature-card, .download-card).recoil-tilt-active {
+  transition:
+    transform 0.12s cubic-bezier(0.2, 0.85, 0.4, 1),
+    box-shadow 0.3s ease,
+    border-color 0.25s ease;
+}
+
+/* ----------------------------------------------------------------------------
+   3. SCROLL REVEAL CHOREOGRAPHY (.reveal-up, .reveal-scale, .reveal-left, .reveal-right)
+   ---------------------------------------------------------------------------- */
+:is(.reveal-up, .reveal-scale, .reveal-left, .reveal-right) {
+  --reveal-delay: 0ms;
+  --reveal-duration: 780ms;
+  opacity: 0;
+  will-change: transform, opacity;
+  transition:
+    opacity var(--reveal-duration) var(--ease-out-expo) var(--reveal-delay),
+    transform var(--reveal-duration) var(--ease-out-expo) var(--reveal-delay),
+    filter var(--reveal-duration) var(--ease-out-expo) var(--reveal-delay);
+  filter: blur(4px);
+}
+
+.reveal-up {
+  transform: translate3d(0, 34px, 0);
+}
+
+.reveal-scale {
+  transform: translate3d(0, 18px, 0) scale(0.94);
+}
+
+.reveal-left {
+  transform: translate3d(-38px, 0, 0);
+}
+
+.reveal-right {
+  transform: translate3d(38px, 0, 0);
+}
+
+/* Active / Revealed State */
+:is(.reveal-up, .reveal-scale, .reveal-left, .reveal-right):is(.is-revealed, .revealed, .in-view) {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0px);
+}
+
+/* Stagger Delay Utility Classes */
+.stagger-1 { --reveal-delay: 60ms; transition-delay: 60ms; }
+.stagger-2 { --reveal-delay: 120ms; transition-delay: 120ms; }
+.stagger-3 { --reveal-delay: 180ms; transition-delay: 180ms; }
+.stagger-4 { --reveal-delay: 240ms; transition-delay: 240ms; }
+.stagger-5 { --reveal-delay: 300ms; transition-delay: 300ms; }
+.stagger-6 { --reveal-delay: 360ms; transition-delay: 360ms; }
+.stagger-7 { --reveal-delay: 420ms; transition-delay: 420ms; }
+.stagger-8 { --reveal-delay: 480ms; transition-delay: 480ms; }
+
+/* ----------------------------------------------------------------------------
+   4. HUD CORNER BRACKETS & SCANNING LINE EFFECTS
+   ---------------------------------------------------------------------------- */
+
+/* Swiss Technical HUD Frame with 4 Precision Corner Brackets */
+.hud-frame {
+  position: relative;
+  --hud-bracket-size: 12px;
+  --hud-bracket-thickness: 1.5px;
+  --hud-bracket-color: var(--primary, #f59e0b);
+  background-image:
+    /* Top-Left */
+    linear-gradient(to right, var(--hud-bracket-color) var(--hud-bracket-thickness), transparent var(--hud-bracket-thickness)),
+    linear-gradient(to bottom, var(--hud-bracket-color) var(--hud-bracket-thickness), transparent var(--hud-bracket-thickness)),
+    /* Top-Right */
+    linear-gradient(to left, var(--hud-bracket-color) var(--hud-bracket-thickness), transparent var(--hud-bracket-thickness)),
+    linear-gradient(to bottom, var(--hud-bracket-color) var(--hud-bracket-thickness), transparent var(--hud-bracket-thickness)),
+    /* Bottom-Left */
+    linear-gradient(to right, var(--hud-bracket-color) var(--hud-bracket-thickness), transparent var(--hud-bracket-thickness)),
+    linear-gradient(to top, var(--hud-bracket-color) var(--hud-bracket-thickness), transparent var(--hud-bracket-thickness)),
+    /* Bottom-Right */
+    linear-gradient(to left, var(--hud-bracket-color) var(--hud-bracket-thickness), transparent var(--hud-bracket-thickness)),
+    linear-gradient(to top, var(--hud-bracket-color) var(--hud-bracket-thickness), transparent var(--hud-bracket-thickness));
+  background-position:
+    0 0, 0 0,
+    100% 0, 100% 0,
+    0 100%, 0 100%,
+    100% 100%, 100% 100%;
+  background-size: var(--hud-bracket-size) var(--hud-bracket-size);
+  background-repeat: no-repeat;
+  transition: background-size 0.35s var(--ease-out-expo);
+}
+
+.hud-frame:hover {
+  --hud-bracket-size: 16px;
+}
+
+/* Explicit Corner Bracket Elements (Optional Child Nodes) */
+.hud-corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--primary, #f59e0b);
+  pointer-events: none;
+  z-index: 4;
+  opacity: 0.75;
+  transition: transform 0.35s var(--ease-out-expo), opacity 0.35s ease;
+}
+
+.hud-corner-tl {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid var(--primary, #f59e0b);
+  border-left: 2px solid var(--primary, #f59e0b);
+}
+
+.hud-corner-tr {
+  top: -1px;
+  right: -1px;
+  border-top: 2px solid var(--primary, #f59e0b);
+  border-right: 2px solid var(--primary, #f59e0b);
+}
+
+.hud-corner-bl {
+  bottom: -1px;
+  left: -1px;
+  border-bottom: 2px solid var(--primary, #f59e0b);
+  border-left: 2px solid var(--primary, #f59e0b);
+}
+
+.hud-corner-br {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid var(--primary, #f59e0b);
+  border-right: 2px solid var(--primary, #f59e0b);
+}
+
+/* Animated Telemetry Laser Scanline Sweep (.scanline-sweep) */
+.scanline-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanline-sweep::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -120%;
+  height: 90px;
+  pointer-events: none;
+  z-index: 3;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--primary-glow, rgba(245, 158, 11, 0.28)) 65%,
+    var(--primary, #f59e0b) 98%,
+    transparent 100%
+  );
+  opacity: 0.45;
+  animation: recoilScanlineSweep 6.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes recoilScanlineSweep {
+  0% {
+    top: -35%;
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.42;
+  }
+  85% {
+    opacity: 0.42;
+  }
+  100% {
+    top: 115%;
+    opacity: 0;
+  }
+}
+
+/* Subtle CRT / Tactical Grid Overlay Helper */
+.hud-scanlines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.018) 2px,
+    rgba(255, 255, 255, 0.018) 4px
+  );
+}
+
+/* ----------------------------------------------------------------------------
+   5. PULSING STATUS BEACONS & TELEMETRY INDICATORS
+   ---------------------------------------------------------------------------- */
+:is(.status-beacon, .beacon-dot, .pulse-dot) {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-emerald, #10b981);
+  box-shadow: 0 0 10px var(--accent-emerald, #10b981);
+  flex-shrink: 0;
+}
+
+:is(.status-beacon, .beacon-dot, .pulse-dot)::before,
+:is(.status-beacon, .beacon-dot, .pulse-dot)::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  color: var(--accent-emerald, #10b981);
+  opacity: 0;
+  pointer-events: none;
+  animation: recoilBeaconSonar 2.4s var(--ease-out-quart) infinite;
+}
+
+:is(.status-beacon, .beacon-dot, .pulse-dot)::after {
+  animation-delay: 1.2s;
+}
+
+.pulse-primary {
+  background-color: var(--primary, #f59e0b) !important;
+  box-shadow: 0 0 10px var(--primary, #f59e0b) !important;
+}
+.pulse-primary::before,
+.pulse-primary::after {
+  color: var(--primary, #f59e0b) !important;
+}
+
+.pulse-amber {
+  background-color: var(--accent-amber, #f59e0b) !important;
+  box-shadow: 0 0 10px var(--accent-amber, #f59e0b) !important;
+}
+.pulse-amber::before,
+.pulse-amber::after {
+  color: var(--accent-amber, #f59e0b) !important;
+}
+
+.pulse-emerald {
+  background-color: var(--accent-emerald, #10b981) !important;
+  box-shadow: 0 0 10px var(--accent-emerald, #10b981) !important;
+}
+.pulse-emerald::before,
+.pulse-emerald::after {
+  color: var(--accent-emerald, #10b981) !important;
+}
+
+@keyframes recoilBeaconSonar {
+  0% {
+    transform: scale(0.55);
+    opacity: 0.85;
+  }
+  80% {
+    transform: scale(2.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.35);
+    opacity: 0;
+  }
+}
+
+/* ----------------------------------------------------------------------------
+   6. BUTTON SHIMMER SWEEP & MAGNETIC CTA DYNAMICS
+   ---------------------------------------------------------------------------- */
+:is(.btn-primary, .btn-nav-download, .btn-shimmer) {
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+  transition:
+    transform 0.42s var(--ease-out-expo),
+    box-shadow 0.35s var(--ease-out-expo),
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+:is(.btn-primary, .btn-nav-download, .btn-shimmer).recoil-magnetic-active {
+  transition:
+    transform 0.1s cubic-bezier(0.2, 0.85, 0.4, 1),
+    box-shadow 0.25s ease;
+}
+
+/* Specular Light Shimmer Sweep */
+:is(.btn-primary, .btn-nav-download, .btn-shimmer)::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -130%;
+  width: 65%;
+  height: 200%;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 30%,
+    rgba(255, 255, 255, 0.42) 50%,
+    rgba(255, 255, 255, 0.08) 70%,
+    transparent 100%
+  );
+  transform: rotate(24deg);
+  transition: left 0.68s var(--ease-out-expo);
+  z-index: 2;
+}
+
+:is(.btn-primary, .btn-nav-download, .btn-shimmer):hover::after {
+  left: 165%;
+}
+
+/* Subtle periodic ambient shimmer for primary hero CTA */
+.btn-primary.shimmer-loop::after {
+  animation: recoilButtonShimmerLoop 5.5s var(--ease-in-out-cubic) infinite;
+}
+
+@keyframes recoilButtonShimmerLoop {
+  0%, 68% {
+    left: -130%;
+  }
+  100% {
+    left: 165%;
+  }
+}
+
+/* Count-up tabular numerals enforcement */
+[data-count-to] {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+/* ----------------------------------------------------------------------------
+   7. ACCESSIBILITY — PREFERS REDUCED MOTION
+   ---------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  :is(.reveal-up, .reveal-scale, .reveal-left, .reveal-right) {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  :is(.feature-card, .download-card) {
+    transform: none !important;
+  }
+
+  .scanline-sweep::after {
+    display: none !important;
+  }
+}

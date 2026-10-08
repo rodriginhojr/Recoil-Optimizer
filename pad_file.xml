@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PADGEN_PML>
+	<App_Spec_Version>3.11</App_Spec_Version>
+	<Modified_Date>2026-10-04</Modified_Date>
+	<Company_Info>
+		<Company_Name>rodriginho</Company_Name>
+		<Address_1>Online Open Source Project</Address_1>
+		<City_Town>Global</City_Town>
+		<State_Province>Global</State_Province>
+		<Zip_Postal_Code>00000</Zip_Postal_Code>
+		<Country>Global</Country>
+		<Company_WebSite_URL>https://recoil-optimizer.surge.sh</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>Rodrigo</Author_First_Name>
+			<Author_Last_Name>Sousa</Author_Last_Name>
+			<Author_Email>rodrigorecargas3910@gmail.com</Author_Email>
+			<Contact_First_Name>Rodrigo</Contact_First_Name>
+			<Contact_Last_Name>Sousa</Contact_Last_Name>
+			<Contact_Email>rodrigorecargas3910@gmail.com</Contact_Email>
+			<Discord_Contact>sousa.r</Discord_Contact>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>rodrigorecargas3910@gmail.com</Sales_Email>
+			<Support_Email>rodrigorecargas3910@gmail.com</Support_Email>
+			<General_Email>rodrigorecargas3910@gmail.com</General_Email>
+			<Support_URL>https://recoil-optimizer.surge.sh/</Support_URL>
+			<Discord_Support>sousa.r</Discord_Support>
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>Recoil Optimizer</Program_Name>
+		<Program_Version>1.0.0</Program_Version>
+		<Program_Release_Month>10</Program_Release_Month>
+		<Program_Release_Day>04</Program_Release_Day>
+		<Program_Release_Year>2026</Program_Release_Year>
+		<Program_Cost_Dollars>0.00</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>Major Update</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>Win7 x32,Win7 x64,Win8,Win8.1,Win10,Win11,Windows 11 24H2,Windows 11 25H2</Program_OS_Support>
+		<Program_Language>English,Spanish</Program_Language>
+		<Program_Change_Info>Initial production release v1.0.0 featuring 117 kernel tweaks, Smart Tune, AutoDriver, and 0.500ms precision timer.</Program_Change_Info>
+		<Program_Specific_Category>System Utilities</Program_Specific_Category>
+		<Program_Category_Class>System Utilities::System Maintenance</Program_Category_Class>
+		<Program_System_Requirements>Windows 7 SP1 or later, 2GB RAM, Administrative privileges</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes>72377559</File_Size_Bytes>
+			<File_Size_K>70681</File_Size_K>
+			<File_Size_MB>69.0</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On />
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>recoil optimizer, windows optimizer, latency, dpc latency, 0.5ms timer, smart tune, zero resident, fps boost, gaming tweaks, input lag, autodriver</Keywords>
+			<Char_Desc_45>Zero-resident Windows latency tuning suite</Char_Desc_45>
+			<Char_Desc_80>Recoil Optimizer v1.0.0: Reversible low-latency Windows tuning suite for gaming.</Char_Desc_80>
+			<Char_Desc_250>Recoil Optimizer is an open-source, zero-resident low-latency Windows optimization and kernel tuning suite for Windows 7-11. Features 117 reversible tweaks, Smart Tune hardware profiling, 0.500ms precision timer, AutoDriver, and DNS benchmarking.</Char_Desc_250>
+			<Char_Desc_450>Recoil Optimizer v1.0.0 is a professional-grade, open-source Windows performance utility designed under a strict Zero-Resident doctrine. It leaves zero background daemons running while applying 117 selective kernel, registry, power, and network optimizations. Includes automatic VSS system restore points, atomic registry rollback, 0.500ms multimedia timer resolution, DPC latency diagnostic, AutoDriver PNP manager, and DNS benchmarking.</Char_Desc_450>
+			<Char_Desc_2000>Recoil Optimizer v1.0.0 is an advanced, open-source performance and low-latency tuning suite for Microsoft Windows (supporting Windows 7 SP1 up to Windows 11 25H2).
+
+Key Features &amp; Highlights:
+1. Zero-Resident Footprint: Leaves 0 background daemons or services running. Apply tweaks in 1-click and close the app; all kernel and registry settings persist across reboots.
+2. 100% Reversible: Automatically triggers Volume Shadow Copy (VSS) restore points and takes atomic .reg snapshots before touching any configuration. One-click rollback restores original Microsoft Windows factory defaults.
+3. 117 Hardware-Adaptive Tweaks: Precision adjustments for DPC latency, PCIe MSI Mode, I/O scheduling, MMCSS audio priorities, and network throttling index.
+4. Smart Tune Hardware Profiling: Intelligently detects Intel Hybrid P/E-Core topologies, AMD Ryzen 3D V-Cache architectures, and NVIDIA/AMD/Intel Arc GPUs to apply mathematically optimal settings.
+5. 0.500ms Precision Kernel Timer: Stablizes frametime variance and eliminates micro-stuttering in competitive titles (Valorant, CS2, Fortnite, Apex Legends).
+6. AutoDriver PNP Inspector: Identifies missing drivers (Codes 28 and 10) and handles offline driver backup and installation using native pnputil.
+7. Real-Time DNS Benchmark: Measures socket latency across leading tier-1 DNS resolvers and applies the fastest server with one click.
+
+Developer &amp; Community Feedback:
+Official Website: https://recoil-optimizer.surge.sh/
+Direct Download (x64): https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe
+Direct Download (x86): https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x86.exe
+Discord Contact: sousa.r</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_XML_File_URL>https://recoil-optimizer.surge.sh/pad_file.xml</Application_XML_File_URL>
+			<Application_Screenshot_URL>https://recoil-optimizer.surge.sh/assets/LogoHorizontal.png</Application_Screenshot_URL>
+			<Application_Icon_URL>https://recoil-optimizer.surge.sh/assets/LogoMark.png</Application_Icon_URL>
+			<Application_Info_URL>https://recoil-optimizer.surge.sh/</Application_Info_URL>
+			<Application_Order_URL>https://recoil-optimizer.surge.sh</Application_Order_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe</Primary_Download_URL>
+			<Secondary_Download_URL>https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x86.exe</Secondary_Download_URL>
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions>Freely distributable under the MIT License.</Distribution_Permissions>
+		<EULA>https://opensource.org/licenses/MIT</EULA>
+	</Permissions>
+</PADGEN_PML>

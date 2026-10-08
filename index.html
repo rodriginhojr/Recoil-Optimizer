@@ -1,0 +1,816 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recoil Optimizer (RecoilOptimizer) — Suite de Optimización de Kernel, Baja Latencia y FPS para Windows</title>
+  
+  <!-- Canonical URL for Google Indexing -->
+  <link rel="canonical" href="https://recoiloptimizer.xyz/">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Recoil Optimizer (RecoilOptimizer) — Suite de Optimización de Kernel, Baja Latencia y FPS para Windows">
+  <meta name="description" content="Descarga Recoil Optimizer (RecoilOptimizer). Suite de baja latencia, reducción de input lag y optimización de kernel para Windows 7, 8.1, 10 y 11. 117 tweaks seguros y reversibles en 1 clic. Contacto Discord: sousa.r">
+  <meta name="keywords" content="recoil optimizer, recoiloptimizer, recoil optimizer windows, recoil optimizer download, descargar recoil optimizer, dpc latency, 0.5ms timer, windows optimizer, gaming pc, valorant, cs2, sousa.r discord">
+  <meta name="author" content="rodriginho">
+  <meta name="discord:creator" content="sousa.r">
+  <meta name="contact" content="sousa.r on Discord">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#07080c">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RecoilOptimizer">
+  <meta property="og:url" content="https://recoiloptimizer.xyz/">
+  <meta property="og:title" content="Recoil Optimizer (RecoilOptimizer) — Optimizador de Kernel, Latencia y FPS para Windows">
+  <meta property="og:description" content="Suite de baja latencia y optimización de kernel para Windows 7 a 11. Cero bloatware, reversible en 1 clic y 100% libre. Contacto Discord: sousa.r">
+  <meta property="og:image" content="https://recoiloptimizer.xyz/assets/LogoHorizontal.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Recoil Optimizer (RecoilOptimizer) — Windows Kernel &amp; Low-Latency Suite">
+  <meta name="twitter:description" content="117 reversible kernel tweaks for Windows 7-11. 0 resident daemons, 0.500ms precision timer, WHQL driver setup. Contact Discord: sousa.r">
+  <meta name="twitter:image" content="https://recoiloptimizer.xyz/assets/LogoHorizontal.png">
+
+  <!-- Schema.org Rich Graph (WebSite + SoftwareApplication + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://recoiloptimizer.xyz/#website",
+        "url": "https://recoiloptimizer.xyz/",
+        "name": "RecoilOptimizer",
+        "alternateName": ["Recoil Optimizer", "Recoil Optimizer Windows", "Recoil Studio"],
+        "inLanguage": ["es", "en"]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://recoiloptimizer.xyz/#software",
+        "name": "RecoilOptimizer",
+        "alternateName": ["Recoil Optimizer", "Recoil Optimizer Windows", "Recoil Studio"],
+        "operatingSystem": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "applicationCategory": "UtilitiesApplication",
+        "softwareVersion": "1.0.0",
+        "fileSize": "69.0 MB",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "url": "https://recoiloptimizer.xyz/",
+        "downloadUrl": "https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe",
+        "author": {
+          "@type": "Person",
+          "name": "rodriginho (Discord: sousa.r)",
+          "url": "https://recoiloptimizer.xyz/"
+        },
+        "description": "RecoilOptimizer (Recoil Optimizer) es una suite de optimización de kernel para Windows 7 a 11 enfocada en baja latencia DPC, timer de 0.500ms y reversibilidad total en 1 clic.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "developer support",
+          "identifier": "Discord: sousa.r"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://recoiloptimizer.xyz/#faqpage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es RecoilOptimizer (Recoil Optimizer) y es seguro para juegos con Anti-Cheat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RecoilOptimizer opera exclusivamente mediante políticas documentadas de Microsoft en Modo Usuario (Ring-3). No inyecta DLLs ni altera procesos de juegos, siendo 100% seguro para Riot Vanguard, EasyAntiCheat, BattlEye y FACEIT."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo revertir todos los cambios de RecoilOptimizer si algo no me gusta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Antes de aplicar cualquier ajuste, RecoilOptimizer crea un Punto de Restauración VSS y un respaldo completo del Registro para restaurar tu configuración original en 1 clic."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  
+  <!-- Google Fonts: Orbitron, Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop Glows & Technical Grid -->
+  <div class="mesh-glow-1" aria-hidden="true"></div>
+  <div class="mesh-glow-2" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- 100% Single-Line Sticky Navbar (Google Style) -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación Principal">
+      <a href="#" class="nav-brand">
+        <img src="assets/LogoMark.png" alt="Recoil Optimizer Logo" class="nav-logo">
+        <span class="nav-brand-title">Recoil <span class="nav-brand-accent">Optimizer</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#os-matrix-mount" data-i18n="navOsMatrix">Multi-Windows</a></li>
+        <li><a href="#security" data-i18n="navTrust">Seguridad</a></li>
+        <li><a href="#downloads" data-i18n="navDownloads">Descargas</a></li>
+        <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Discord Developer Contact (Official Blurple) -->
+        <a href="https://discord.com" onclick="copyDiscord(event)" id="nav-discord-btn" class="nav-discord-contact" title="Copiar usuario de Discord: sousa.r">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <span id="nav-discord-text">Discord: sousa.r</span>
+        </a>
+
+        <!-- Language Toggle -->
+        <button type="button" id="btn-lang-toggle" class="lang-toggle" aria-label="Cambiar Idioma">🌐 EN</button>
+
+        <!-- Primary Download CTA -->
+        <a href="#downloads" class="btn-nav-download">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="btnDownloadNav">Descargar Gratis</span>
+        </a>
+
+        <!-- Mobile / Tablet Hamburger -->
+        <button type="button" class="nav-hamburger" id="btn-nav-drawer" aria-label="Abrir Menú de Navegación" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#os-matrix-mount" data-i18n="navOsMatrix">Multi-Windows</a></li>
+        <li><a href="#security" data-i18n="navTrust">Seguridad</a></li>
+        <li><a href="#downloads" data-i18n="navDownloads">Descargas</a></li>
+        <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+        <li><a href="https://discord.com" onclick="copyDiscord(event)" style="color: #7983f5;">💬 Discord: sousa.r</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section (Clean Antigravity-Style) -->
+    <section class="hero container" id="hero">
+      <!-- Eyebrow Badge -->
+      <div class="badge badge-pulse">
+        <span class="pulse-dot"></span>
+        <span data-i18n="heroTag">Optimizador de Latencia de Kernel · Windows 7 a 11</span>
+      </div>
+
+      <!-- Hero Title & Subtitle -->
+      <h1 class="hero-title" data-i18n="heroTitle">
+        Exprime cada gota de FPS y elimina el stutter en tu Windows.
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        Herramienta de optimización de kernel y baja latencia para jugadores y técnicos. Soporte universal desde Windows 7 SP1 hasta Windows 11 25H2. Cero bloatware y reversible en 1 clic.
+      </p>
+
+      <!-- Direct & Confident CTAs (Google Style) -->
+      <div class="hero-actions">
+        <a href="https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe" download="RecoilOptimizer_x64.exe" id="hero-download-btn" class="btn-hero-download">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="btnDownloadHero">Descargar para Windows</span>
+          <span class="hero-arch-badge" id="hero-arch-badge">64 bits</span>
+        </a>
+      </div>
+
+      <!-- Subtle & Clean PIN Note -->
+      <div class="hero-pin-note">
+        <span>🔑</span>
+        <span>PIN de primer inicio: <strong id="passkey-val">3910</strong></span>
+        <button type="button" class="btn-copy-pin-mini" id="btn-copy-passkey" onclick="copyPasskey()" title="Copiar PIN 3910" data-i18n="btnCopyPin">Copiar PIN</button>
+      </div>
+
+      <!-- 5 Executive Telemetry Counters Strip -->
+      <div class="hero-stats-strip telemetry-strip">
+        <div class="hero-stat-card">
+          <div class="hero-stat-value" data-count-to="117">117</div>
+          <div class="hero-stat-label" data-i18n="statTweaksLabel">Optimizaciones de Kernel</div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="hero-stat-value" data-count-to="0.500" data-count-decimals="3" data-count-suffix=" ms">0.500 ms</div>
+          <div class="hero-stat-label" data-i18n="statTimerLabel">Kernel Timer NTAPI</div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="hero-stat-value" data-count-to="44" data-count-prefix="+" data-count-suffix="%">+44%</div>
+          <div class="hero-stat-label" data-i18n="statFpsLabel">FPS / 1% Low Boost</div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="hero-stat-value" data-count-to="0" data-count-suffix=" MB">0 MB</div>
+          <div class="hero-stat-label" data-i18n="statRamLabel">RAM Residual en Fondo</div>
+        </div>
+      </div>
+
+      <!-- Authentic Windows 11 / WPF Desktop Application Replica -->
+      <div class="hero-mockup-wrapper">
+        <div class="app-window">
+          <!-- Authentic WPF Windows 11 Titlebar -->
+          <div class="window-titlebar">
+            <div class="wpf-titlebar-left">
+              <div class="wpf-app-emblem" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <div class="wpf-title-stack">
+                <span class="window-title" data-i18n="wpfWindowTitle">Recoil Studio · RecoilOptimizer.exe</span>
+                <span class="wpf-admin-pill" data-i18n="wpfAdminBadge">🛡️ RING-0 / ADMIN</span>
+              </div>
+            </div>
+
+            <div class="wpf-titlebar-right">
+              <div class="wpf-header-telemetry">
+                <div class="wpf-telemetry-pill">
+                  <span data-i18n="wpfProfilePill">PERFIL:</span> <strong>ESPORTS</strong>
+                </div>
+                <div class="wpf-telemetry-pill">
+                  <span data-i18n="wpfScoreLabel">❤ SALUD:</span> <span class="telemetry-val" id="wpf-live-health-val">100%</span>
+                </div>
+              </div>
+
+              <!-- Native Windows Caption Controls -->
+              <div class="win-caption-controls" aria-hidden="true">
+                <button type="button" class="win-caption-btn win-btn-min" tabindex="-1">─</button>
+                <button type="button" class="win-caption-btn win-btn-max" tabindex="-1">□</button>
+                <button type="button" class="win-caption-btn win-btn-close" tabindex="-1">✕</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="window-content">
+            <!-- Mock Sidebar (5 Interactive Tabs) -->
+            <div class="mock-sidebar">
+              <div class="mock-menu-item active" data-mock-tab="dashboard">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                <span data-i18n="mockTabDashboard">Dashboard</span>
+              </div>
+              <div class="mock-menu-item" data-mock-tab="smarttune">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <span data-i18n="mockTabSmartTune">Smart Tune</span>
+              </div>
+              <div class="mock-menu-item" data-mock-tab="tweaks">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <span><span data-i18n="mockTabTweaks">Optimizaciones</span> (<span id="mock-tweak-count-badge">117</span>)</span>
+              </div>
+              <div class="mock-menu-item" data-mock-tab="autodriver">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/></svg>
+                <span data-i18n="mockTabAutoDriver">AutoDriver</span>
+              </div>
+              <div class="mock-menu-item" data-mock-tab="security">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span data-i18n="mockTabSecurity">Seguridad &amp; Rollback</span>
+              </div>
+            </div>
+
+            <!-- Mock Panes Container -->
+            <div class="mock-panes-wrapper">
+              <!-- PANE 1: Dashboard -->
+              <div class="mock-pane active" id="mock-pane-dashboard">
+                <div class="mock-stat-cards">
+                  <div class="mock-stat-card">
+                    <div class="mock-stat-title" data-i18n="mockStatTimerTitle">Timer NTAPI</div>
+                    <div class="mock-stat-value" style="color: var(--primary);">0.500 ms</div>
+                    <div style="font-size: 0.75rem; color: var(--accent-emerald); margin-top: 4px;" data-i18n="mockStatTimerSub">● NtSetTimerResolution Constante</div>
+                  </div>
+
+                  <div class="mock-stat-card">
+                    <div class="mock-stat-title" data-i18n="mockStatActiveTitle">Latencia DPC Kernel</div>
+                    <div class="mock-stat-value" style="color: var(--accent-amber);">18 µs</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;" data-i18n="mockStatActiveSub">● Rutina ISR Sin Desviación</div>
+                  </div>
+
+                  <div class="mock-stat-card">
+                    <div class="mock-stat-title" data-i18n="mockStatHealthTitle">Respaldo &amp; Seguridad</div>
+                    <div class="mock-stat-value" style="color: var(--accent-emerald);">100% Reversible</div>
+                    <div style="font-size: 0.75rem; color: var(--accent-emerald); margin-top: 4px;" data-i18n="mockStatHealthSub">● Punto VSS y Registro UTF-16</div>
+                  </div>
+                </div>
+
+                <!-- Live 60fps DPC & Kernel Timer Oscilloscope Canvas -->
+                <div class="oscilloscope-box">
+                  <div class="oscilloscope-header">
+                    <span class="oscilloscope-title" data-i18n="oscilloscopeTitle">● Telemetría de Kernel en Vivo (DPC &amp; Timer)</span>
+                    <div style="display:flex;align-items:center;gap:10px;">
+                      <span id="osc-dom-readout" class="mono-readout" style="color:var(--accent-emerald);font-size:0.75rem;">DPC: 18 µs | Timer: 0.500 ms</span>
+                      <button type="button" class="btn-osc-stress" onclick="window.RecoilCanvasFX &amp;&amp; window.RecoilCanvasFX.triggerStressTest()" data-i18n="btnOscStress">⚡ Probar Resiliencia DPC</button>
+                    </div>
+                  </div>
+                  <canvas id="dpc-oscilloscope-canvas" width="680" height="110"></canvas>
+                </div>
+              </div>
+
+              <!-- PANE 2: Smart Tune -->
+              <div class="mock-pane" id="mock-pane-smarttune">
+                <div class="mock-card-header">
+                  <div>
+                    <h4 style="color: var(--text-main); font-size: 1rem; margin-bottom: 2px;" data-i18n="smartTuneHeaderTitle">Smart Tune · Ajuste Inteligente</h4>
+                    <p style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="smartTuneHeaderDesc">Detecta tu combinación de CPU, GPU, RAM y versión de Windows para aplicar la configuración matemática óptima.</p>
+                  </div>
+                  <span class="badge" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.3);" data-i18n="smartTuneSafeBadge">100% SEGURO</span>
+                </div>
+
+                <div class="mock-hardware-summary">
+                  <div class="hw-item">
+                    <span class="hw-label" data-i18n="hwCpuLabel">PROCESADOR DETECTADO:</span>
+                    <span class="hw-val" data-i18n="hwCpuVal">AMD Ryzen 9 / Intel Core Ultra (Prioridad Hilos P-Cores)</span>
+                  </div>
+                  <div class="hw-item">
+                    <span class="hw-label" data-i18n="hwGpuLabel">GRÁFICA &amp; MONITOR:</span>
+                    <span class="hw-val" data-i18n="hwGpuVal">NVIDIA RTX / AMD Radeon (Modo MSI + HAGS + Latencia Ultra-Baja)</span>
+                  </div>
+                  <div class="hw-item">
+                    <span class="hw-label" data-i18n="hwProfileLabel">PERFIL RECOMENDADO:</span>
+                    <span class="hw-val" style="color: var(--accent-amber);" data-i18n="hwProfileVal">⚡ Perfil Esports Competitivo (117 Optimizaciones)</span>
+                  </div>
+                </div>
+
+                <div class="mock-tune-cta">
+                  <button type="button" class="btn btn-primary" id="btn-mock-smarttune" onclick="executeMockSmartTune()" style="width: 100%; justify-content: center; height: 44px;" data-i18n="btnRunSmartTune">
+                    ⚡ EJECUTAR SMART TUNE (1 CLIC)
+                  </button>
+                  <div id="mock-tune-status" style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-emerald); text-align: center; display: none; margin-top: 8px;" data-i18n="smartTuneStatusDone">
+                    ✓ Consenso de hardware validado: 117 ajustes optimizados para tu procesador y GPU.
+                  </div>
+                </div>
+              </div>
+
+              <!-- PANE 3: Optimizaciones (117) -->
+              <div class="mock-pane" id="mock-pane-tweaks">
+                <div class="mock-card-header">
+                  <div>
+                    <h4 style="color: var(--text-main); font-size: 1rem; margin-bottom: 2px;" data-i18n="tweaksPaneTitle">Catálogo Completo de 117 Tweaks</h4>
+                    <p style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="tweaksPaneDesc">Haz clic en cualquier interruptor para activar o desactivar en tiempo real con respaldo instantáneo.</p>
+                  </div>
+                  <span class="badge" style="background: rgba(59, 130, 246, 0.15); color: var(--primary); border: 1px solid var(--border-glow);" data-i18n="tweaksReversibleBadge">117 REVERSIBLES</span>
+                </div>
+
+                <div class="mock-tweak-list">
+                  <div class="mock-tweak-row">
+                    <div class="mock-tweak-info">
+                      <span class="mock-tweak-name">MMCSS Audio &amp; Game Scheduling Priority</span>
+                      <span class="mock-tweak-sub" data-i18n="mockPaneTweak1">Prioridad de programación de subprocesos en tiempo real en el planificador NT</span>
+                    </div>
+                    <div class="toggle-switch active" onclick="toggleMockSwitch(this)"></div>
+                  </div>
+
+                  <div class="mock-tweak-row">
+                    <div class="mock-tweak-info">
+                      <span class="mock-tweak-name">Disable Dynamic Tick (Reloj de Kernel Fijo 0.500 ms)</span>
+                      <span class="mock-tweak-sub" data-i18n="mockPaneTweak2">Evita que el kernel de Windows altere la frecuencia del temporizador al estar inactivo</span>
+                    </div>
+                    <div class="toggle-switch active" onclick="toggleMockSwitch(this)"></div>
+                  </div>
+
+                  <div class="mock-tweak-row">
+                    <div class="mock-tweak-info">
+                      <span class="mock-tweak-name">TCP NoDelay &amp; TcpAckFrequency = 1</span>
+                      <span class="mock-tweak-sub" data-i18n="mockPaneTweak3">Desactiva el algoritmo de Nagle para enviar paquetes TCP instantáneamente sin esperar confirmación</span>
+                    </div>
+                    <div class="toggle-switch active" onclick="toggleMockSwitch(this)"></div>
+                  </div>
+
+                  <div class="mock-tweak-row">
+                    <div class="mock-tweak-info">
+                      <span class="mock-tweak-name">Disable Paging Executive (Kernel Bloqueado en RAM Física)</span>
+                      <span class="mock-tweak-sub" data-i18n="mockPaneTweak4">Impide que los módulos críticos del kernel se envíen al archivo de paginación en disco</span>
+                    </div>
+                    <div class="toggle-switch active" onclick="toggleMockSwitch(this)"></div>
+                  </div>
+
+                  <div class="mock-tweak-row">
+                    <div class="mock-tweak-info">
+                      <span class="mock-tweak-name">Windows Telemetry &amp; Diagnostic Data Purge</span>
+                      <span class="mock-tweak-sub" data-i18n="mockPaneTweak5">Desactiva diagnósticos en segundo plano que consumen ciclos de CPU y ancho de banda</span>
+                    </div>
+                    <div class="toggle-switch active" onclick="toggleMockSwitch(this)"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PANE 4: AutoDriver -->
+              <div class="mock-pane" id="mock-pane-autodriver">
+                <div class="mock-card-header">
+                  <div>
+                    <h4 style="color: var(--text-main); font-size: 1rem; margin-bottom: 2px;" data-i18n="autoDriverPaneTitle">AutoDriver · WHQL Guardian &amp; Limpieza Pura</h4>
+                    <p style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="autoDriverPaneDesc">Auditoría por PNP Hardware ID. 0 MB de consumo de RAM permanente en segundo plano.</p>
+                  </div>
+                  <span class="badge" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.3);" data-i18n="autoDriverZeroRamBadge">0 MB RAM RESIDUAL</span>
+                </div>
+
+                <!-- Driver Devices List -->
+                <div class="mock-driver-list">
+                  <div class="mock-driver-card">
+                    <div class="mock-driver-left">
+                      <div class="mock-driver-icon" style="color: var(--accent-emerald);">🎮</div>
+                      <div>
+                        <div class="mock-driver-name">NVIDIA GeForce RTX 4080 (Game Ready v560.94)</div>
+                        <div class="mock-driver-meta" data-i18n="mockDrv1Meta">PNP ID: PCI\VEN_10DE&amp;DEV_2704 — Telemetría purgada, DPC latency minimizada</div>
+                      </div>
+                    </div>
+                    <span class="badge badge-success" data-i18n="mockDrv1Badge">✓ LIMPIO SIN BLOATWARE</span>
+                  </div>
+
+                  <div class="mock-driver-card">
+                    <div class="mock-driver-left">
+                      <div class="mock-driver-icon" style="color: var(--primary);">🌐</div>
+                      <div>
+                        <div class="mock-driver-name">Realtek Gaming 2.5GbE Family Controller</div>
+                        <div class="mock-driver-meta" data-i18n="mockDrv2Meta">PNP ID: PCI\VEN_10EC&amp;DEV_8125 — Modo MSI activo (Línea IRQ dedicada)</div>
+                      </div>
+                    </div>
+                    <span class="badge badge-success" data-i18n="mockDrv2Badge">✓ MSI MODE ACTIVO</span>
+                  </div>
+
+                  <div class="mock-driver-card">
+                    <div class="mock-driver-left">
+                      <div class="mock-driver-icon" style="color: var(--accent-amber);">⚡</div>
+                      <div>
+                        <div class="mock-driver-name">AMD Chipset I2C / Intel Serial IO Controller</div>
+                        <div class="mock-driver-meta" data-i18n="mockDrv3Meta">PNP ID: ACPI\AMDI0010 — Firmware oficial certificado por Microsoft</div>
+                      </div>
+                    </div>
+                    <span class="badge badge-warning" data-i18n="mockDrv3Badge">✓ WHQL CERTIFICADO</span>
+                  </div>
+
+                  <div class="mock-driver-card">
+                    <div class="mock-driver-left">
+                      <div class="mock-driver-icon" style="color: #f87171;">🧹</div>
+                      <div>
+                        <div class="mock-driver-name">DirectX &amp; Vulkan Shader Cache</div>
+                        <div class="mock-driver-meta" data-i18n="shaderCacheDesc">1.8 GB de sombreadores obsoletos de drivers anteriores que producen micro-stuttering</div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn-clean-mini" id="btn-clean-shaders" onclick="executeMockCleanShaders()" data-i18n="btnCleanShaders">Limpiar 1.8 GB</button>
+                  </div>
+                </div>
+
+                <div class="mock-autodriver-actions">
+                  <button type="button" class="btn btn-secondary" onclick="executeMockBackupDrivers()" style="font-size: 0.82rem; padding: 10px 18px;" data-i18n="btnBackupDrivers">
+                    📦 Respaldar Drivers con pnputil
+                  </button>
+                  <div id="driver-action-toast" style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--accent-emerald); display: none; align-items: center; gap: 6px;">
+                    <span data-i18n="driverToastDone">✓ Respaldo de controladores completado en System32/DriverStore.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PANE 5: Seguridad & Rollback -->
+              <div class="mock-pane" id="mock-pane-security">
+                <div class="mock-card-header">
+                  <div>
+                    <h4 style="color: var(--text-main); font-size: 1rem; margin-bottom: 2px;" data-i18n="secPaneTitle">Seguridad y Reversibilidad Total</h4>
+                    <p style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="secPaneDesc">Cada ajuste cuenta con un respaldo atómico previo. Reversible a los valores de fábrica de Windows en 1 clic.</p>
+                  </div>
+                  <span class="badge" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.3);" data-i18n="secTransparentBadge">TRANSPARENTE</span>
+                </div>
+
+                <div class="mock-security-grid">
+                  <div class="sec-status-box">
+                    <div class="sec-status-title" data-i18n="secBox1Title">Punto de Restauración Windows (VSS)</div>
+                    <div class="sec-status-val" style="color: var(--accent-emerald);" data-i18n="secBox1Val">✓ Creado &amp; Verificado</div>
+                    <div class="sec-status-sub" data-i18n="secBox1Sub">Snapshot del sistema antes de aplicar optimizaciones</div>
+                  </div>
+
+                  <div class="sec-status-box">
+                    <div class="sec-status-title" data-i18n="secBox2Title">Respaldo de Registro UTF-16 LE</div>
+                    <div class="sec-status-val" style="color: var(--primary);" data-i18n="secBox2Val">✓ 117 Claves Salvaguardadas</div>
+                    <div class="sec-status-sub" data-i18n="secBox2Sub">Copia fiel en formato nativo de Windows Registry</div>
+                  </div>
+
+                  <div class="sec-status-box">
+                    <div class="sec-status-title" data-i18n="secBox3Title">Arquitectura Sin Riesgo de BSOD</div>
+                    <div class="sec-status-val" style="color: var(--accent-emerald);" data-i18n="secBox3Val">✓ 100% No Destructivo</div>
+                    <div class="sec-status-sub" data-i18n="secBox3Sub">No modifica BIOS, no altera archivos del sistema del kernel</div>
+                  </div>
+                </div>
+
+                <div style="margin-top: 16px;">
+                  <button type="button" class="btn btn-secondary" id="btn-mock-rollback" onclick="executeMockRollback()" style="width: 100%; justify-content: center; border-color: rgba(239, 68, 68, 0.4); color: #fca5a5;" data-i18n="btnRollbackAll">
+                    🔄 REVERTIR TODO A VALORES DE FÁBRICA (1 CLIC)
+                  </button>
+                  <div id="mock-rollback-status" style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--primary); text-align: center; display: none; margin-top: 8px;" data-i18n="rollbackStatusDone">
+                    ✓ Todos los valores originales de fábrica de Windows han sido restaurados con éxito.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Window Statusbar -->
+          <div class="window-statusbar">
+            <div class="statusbar-left">
+              <div class="statusbar-item">
+                <span class="statusbar-dot"></span>
+                <span id="wpf-statusbar-msg" class="mono-readout" data-i18n="wpfStatusReady">ESTADO: SISTEMA PROTEGIDO · RING-3 SEGURO</span>
+              </div>
+            </div>
+            <div class="statusbar-right">
+              <div class="statusbar-item">
+                <span class="mono-readout">TIMER RESOLUTION: <strong id="wpf-live-timer-footer" style="color:var(--accent-emerald);">0.500 ms</strong></span>
+              </div>
+              <div class="statusbar-item">
+                <span class="mono-readout" style="color:var(--text-dim);">CERO SERVICIOS RESIDENTES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 4. Multi-Windows Compatibility Matrix -->
+    <div id="os-matrix-mount"></div>
+
+    <!-- 5. Seguridad & Garantía de Ingeniería (Google Antigravity Style) -->
+    <section id="security" class="section container">
+      <div class="section-header">
+        <div class="section-tag">INGENIERÍA &amp; SEGURIDAD</div>
+        <h2 class="section-title">Seguridad y Transparencia</h2>
+        <p class="section-desc">
+          Transparencia absoluta. Sin trucos publicitarios, sin riesgos de ban en anti-cheats y con reversibilidad total garantizada.
+        </p>
+      </div>
+
+      <div class="security-grid-google">
+        <div class="sec-card-google">
+          <div class="sec-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="sec-card-title">Ring-3 User Space</h3>
+          <p class="sec-card-desc">
+            100% seguro con Riot Vanguard, FACEIT, EasyAntiCheat y Ricochet. No inyecta drivers de kernel ni manipula memoria de procesos.
+          </p>
+        </div>
+
+        <div class="sec-card-google">
+          <div class="sec-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          </div>
+          <h3 class="sec-card-title">Punto de Restauración y Respaldo VSS</h3>
+          <p class="sec-card-desc">
+            Crea un Punto de Restauración oficial de Windows (VSS) y exporta un respaldo nativo del registro en formato UTF-16 LE antes de tocar cualquier valor.
+          </p>
+        </div>
+
+        <div class="sec-card-google">
+          <div class="sec-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3 class="sec-card-title">0 MB en Segundo Plano</h3>
+          <p class="sec-card-desc">
+            Cero servicios o daemons residentes. Aplica las configuraciones directamente al kernel de Windows y se cierra por completo mientras juegas.
+          </p>
+        </div>
+
+        <div class="sec-card-google">
+          <div class="sec-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="sec-card-title">Verificación SHA-256</h3>
+          <p class="sec-card-desc">
+            Integridad criptográfica garantizada. Cada compilación está verificada mediante sumas SHA-256 públicas y transparentes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Official Dual Download Hub (Directo & Profesional) -->
+    <section id="downloads" class="section download-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="downloadsTag">DISTRIBUCIÓN OFICIAL COMPLETA</div>
+          <h2 class="section-title" data-i18n="downloadsTitle">Descargas Oficiales y Verificadas</h2>
+          <p class="section-desc" data-i18n="downloadsDesc">
+            Arquitectura nativa dual para cubrir tanto computadoras modernas de alto rendimiento como equipos antiguos.
+          </p>
+        </div>
+
+        <div class="download-grid">
+          <!-- Card 64-bit -->
+          <div id="card-x64" class="download-card">
+            <div class="recommended-ribbon" data-i18n="recommendedRibbon">RECOMENDADO PARA TU PC</div>
+            <div class="download-header">
+              <h3 class="arch-title">
+                <span data-i18n="cardX64Title">Windows 64 bits (x64)</span>
+                <span class="badge" style="background: rgba(59, 130, 246, 0.2); color: var(--primary); font-size: 0.75rem;">69.0 MB</span>
+              </h3>
+              <p class="arch-desc" data-i18n="cardX64Desc">Recomendado para el 95% de las computadoras modernas.</p>
+            </div>
+
+            <ul class="specs-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardX64Spec1">Windows 10, Windows 11 y Windows 7/8 de 64 bits</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardX64Spec2">Optimizado para Intel Core Ultra, AMD Ryzen X3D y GPUs dedicadas</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardX64Spec3">Soporte multinúcleo de 64+ hilos y baja latencia de kernel</span>
+              </li>
+            </ul>
+
+            <div class="hash-container">
+              <span class="hash-text" title="0E73DF41953870169CBAE6E7687F450F85324B6C2B6BC56C76888435089AAF3B">SHA256: 0E73DF4195387016...</span>
+              <button type="button" class="btn-copy-hash" data-hash="0E73DF41953870169CBAE6E7687F450F85324B6C2B6BC56C76888435089AAF3B" title="Copiar hash SHA-256">
+                📋
+              </button>
+            </div>
+
+            <a href="https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe" download="RecoilOptimizer_x64.exe" class="btn btn-primary" style="width: 100%;" data-i18n="btnDownloadX64">
+              Descargar RecoilOptimizer_x64.exe
+            </a>
+          </div>
+
+          <!-- Card 32-bit -->
+          <div id="card-x86" class="download-card">
+            <div class="recommended-ribbon" data-i18n="recommendedRibbon">RECOMENDADO PARA TU PC</div>
+            <div class="download-header">
+              <h3 class="arch-title">
+                <span data-i18n="cardX86Title">Windows 32 bits (x86)</span>
+                <span class="badge" style="background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); font-size: 0.75rem;">63.8 MB</span>
+              </h3>
+              <p class="arch-desc" data-i18n="cardX86Desc">Indispensable para PCs legacy o recursos reducidos.</p>
+            </div>
+
+            <ul class="specs-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardX86Spec1">Windows 7 SP1, Windows 8 y Windows 10 de 32 bits</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardX86Spec2">Garantiza ejecución sin errores de compatibilidad en PCs legacy</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardX86Spec3">Mismo catálogo de 117 tweaks y protección total del sistema</span>
+              </li>
+            </ul>
+
+            <div class="hash-container">
+              <span class="hash-text" title="32E762B461DDCCA1356B1254D910142B27E386D3E1BFBF6A64F84117F6B35F22">SHA256: 32E762B461DDCCA1...</span>
+              <button type="button" class="btn-copy-hash" data-hash="32E762B461DDCCA1356B1254D910142B27E386D3E1BFBF6A64F84117F6B35F22" title="Copiar hash SHA-256">
+                📋
+              </button>
+            </div>
+
+            <a href="https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x86.exe" download="RecoilOptimizer_x86.exe" class="btn btn-secondary" style="width: 100%; border-color: rgba(245, 158, 11, 0.4);" data-i18n="btnDownloadX86">
+              Descargar RecoilOptimizer_x86.exe
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="section container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="faqTag">PREGUNTAS FRECUENTES</div>
+        <h2 class="section-title" data-i18n="faqTitle">Respuestas Claras y Transparentes</h2>
+        <p class="section-desc" data-i18n="faqDesc">Todo lo que necesitas saber antes de optimizar tu equipo.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faqQ1">¿Por qué en Windows 7 me salía un error de compatibilidad x86 / x64?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" data-i18n="faqA1">
+            Muchas computadoras con Windows 7 tienen instalada la edición de 32 bits (x86). Si descargas el archivo de 64 bits en un sistema de 32 bits, Windows muestra esa advertencia porque el kernel no puede cargar binarios de 64 bits. Para solucionarlo, simplemente descarga la versión RecoilOptimizer_x86.exe (32 bits) disponible en nuestra sección de descargas.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faqQ2">¿Es seguro usar Recoil Optimizer? ¿Puede dañar mi Windows?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" data-i18n="faqA2">
+            Es 100% seguro. A diferencia de scripts dudosos de internet, Recoil Optimizer valida tu hardware antes de tocar nada (protegiendo el programador de AMD Dual-CCD X3D, Intel Hybrid e impidiendo desactivar SysMain en discos mecánicos HDD). Además, realiza un respaldo del registro previo con codificación UTF-16 LE y crea un punto de restauración del sistema de forma automática.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faqQ3">¿Funciona en Laptops de Gaming con doble gráfica (NVIDIA Optimus / AMD Advantage)?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" data-i18n="faqA3">
+            Sí. La detección automática de hardware identifica la GPU discreta principal y evita aplicar modificaciones que rompan el conmutador de pantalla o el estado de reposo de la batería en ordenadores portátiles.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faqQ4">¿Cómo puedo revertir los cambios si quiero volver al estado de fábrica?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" data-i18n="faqA4">
+            Dentro de la aplicación, existe la pestaña Seguridad &amp; Rollback. Con un solo clic en "Restaurar Copia de Seguridad", todos los valores de registro, planes de energía y servicios vuelven exactamente a sus valores predeterminados de fábrica de Microsoft Windows.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faqQ5">¿Es gratuito o tendré que pagar algo después?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" data-i18n="faqA5">
+            Recoil Optimizer es un proyecto 100% libre y gratuito ($0.00). No hay versiones de pago, no hay funciones bloqueadas tras un muro de pago, ni suscripciones recurrentes.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- World-Class Footer (Google Engineering Style) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="nav-brand">
+            <img src="assets/LogoMark.png" alt="Recoil Logo" class="nav-logo">
+            <span class="nav-brand-title">Recoil <span style="color: var(--primary);">Optimizer</span></span>
+          </div>
+          <p class="footer-brand-desc" data-i18n="footerBrandDesc">
+            La suite de optimización de más alto rendimiento, precisión de temporizadores y latencia ultra-baja para la comunidad global de gaming y PC.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-column-title" data-i18n="footerColNav">Navegación</div>
+          <ul class="footer-links">
+            <li><a href="#os-matrix-mount" data-i18n="navOsMatrix">Multi-Windows</a></li>
+            <li><a href="#security" data-i18n="navTrust">Seguridad</a></li>
+            <li><a href="#downloads" data-i18n="navDownloads">Descargas</a></li>
+            <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-column-title" data-i18n="footerColArch">Arquitecturas</div>
+          <ul class="footer-links">
+            <li><a href="https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe" download="RecoilOptimizer_x64.exe">Windows 64 bits (x64 — 69.0 MB)</a></li>
+            <li><a href="https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x86.exe" download="RecoilOptimizer_x86.exe">Windows 32 bits (x86 — 63.8 MB)</a></li>
+            <li><a href="#os-matrix-mount">Windows 7 SP1 Legacy</a></li>
+            <li><a href="#os-matrix-mount">Windows 11 24H2/25H2</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-column-title" data-i18n="footerColSec">Seguridad &amp; Soporte</div>
+          <ul class="footer-links">
+            <li><a href="#security">Garantía de Reversibilidad</a></li>
+            <li><a href="#security">Protección Anti-Cheat (Ring-3)</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div data-i18n="footerCopyright">© 2024-2026 Recoil Optimizer Project. Todos los derechos reservados.</div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="width: 8px; height: 8px; background: var(--accent-emerald); border-radius: 50%; box-shadow: 0 0 8px var(--accent-emerald);"></span>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-emerald);" data-i18n="footerStatus">Todos los Sistemas Operativos Soportados (Win 7 — Win 11 25H2)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- High-Performance Core Scripts -->
+  <script src="canvas-fx.js"></script>
+  <script src="motion-engine.js"></script>
+  <script src="os-matrix.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
