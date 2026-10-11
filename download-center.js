@@ -1,9 +1,9 @@
-﻿/**
+/**
  * Recoil Optimizer v1.0.0 — Cryptographic Verifier & Download Experience Center
  * File: download-center.js
  * Mounts into: #crypto-verifier-mount
  * Features:
- *  - Official v1.0.0 Binary Manifest (x64: 69.0 MB / 72,377,559 bytes, x86: 63.8 MB / 66,862,368 bytes)
+ *  - Official v1.0.0 Binary Manifest (x64: 69.1 MB / 72,426,444 bytes, x86: 63.8 MB / 66,911,237 bytes)
  *  - Interactive PowerShell (x64), PowerShell (x86), and CMD (certutil) Hash Verifier Terminal
  *  - Live SHA-256 Cryptographic Hash Validator Input Box with Instant Seal & Local File Drag-and-Drop SHA-256 Check
  *  - Interactive PIN 3910 Startup Security Gate & Real-Time Hardware Telemetry Unlock Simulator
@@ -22,11 +22,11 @@
       fileName: 'RecoilOptimizer_x64.exe',
       archLabelEs: '64-bit (x64 Native)',
       archLabelEn: '64-bit (x64 Native)',
-      sizeFormatted: '69.0 MB',
-      sizeBytes: '72,377,559 bytes',
-      sizeBytesRaw: 72377559,
-      sha256: '0E73DF41953870169CBAE6E7687F450F85324B6C2B6BC56C76888435089AAF3B',
-      downloadUrl: 'https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe',
+      sizeFormatted: '69.1 MB',
+      sizeBytes: '72,426,444 bytes',
+      sizeBytesRaw: 72426444,
+      sha256: '1CBD0BDA1C11F78395257065249EBCCFFA18889282EC07503C6250696508623E',
+      downloadUrl: 'https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x64.exe',
       targetOsEs: 'Windows 10 / 11 (24H2/25H2) & Win 7/8.1 x64',
       targetOsEn: 'Windows 10 / 11 (24H2/25H2) & Win 7/8.1 x64'
     },
@@ -36,10 +36,10 @@
       archLabelEs: '32-bit (x86 Legacy)',
       archLabelEn: '32-bit (x86 Legacy)',
       sizeFormatted: '63.8 MB',
-      sizeBytes: '66,862,368 bytes',
-      sizeBytesRaw: 66862368,
-      sha256: '32E762B461DDCCA1356B1254D910142B27E386D3E1BFBF6A64F84117F6B35F22',
-      downloadUrl: 'https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x86.exe',
+      sizeBytes: '66,911,237 bytes',
+      sizeBytesRaw: 66911237,
+      sha256: 'F178F921585B6512BCDD5A50689DCB3775B115FBEDBF8B4B811D0C5D58E9146F',
+      downloadUrl: 'https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x86.exe',
       targetOsEs: 'Windows 7 SP1 / 8 / 10 (32-bit x86)',
       targetOsEn: 'Windows 7 SP1 / 8 / 10 (32-bit x86)'
     }

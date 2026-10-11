@@ -9,7 +9,7 @@
 		<State_Province>Global</State_Province>
 		<Zip_Postal_Code>00000</Zip_Postal_Code>
 		<Country>Global</Country>
-		<Company_WebSite_URL>https://recoil-optimizer.surge.sh</Company_WebSite_URL>
+		<Company_WebSite_URL>https://recoiloptimizer.xyz</Company_WebSite_URL>
 		<Contact_Info>
 			<Author_First_Name>Rodrigo</Author_First_Name>
 			<Author_Last_Name>Sousa</Author_Last_Name>
@@ -23,7 +23,7 @@
 			<Sales_Email>rodrigorecargas3910@gmail.com</Sales_Email>
 			<Support_Email>rodrigorecargas3910@gmail.com</Support_Email>
 			<General_Email>rodrigorecargas3910@gmail.com</General_Email>
-			<Support_URL>https://recoil-optimizer.surge.sh/</Support_URL>
+			<Support_URL>https://recoiloptimizer.xyz/</Support_URL>
 			<Discord_Support>sousa.r</Discord_Support>
 		</Support_Info>
 	</Company_Info>
@@ -46,9 +46,9 @@
 		<Program_Category_Class>System Utilities::System Maintenance</Program_Category_Class>
 		<Program_System_Requirements>Windows 7 SP1 or later, 2GB RAM, Administrative privileges</Program_System_Requirements>
 		<File_Info>
-			<File_Size_Bytes>72377559</File_Size_Bytes>
-			<File_Size_K>70681</File_Size_K>
-			<File_Size_MB>69.0</File_Size_MB>
+			<File_Size_Bytes>72426444</File_Size_Bytes>
+			<File_Size_K>70728</File_Size_K>
+			<File_Size_MB>69.1</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
@@ -79,23 +79,23 @@ Key Features &amp; Highlights:
 7. Real-Time DNS Benchmark: Measures socket latency across leading tier-1 DNS resolvers and applies the fastest server with one click.
 
 Developer &amp; Community Feedback:
-Official Website: https://recoil-optimizer.surge.sh/
-Direct Download (x64): https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe
-Direct Download (x86): https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x86.exe
+Official Website: https://recoiloptimizer.xyz/
+Direct Download (x64): https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x64.exe
+Direct Download (x86): https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x86.exe
 Discord Contact: sousa.r</Char_Desc_2000>
 		</English>
 	</Program_Descriptions>
 	<Web_Info>
 		<Application_URLs>
-			<Application_XML_File_URL>https://recoil-optimizer.surge.sh/pad_file.xml</Application_XML_File_URL>
-			<Application_Screenshot_URL>https://recoil-optimizer.surge.sh/assets/LogoHorizontal.png</Application_Screenshot_URL>
-			<Application_Icon_URL>https://recoil-optimizer.surge.sh/assets/LogoMark.png</Application_Icon_URL>
-			<Application_Info_URL>https://recoil-optimizer.surge.sh/</Application_Info_URL>
-			<Application_Order_URL>https://recoil-optimizer.surge.sh</Application_Order_URL>
+			<Application_XML_File_URL>https://recoiloptimizer.xyz/pad_file.xml</Application_XML_File_URL>
+			<Application_Screenshot_URL>https://recoiloptimizer.xyz/assets/LogoHorizontal.png</Application_Screenshot_URL>
+			<Application_Icon_URL>https://recoiloptimizer.xyz/assets/LogoMark.png</Application_Icon_URL>
+			<Application_Info_URL>https://recoiloptimizer.xyz/</Application_Info_URL>
+			<Application_Order_URL>https://recoiloptimizer.xyz</Application_Order_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x64.exe</Primary_Download_URL>
-			<Secondary_Download_URL>https://recoil-optimizer.surge.sh/downloads/RecoilOptimizer_x86.exe</Secondary_Download_URL>
+			<Primary_Download_URL>https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x64.exe</Primary_Download_URL>
+			<Secondary_Download_URL>https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x86.exe</Secondary_Download_URL>
 		</Download_URLs>
 	</Web_Info>
 	<Permissions>

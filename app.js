@@ -502,7 +502,7 @@ async function applySystemDetection() {
   const heroBtn = document.getElementById('hero-download-btn');
   if (heroBtn) {
     const filename = sys.arch === 'x64' ? 'RecoilOptimizer_x64.exe' : 'RecoilOptimizer_x86.exe';
-    heroBtn.href = 'https://recoil-optimizer.surge.sh/downloads/' + filename;
+    heroBtn.href = 'https://recoiloptimizer.xyz/downloads/' + filename;
     heroBtn.setAttribute('download', filename);
     const archBadge = document.getElementById('hero-arch-badge');
     if (archBadge) {
