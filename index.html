@@ -103,15 +103,14 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   
-  <!-- Google Fonts: Orbitron, Noto Sans JP, Plus Jakarta Sans & JetBrains Mono -->
+  <!-- Google Fonts: Orbitron, Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700;900&family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="animations.css">
-  <link rel="stylesheet" href="hakai-decor.css">
 </head>
 <body>
 
@@ -126,16 +125,12 @@
       <a href="#" class="nav-brand">
         <img src="assets/LogoMark.png" alt="Recoil Optimizer Logo" class="nav-logo">
         <span class="nav-brand-title">Recoil <span class="nav-brand-accent">Optimizer</span></span>
-        <span class="nav-brand-jp">反動最適化</span>
       </a>
 
       <ul class="nav-links">
         <li><a href="#os-matrix-mount" data-i18n="navOsMatrix">Multi-Windows</a></li>
         <li><a href="#security" data-i18n="navTrust">Seguridad</a></li>
         <li><a href="#downloads" data-i18n="navDownloads">Descargas</a></li>
-        <li><a href="#apps">Herramientas</a></li>
-        <li><a href="#community">Comunidad</a></li>
-        <li><a href="#changelog">Changelog</a></li>
         <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
       </ul>
 
@@ -168,9 +163,6 @@
         <li><a href="#os-matrix-mount" data-i18n="navOsMatrix">Multi-Windows</a></li>
         <li><a href="#security" data-i18n="navTrust">Seguridad</a></li>
         <li><a href="#downloads" data-i18n="navDownloads">Descargas</a></li>
-        <li><a href="#apps">Herramientas</a></li>
-        <li><a href="#community">Comunidad</a></li>
-        <li><a href="#changelog">Changelog</a></li>
         <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
         <li><a href="https://discord.com" onclick="copyDiscord(event)" style="color: #7983f5;">💬 Discord: sousa.r</a></li>
       </ul>
@@ -179,11 +171,8 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section (Hakai-Enhanced Obsidian Cyberpunk) -->
+    <!-- Hero Section (Clean Antigravity-Style) -->
     <section class="hero container" id="hero">
-      <!-- Hakai Framed Monospace Tagline -->
-      <div class="hero-tagline-hakai">WINDOWS KERNEL OPTIMIZATION SUITE · ZERO-RESIDENT DOCTRINE</div>
-
       <!-- Eyebrow Badge -->
       <div class="badge badge-pulse">
         <span class="pulse-dot"></span>
@@ -194,9 +183,6 @@
       <h1 class="hero-title" data-i18n="heroTitle">
         Exprime cada gota de FPS y elimina el stutter en tu Windows.
       </h1>
-
-      <!-- Katakana Cyber Subtitle -->
-      <div class="hero-jp-title">超低遅延カーネル · 競技ゲーミング</div>
 
       <p class="hero-subtitle" data-i18n="heroSubtitle">
         Herramienta de optimización de kernel y baja latencia para jugadores y técnicos. Soporte universal desde Windows 7 SP1 hasta Windows 11 25H2. Cero bloatware y reversible en 1 clic.
@@ -555,52 +541,6 @@
       </div>
     </section>
 
-    <!-- Hakai-Style Full-Width Stats Ribbon -->
-    <div class="container">
-      <div class="stats-ribbon-hakai hakai-reveal">
-        <div class="stat-item-hakai">
-          <div class="stat-num-hakai">117</div>
-          <div class="stat-label-hakai">Optimizaciones Kernel</div>
-        </div>
-        <div class="stat-item-hakai">
-          <div class="stat-num-hakai">0.500 ms</div>
-          <div class="stat-label-hakai">Timer NTAPI Bloqueado</div>
-        </div>
-        <div class="stat-item-hakai">
-          <div class="stat-num-hakai">+44%</div>
-          <div class="stat-label-hakai">Boost 1% Low FPS</div>
-        </div>
-        <div class="stat-item-hakai">
-          <div class="stat-num-hakai">0 MB</div>
-          <div class="stat-label-hakai">Cero RAM en Fondo</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Hakai-Style Interactive Kernel Terminal Window -->
-    <div class="container">
-      <section class="terminal-wrapper-hakai hakai-reveal" aria-label="Terminal de Auditoría de Kernel">
-        <div class="terminal-card-hakai">
-          <div class="terminal-header-hakai">
-            <span class="terminal-dot red"></span>
-            <span class="terminal-dot yellow"></span>
-            <span class="terminal-dot green"></span>
-            <span class="terminal-title-hakai">recoil-kernel-ring0.exe // latency-daemon</span>
-          </div>
-          <div class="terminal-body-hakai">
-            <div class="term-line"><span class="term-prompt">PS C:\Recoil&gt;</span> <span class="term-cmd">.\RecoilOptimizer.exe --profile competitive-esports --target-timer 0.500ms</span></div>
-            <div class="term-line"><span class="term-info">[KERNEL]</span> <span class="term-out">NtSetTimerResolution(5000, TRUE, &amp;curRes) =&gt;</span> <span class="term-success">SUCCESS [0.5000 ms LOCKED]</span></div>
-            <div class="term-line"><span class="term-info">[AFFINITY]</span> <span class="term-out">Topology parsed: Physical P-Cores 0, 2, 4, 6 locked to Gaming Thread Group</span></div>
-            <div class="term-line"><span class="term-info">[NETWORK]</span> <span class="term-out">Nagle's Algorithm Disabled: TcpAckFrequency=1, TCPNoDelay=1 on Active NIC</span></div>
-            <div class="term-line"><span class="term-info">[GPU MSI]</span> <span class="term-out">Line-based IRQ #16 converted to MSI Vector (Negative Priority Latency Trap eliminated)</span></div>
-            <div class="term-line"><span class="term-warn">[VSS BACKUP]</span> <span class="term-out">Volume Shadow Copy snapshot created. 117 original registry keys safeguarded</span></div>
-            <div class="term-line"><span class="term-info">[DPC AUDIT]</span> <span class="term-out">Interrupt Service Routine latency:</span> <span class="term-success">14.2 µs (Stock Windows: 380.5 µs)</span></div>
-            <div class="term-line"><span class="term-success">✓ RING-3 COMPLIANCE:</span> <span class="term-out">Riot Vanguard, EasyAntiCheat, BattlEye, FACEIT =&gt;</span> <span class="term-success">100% UNTOUCHED</span></div>
-            <div class="term-line"><span class="term-success">✓ STATUS:</span> <span class="term-cmd">Zero resident background daemons. Settings persistent across reboots.</span></div>
-          </div>
-        </div>
-      </section>
-    </div>
 
     <!-- 4. Multi-Windows Compatibility Matrix -->
     <div id="os-matrix-mount"></div>
@@ -610,15 +550,13 @@
       <div class="section-header">
         <div class="section-tag">INGENIERÍA &amp; SEGURIDAD</div>
         <h2 class="section-title">Seguridad y Transparencia</h2>
-        <div class="section-sub">セキュリティと信頼性</div>
         <p class="section-desc">
           Transparencia absoluta. Sin trucos publicitarios, sin riesgos de ban en anti-cheats y con reversibilidad total garantizada.
         </p>
       </div>
 
       <div class="security-grid-google">
-        <div class="sec-card-google hakai-reveal">
-          <span class="card-jp-tag">安全隔離</span>
+        <div class="sec-card-google">
           <div class="sec-card-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
@@ -628,8 +566,7 @@
           </p>
         </div>
 
-        <div class="sec-card-google hakai-reveal">
-          <span class="card-jp-tag">自動保護</span>
+        <div class="sec-card-google">
           <div class="sec-card-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
           </div>
@@ -639,8 +576,7 @@
           </p>
         </div>
 
-        <div class="sec-card-google hakai-reveal">
-          <span class="card-jp-tag">ゼロ負荷</span>
+        <div class="sec-card-google">
           <div class="sec-card-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
           </div>
@@ -650,8 +586,7 @@
           </p>
         </div>
 
-        <div class="sec-card-google hakai-reveal">
-          <span class="card-jp-tag">暗号検証</span>
+        <div class="sec-card-google">
           <div class="sec-card-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
@@ -669,7 +604,6 @@
         <div class="section-header">
           <div class="section-tag" data-i18n="downloadsTag">DISTRIBUCIÓN OFICIAL COMPLETA</div>
           <h2 class="section-title" data-i18n="downloadsTitle">Descargas Oficiales y Verificadas</h2>
-          <div class="section-sub">公式ダウンロードセンター</div>
           <p class="section-desc" data-i18n="downloadsDesc">
             Arquitectura nativa dual para cubrir tanto computadoras modernas de alto rendimiento como equipos antiguos.
           </p>
@@ -677,8 +611,7 @@
 
         <div class="download-grid">
           <!-- Card 64-bit -->
-          <div id="card-x64" class="download-card hakai-reveal">
-            <span class="card-jp-tag">64ビット版</span>
+          <div id="card-x64" class="download-card">
             <div class="recommended-ribbon" data-i18n="recommendedRibbon">RECOMENDADO PARA TU PC</div>
             <div class="download-header">
               <h3 class="arch-title">
@@ -716,8 +649,7 @@
           </div>
 
           <!-- Card 32-bit -->
-          <div id="card-x86" class="download-card hakai-reveal">
-            <span class="card-jp-tag">32ビット版</span>
+          <div id="card-x86" class="download-card">
             <div class="recommended-ribbon" data-i18n="recommendedRibbon">RECOMENDADO PARA TU PC</div>
             <div class="download-header">
               <h3 class="arch-title">
@@ -757,118 +689,12 @@
       </div>
     </section>
 
-    <!-- Hakai-Style Recommended Apps & Tools Section -->
-    <section id="apps" class="section container">
-      <div class="section-header">
-        <div class="section-tag">ECOSISTEMA &amp; HERRAMIENTAS</div>
-        <h2 class="section-title">Herramientas Recomendadas</h2>
-        <div class="section-sub">推奨アプリケーション</div>
-        <p class="section-desc">
-          Software de élite y alto rendimiento curado para complementar la doctrina de baja latencia y cero bloatware de Recoil Optimizer.
-        </p>
-      </div>
-
-      <div class="apps-grid-hakai">
-        <a href="https://brave.com/download/" target="_blank" rel="noopener noreferrer" class="app-item hakai-reveal">
-          <div>
-            <div class="app-name">Brave Browser</div>
-            <span class="app-jp-name">高プライバシー・ブラウザ</span>
-          </div>
-          <div class="app-arrow">→</div>
-        </a>
-
-        <a href="https://www.7-zip.org/download.html" target="_blank" rel="noopener noreferrer" class="app-item hakai-reveal">
-          <div>
-            <div class="app-name">7-Zip</div>
-            <span class="app-jp-name">高圧縮・軽量解凍</span>
-          </div>
-          <div class="app-arrow">→</div>
-        </a>
-
-        <a href="https://obsproject.com/download" target="_blank" rel="noopener noreferrer" class="app-item hakai-reveal">
-          <div>
-            <div class="app-name">OBS Studio</div>
-            <span class="app-jp-name">低負荷・ゲーム録画</span>
-          </div>
-          <div class="app-arrow">→</div>
-        </a>
-
-        <a href="https://bitsum.com/" target="_blank" rel="noopener noreferrer" class="app-item hakai-reveal">
-          <div>
-            <div class="app-name">Process Lasso</div>
-            <span class="app-jp-name">CPUアフィニティ・自動制御</span>
-          </div>
-          <div class="app-arrow">→</div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Hakai-Style Community Section -->
-    <section id="community" class="section container">
-      <div class="section-header">
-        <div class="section-tag">COMUNIDAD &amp; SOPORTE</div>
-        <h2 class="section-title">Comunidad Recoil</h2>
-        <div class="section-sub">コミュニティ</div>
-        <p class="section-desc">
-          Conéctate con la comunidad global de jugadores competitivos y entusiastas del hardware para soporte directo y optimización avanzada.
-        </p>
-      </div>
-
-      <div class="community-grid-hakai">
-        <div class="community-card discord hakai-reveal">
-          <span class="comm-icon">💬</span>
-          <h3>DISCORD OFICIAL</h3>
-          <p>Obtén soporte técnico directo, comparte tus benchmarks de latencia y resuelve dudas en tiempo real.</p>
-          <span class="comm-handle">Discord: sousa.r</span>
-          <a href="https://discord.com" onclick="copyDiscord(event)" class="btn-comm">UNIRSE A DISCORD</a>
-        </div>
-
-        <div class="community-card hakai-reveal" style="border-color: rgba(245, 158, 11, 0.4);">
-          <span class="comm-icon" style="color: var(--hakai-amber);">⚡</span>
-          <h3>CÓDIGO ABIERTO</h3>
-          <p>Audita cada línea de código, revisa los manifiestos de compilación y descarga versiones transparentes.</p>
-          <span class="comm-handle">rodriginhojr/Recoil-Optimizer</span>
-          <a href="https://github.com/rodriginhojr/Recoil-Optimizer" target="_blank" rel="noopener noreferrer" class="btn-comm" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #080808;">VER EN GITHUB</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hakai-Style Changelog Timeline -->
-    <section id="changelog" class="section container">
-      <div class="section-header">
-        <div class="section-tag">HISTORIAL DE VERSIONES</div>
-        <h2 class="section-title">Registro de Cambios</h2>
-        <div class="section-sub">変更履歴</div>
-        <p class="section-desc">
-          Evolución continua del motor de optimización, paridad arquitectónica y soporte multi-generación de Windows.
-        </p>
-      </div>
-
-      <div class="changelog-hakai">
-        <div class="log-entry-hakai hakai-reveal">
-          <div class="log-version-hakai">v1.0.0 GOLD</div>
-          <div class="log-content-hakai">
-            <h4>RECOIL OPTIMIZER SUITE // PRODUCCIÓN OFICIAL</h4>
-            <ul>
-              <li>Motor de Consenso Autónomo Smart Tune para topologías Intel Hybrid (P/E Cores) y AMD Ryzen 3D V-Cache</li>
-              <li>Bloqueo de resolución de temporizador NTAPI a 0.500 ms en tiempo real</li>
-              <li>117 Optimizaciones reversibles en 1 clic con respaldo atómico VSS y Registro UTF-16</li>
-              <li>AutoDriver PNP Guardian con soporte offline y detección inteligente de controladores desactivados</li>
-              <li>Despliegue dual de binarios nativos para Windows 64-bit (x64) y Windows 32-bit (x86 Legacy)</li>
-              <li>Cero procesos, servicios o daemons residentes en segundo plano (0 MB de consumo de RAM)</li>
-              <li>Protección y compatibilidad certificada con anti-cheats Ring-3 (Vanguard, EAC, BattlEye, FACEIT)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- FAQ Accordion Section -->
     <section id="faq" class="section container">
       <div class="section-header">
         <div class="section-tag" data-i18n="faqTag">PREGUNTAS FRECUENTES</div>
         <h2 class="section-title" data-i18n="faqTitle">Respuestas Claras y Transparentes</h2>
-        <div class="section-sub">よくある質問</div>
         <p class="section-desc" data-i18n="faqDesc">Todo lo que necesitas saber antes de optimizar tu equipo.</p>
       </div>
 
@@ -934,7 +760,6 @@
           <div class="nav-brand">
             <img src="assets/LogoMark.png" alt="Recoil Logo" class="nav-logo">
             <span class="nav-brand-title">Recoil <span style="color: var(--primary);">Optimizer</span></span>
-            <span class="nav-brand-jp" style="font-size: 0.72rem; display: block; margin-top: 6px; color: var(--hakai-gold);">反動は力なり · 究極の低遅延</span>
           </div>
           <p class="footer-brand-desc" data-i18n="footerBrandDesc">
             La suite de optimización de más alto rendimiento, precisión de temporizadores y latencia ultra-baja para la comunidad global de gaming y PC.
@@ -947,9 +772,6 @@
             <li><a href="#os-matrix-mount" data-i18n="navOsMatrix">Multi-Windows</a></li>
             <li><a href="#security" data-i18n="navTrust">Seguridad</a></li>
             <li><a href="#downloads" data-i18n="navDownloads">Descargas</a></li>
-            <li><a href="#apps">Herramientas</a></li>
-            <li><a href="#community">Comunidad</a></li>
-            <li><a href="#changelog">Changelog</a></li>
             <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
           </ul>
         </div>
@@ -989,30 +811,6 @@
   <script src="motion-engine.js"></script>
   <script src="os-matrix.js"></script>
   <script src="app.js"></script>
-
-  <!-- Hakai-Style Scroll Reveal Observer -->
-  <script>
-    (function () {
-      if ('IntersectionObserver' in window) {
-        const hakaiObserver = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              hakaiObserver.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
-        document.querySelectorAll('.hakai-reveal, .terminal-card-hakai, .community-card, .app-item, .log-entry-hakai, .stats-ribbon-hakai').forEach(function (el) {
-          hakaiObserver.observe(el);
-        });
-      } else {
-        document.querySelectorAll('.hakai-reveal').forEach(function (el) {
-          el.classList.add('visible');
-        });
-      }
-    })();
-  </script>
 </body>
 </html>
 
