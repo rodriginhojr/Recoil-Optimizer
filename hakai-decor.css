@@ -165,20 +165,9 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   padding: 100px 20px 50px !important;
 }
 
-/* Framed Tagline Box */
+/* Framed Tagline Box (Eliminated per user directive) */
 .hero-tagline-hakai {
-  font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.8rem !important;
-  color: var(--hakai-amber) !important;
-  letter-spacing: 6px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 25px !important;
-  border: 1px solid rgba(245, 158, 11, 0.4) !important;
-  background: rgba(245, 158, 11, 0.04) !important;
-  padding: 8px 24px !important;
-  border-radius: 4px !important;
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.12) !important;
-  animation: hakaiFadeIn 1s ease !important;
+  display: none !important;
 }
 
 /* Giant Glowing Hero Title */
