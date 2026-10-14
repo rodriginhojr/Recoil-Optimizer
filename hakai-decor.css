@@ -555,3 +555,9 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   padding-bottom: 100px !important;
 }
 
+/* Eliminate window emblem icon per user directive */
+.wpf-app-emblem {
+  display: none !important;
+}
+
+
