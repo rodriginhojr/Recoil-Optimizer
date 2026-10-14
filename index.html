@@ -73,28 +73,6 @@
           "contactType": "developer support",
           "identifier": "Discord: sousa.r"
         }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://recoiloptimizer.xyz/#faqpage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Qué es RecoilOptimizer (Recoil Optimizer) y es seguro para juegos con Anti-Cheat?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "RecoilOptimizer opera exclusivamente mediante políticas documentadas de Microsoft en Modo Usuario (Ring-3). No inyecta DLLs ni altera procesos de juegos, siendo 100% seguro para Riot Vanguard, EasyAntiCheat, BattlEye y FACEIT."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Puedo revertir todos los cambios de RecoilOptimizer si algo no me gusta?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí. Antes de aplicar cualquier ajuste, RecoilOptimizer crea un Punto de Restauración VSS y un respaldo completo del Registro para restaurar tu configuración original en 1 clic."
-            }
-          }
-        ]
       }
     ]
   }
@@ -125,7 +103,6 @@
   <header class="site-header">
     <nav class="navbar" aria-label="Navegación Principal">
       <a href="#" class="nav-brand">
-        <img src="assets/LogoMark.png" alt="Recoil Optimizer Logo" class="nav-logo">
         <span class="nav-brand-title">Recoil <span class="nav-brand-accent">Optimizer</span></span>
         <span class="nav-brand-ar" dir="rtl">الارتداد</span>
       </a>
@@ -134,7 +111,6 @@
         <li><a href="#os-matrix-mount" data-i18n="navOsMatrix">Multi-Windows</a></li>
         <li><a href="#security" data-i18n="navTrust">Seguridad</a></li>
         <li><a href="#downloads" data-i18n="navDownloads">Descargas</a></li>
-        <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -146,12 +122,6 @@
 
         <!-- Language Toggle -->
         <button type="button" id="btn-lang-toggle" class="lang-toggle" aria-label="Cambiar Idioma">🌐 EN</button>
-
-        <!-- Primary Download CTA -->
-        <a href="#downloads" class="btn-nav-download">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          <span data-i18n="btnDownloadNav">Descargar Gratis</span>
-        </a>
 
         <!-- Mobile / Tablet Hamburger -->
         <button type="button" class="nav-hamburger" id="btn-nav-drawer" aria-label="Abrir Menú de Navegación" aria-expanded="false">
@@ -166,7 +136,6 @@
         <li><a href="#os-matrix-mount" data-i18n="navOsMatrix">Multi-Windows</a></li>
         <li><a href="#security" data-i18n="navTrust">Seguridad</a></li>
         <li><a href="#downloads" data-i18n="navDownloads">Descargas</a></li>
-        <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
         <li><a href="https://discord.com" onclick="copyDiscord(event)" style="color: #7983f5;">💬 Discord: sousa.r</a></li>
       </ul>
     </div>
@@ -694,70 +663,6 @@
             </a>
           </div>
         </div>
-      </div>
-    </section>
-
-
-    <!-- FAQ Accordion Section -->
-    <section id="faq" class="section container">
-      <div class="section-header">
-        <div class="section-tag" data-i18n="faqTag">PREGUNTAS FRECUENTES</div>
-        <h2 class="section-title" data-i18n="faqTitle">Respuestas Claras y Transparentes</h2>
-        <div class="section-sub" dir="rtl">الأسئلة الشائعة والأجوبة</div>
-        <p class="section-desc" data-i18n="faqDesc">Todo lo que necesitas saber antes de optimizar tu equipo.</p>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item">
-          <button type="button" class="faq-question">
-            <span data-i18n="faqQ1">¿Por qué en Windows 7 me salía un error de compatibilidad x86 / x64?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="faq-answer" data-i18n="faqA1">
-            Muchas computadoras con Windows 7 tienen instalada la edición de 32 bits (x86). Si descargas el archivo de 64 bits en un sistema de 32 bits, Windows muestra esa advertencia porque el kernel no puede cargar binarios de 64 bits. Para solucionarlo, simplemente descarga la versión RecoilOptimizer_x86.exe (32 bits) disponible en nuestra sección de descargas.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button type="button" class="faq-question">
-            <span data-i18n="faqQ2">¿Es seguro usar Recoil Optimizer? ¿Puede dañar mi Windows?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="faq-answer" data-i18n="faqA2">
-            Es 100% seguro. A diferencia de scripts dudosos de internet, Recoil Optimizer valida tu hardware antes de tocar nada (protegiendo el programador de AMD Dual-CCD X3D, Intel Hybrid e impidiendo desactivar SysMain en discos mecánicos HDD). Además, realiza un respaldo del registro previo con codificación UTF-16 LE y crea un punto de restauración del sistema de forma automática.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button type="button" class="faq-question">
-            <span data-i18n="faqQ3">¿Funciona en Laptops de Gaming con doble gráfica (NVIDIA Optimus / AMD Advantage)?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="faq-answer" data-i18n="faqA3">
-            Sí. La detección automática de hardware identifica la GPU discreta principal y evita aplicar modificaciones que rompan el conmutador de pantalla o el estado de reposo de la batería en ordenadores portátiles.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button type="button" class="faq-question">
-            <span data-i18n="faqQ4">¿Cómo puedo revertir los cambios si quiero volver al estado de fábrica?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="faq-answer" data-i18n="faqA4">
-            Dentro de la aplicación, existe la pestaña Seguridad &amp; Rollback. Con un solo clic en "Restaurar Copia de Seguridad", todos los valores de registro, planes de energía y servicios vuelven exactamente a sus valores predeterminados de fábrica de Microsoft Windows.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button type="button" class="faq-question">
-            <span data-i18n="faqQ5">¿Es gratuito o tendré que pagar algo después?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="faq-answer" data-i18n="faqA5">
-            Recoil Optimizer es un proyecto 100% libre y gratuito ($0.00). No hay versiones de pago, no hay funciones bloqueadas tras un muro de pago, ni suscripciones recurrentes.
-          </div>
-        </div>
-      </div>
     </section>
   </main>
 

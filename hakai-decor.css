@@ -58,6 +58,26 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
   border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.navbar {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 12px 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+.nav-logo,
+.btn-nav-download {
+  display: none !important;
 }
 
 .nav-brand {
@@ -551,8 +571,8 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   }
 }
 
-#faq {
-  padding-bottom: 100px !important;
+#downloads {
+  padding-bottom: 90px !important;
 }
 
 /* Eliminate window emblem icon per user directive */
