@@ -1707,10 +1707,6 @@
     mount.innerHTML = `
       <div class="os-matrix-wrap">
         <div class="os-matrix-header">
-          <div class="os-matrix-kicker-row">
-            <span class="os-matrix-kicker-dot"></span>
-            <span>${copy.sectionTag}</span>
-          </div>
           <h2 class="os-matrix-title">${copy.sectionTitle}</h2>
           <p class="os-matrix-desc">${copy.sectionDesc}</p>
           <div class="os-matrix-detected-bar">

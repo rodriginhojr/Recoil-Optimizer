@@ -824,5 +824,9 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   }
 }
 
+.os-matrix-kicker-row {
+  display: none !important;
+}
+
 
 
