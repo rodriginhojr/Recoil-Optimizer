@@ -1,8 +1,8 @@
 /* ==========================================================================
    RECOIL OPTIMIZER — HAKAI.LOL SIGNATURE CYBERPUNK HUD & LIGHTING ENGINE
    Aesthetic: Ring-0 Kernel Precision | Obsidian Black, Solar Amber & Cobalt
-   Faithfully replicating hakai.lol's lighting, reflections, Orbitron typography,
-   corner kanji tags, glowing hero identity, and interactive live terminal.
+   Replicating hakai.lol's luxury lighting, reflections, Orbitron typography,
+   Arabic calligraphic tags (Reem Kufi / Cairo), glowing hero identity, and clean HUD.
    ========================================================================== */
 
 :root {
@@ -22,7 +22,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   1. GLOBAL TYPOGRAPHY: ORBITRON + JETBRAINS MONO + NOTO SANS JP
+   1. GLOBAL TYPOGRAPHY: ORBITRON + JETBRAINS MONO + REEM KUFI (ARABIC)
    Eliminates generic AI fonts (Inter, Roboto, Plus Jakarta Sans) completely.
    -------------------------------------------------------------------------- */
 body {
@@ -81,13 +81,17 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   text-shadow: 0 0 25px var(--hakai-amber-bright), 0 0 45px var(--hakai-amber) !important;
 }
 
+.nav-brand-ar,
 .nav-brand-jp {
-  font-family: 'Noto Sans JP', sans-serif !important;
-  font-size: 0.72rem !important;
+  font-family: 'Reem Kufi', 'Cairo', 'Amiri', sans-serif !important;
+  font-size: 0.95rem !important;
   color: var(--hakai-gold) !important;
-  letter-spacing: 3px !important;
+  letter-spacing: 0.5px !important;
   font-weight: 700 !important;
-  opacity: 0.9 !important;
+  opacity: 0.95 !important;
+  text-shadow: 0 0 14px rgba(212, 175, 55, 0.5) !important;
+  margin-left: 6px !important;
+  direction: rtl !important;
 }
 
 .nav-links {
@@ -182,16 +186,20 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   }
 }
 
-/* Katakana Under-Name Accent */
+/* Arabic Under-Name Calligraphic Accent (Hakai Luxury Style) */
+.hero-ar-title,
 .hero-jp-title {
-  font-family: 'Noto Sans JP', sans-serif !important;
-  font-size: 1.25rem !important;
+  font-family: 'Reem Kufi', 'Cairo', 'Amiri', serif !important;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem) !important;
   color: var(--hakai-gold) !important;
-  letter-spacing: 10px !important;
+  word-spacing: 16px !important;
+  letter-spacing: 0.5px !important;
   margin-bottom: 35px !important;
   font-weight: 700 !important;
-  text-shadow: 0 0 14px rgba(212, 175, 55, 0.45) !important;
+  text-shadow: 0 0 16px rgba(212, 175, 55, 0.65), 0 0 35px rgba(245, 158, 11, 0.35) !important;
   animation: hakaiFadeIn 1.4s ease !important;
+  direction: rtl !important;
+  unicode-bidi: isolate !important;
 }
 
 /* Hero Paragraph in Orbitron */
@@ -402,22 +410,31 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   box-shadow: 0 15px 40px rgba(245, 158, 11, 0.25) !important;
 }
 
-/* Corner Kanji Tag */
+/* Corner Arabic Calligraphic Tag */
+.card-ar-tag,
 .card-jp-tag {
   position: absolute !important;
-  top: 18px !important;
+  top: 16px !important;
   right: 18px !important;
-  font-family: 'Noto Sans JP', sans-serif !important;
-  font-size: 0.7rem !important;
+  font-family: 'Reem Kufi', 'Cairo', sans-serif !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
   color: var(--hakai-gold) !important;
-  opacity: 0.55 !important;
-  letter-spacing: 2px !important;
-  transition: opacity 0.3s ease !important;
+  opacity: 0.75 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4) !important;
+  direction: rtl !important;
 }
 
+.sec-card-google:hover .card-ar-tag,
 .sec-card-google:hover .card-jp-tag,
+.download-card:hover .card-ar-tag,
 .download-card:hover .card-jp-tag {
   opacity: 1 !important;
+  color: var(--hakai-amber-bright) !important;
+  text-shadow: 0 0 16px var(--hakai-amber-bright), 0 0 30px var(--hakai-amber) !important;
+  transform: translateY(-2px) !important;
 }
 
 .sec-card-google h3,
@@ -483,15 +500,17 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 .section-sub {
-  font-family: 'Noto Sans JP', sans-serif !important;
+  font-family: 'Reem Kufi', 'Cairo', 'Amiri', sans-serif !important;
   color: var(--hakai-gold) !important;
   text-align: center !important;
   margin-top: 14px !important;
   margin-bottom: 24px !important;
-  letter-spacing: 6px !important;
-  font-size: 0.88rem !important;
+  word-spacing: 8px !important;
+  letter-spacing: 0.5px !important;
+  font-size: 1.05rem !important;
   font-weight: 700 !important;
-  text-shadow: 0 0 14px rgba(212, 175, 55, 0.35) !important;
+  text-shadow: 0 0 16px rgba(212, 175, 55, 0.45) !important;
+  direction: rtl !important;
 }
 
 .section-tag {
