@@ -44,11 +44,12 @@
   --text-muted: #94a3b8;
   --text-dim: #64748b;
 
-  /* Precision Font Stacks */
-  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Precision Font Stacks (Hakai.lol Cyberpunk Typography) */
+  --font-sans: 'Orbitron', 'JetBrains Mono', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Orbitron', sans-serif;
   --font-hud: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
   --font-mono: 'JetBrains Mono', Consolas, monospace;
+  --font-jp: 'Noto Sans JP', sans-serif;
 
   /* Geometric Radii */
   --radius-xs: 6px;

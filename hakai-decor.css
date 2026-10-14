@@ -1,0 +1,503 @@
+/* ==========================================================================
+   RECOIL OPTIMIZER — HAKAI.LOL SIGNATURE CYBERPUNK HUD & LIGHTING ENGINE
+   Aesthetic: Ring-0 Kernel Precision | Obsidian Black, Solar Amber & Cobalt
+   Faithfully replicating hakai.lol's lighting, reflections, Orbitron typography,
+   corner kanji tags, glowing hero identity, and interactive live terminal.
+   ========================================================================== */
+
+:root {
+  --hakai-amber: #f59e0b;
+  --hakai-amber-bright: #fbbf24;
+  --hakai-gold: #d4af37;
+  --hakai-cobalt: #3b82f6;
+  --hakai-black: #080808;
+  --hakai-card: #141414;
+  --hakai-border: rgba(245, 158, 11, 0.25);
+  --hakai-border-bright: #f59e0b;
+  --hakai-glow: rgba(245, 158, 11, 0.35);
+  --hakai-glow-bright: rgba(251, 191, 36, 0.65);
+  --hakai-white: #f8fafc;
+  --hakai-gray: #888888;
+  --hakai-discord: #5865f2;
+}
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL TYPOGRAPHY: ORBITRON + JETBRAINS MONO + NOTO SANS JP
+   Eliminates generic AI fonts (Inter, Roboto, Plus Jakarta Sans) completely.
+   -------------------------------------------------------------------------- */
+body {
+  font-family: 'Orbitron', 'JetBrains Mono', -apple-system, sans-serif !important;
+  background: var(--hakai-black) !important;
+  color: var(--hakai-white) !important;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M4 2 L4 26 L10 20 L14 30 L18 28 L14 18 L22 18 Z' fill='%23f59e0b' stroke='%23ffffff' stroke-width='1.2'/%3E%3C/svg%3E") 4 2, auto;
+}
+
+a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question, .download-card, .sec-card-google {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M4 2 L4 26 L10 20 L14 30 L18 28 L14 18 L22 18 Z' fill='%23fbbf24' stroke='%23ffffff' stroke-width='1.5'/%3E%3C/svg%3E") 4 2, pointer;
+}
+
+/* --------------------------------------------------------------------------
+   2. AMBIENT BACKDROP LIGHTING & REFLECTIONS
+   -------------------------------------------------------------------------- */
+#hakai-ambient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(245, 158, 11, 0.16) 0%, rgba(8, 8, 8, 0.95) 60%, #080808 100%),
+    radial-gradient(circle at 80% 25%, rgba(59, 130, 246, 0.08) 0%, transparent 45%),
+    linear-gradient(180deg, transparent 0%, rgba(245, 158, 11, 0.02) 50%, transparent 100%);
+}
+
+/* --------------------------------------------------------------------------
+   3. SINGLE-LINE HEADER & NAVBAR (Hakai Cyberpunk Minimalist)
+   -------------------------------------------------------------------------- */
+.site-header {
+  background: rgba(8, 8, 8, 0.94) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;
+}
+
+.nav-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+}
+
+.nav-brand-title {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 4px !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  transition: text-shadow 0.3s ease !important;
+}
+
+.nav-brand:hover .nav-brand-title {
+  text-shadow: 0 0 25px var(--hakai-amber-bright), 0 0 45px var(--hakai-amber) !important;
+}
+
+.nav-brand-jp {
+  font-family: 'Noto Sans JP', sans-serif !important;
+  font-size: 0.72rem !important;
+  color: var(--hakai-gold) !important;
+  letter-spacing: 3px !important;
+  font-weight: 700 !important;
+  opacity: 0.9 !important;
+}
+
+.nav-links {
+  display: flex !important;
+  gap: 28px !important;
+  list-style: none !important;
+}
+
+.nav-links a {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  color: var(--hakai-white) !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+  padding: 6px 0 !important;
+  transition: color 0.25s ease !important;
+}
+
+.nav-links a::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 2px !important;
+  background: var(--hakai-amber) !important;
+  transition: width 0.25s ease !important;
+}
+
+.nav-links a:hover {
+  color: var(--hakai-amber) !important;
+}
+
+.nav-links a:hover::after {
+  width: 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. HERO SECTION WITH MASSIVE GLOWING NAME & ACCENTS (Screenshot 1 Match)
+   -------------------------------------------------------------------------- */
+.hero {
+  min-height: calc(100vh - 75px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 100px 20px 50px !important;
+}
+
+/* Framed Tagline Box */
+.hero-tagline-hakai {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.8rem !important;
+  color: var(--hakai-amber) !important;
+  letter-spacing: 6px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 25px !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  background: rgba(245, 158, 11, 0.04) !important;
+  padding: 8px 24px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.12) !important;
+  animation: hakaiFadeIn 1s ease !important;
+}
+
+/* Giant Glowing Hero Title */
+.hero-title-hakai {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: clamp(4.5rem, 11vw, 9rem) !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  letter-spacing: clamp(8px, 2.5vw, 18px) !important;
+  text-shadow: 0 0 35px var(--hakai-amber), 0 0 85px #d97706, 0 0 140px rgba(245, 158, 11, 0.45) !important;
+  margin-bottom: 12px !important;
+  line-height: 1 !important;
+  animation: hakaiFadeIn 1.2s ease, hakaiNameGlow 4s ease-in-out infinite alternate !important;
+}
+
+@keyframes hakaiNameGlow {
+  0% {
+    text-shadow: 0 0 30px var(--hakai-amber), 0 0 75px #d97706;
+  }
+  50% {
+    text-shadow: 0 0 55px var(--hakai-amber-bright), 0 0 110px var(--hakai-amber), 0 0 150px rgba(245, 158, 11, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 30px var(--hakai-amber), 0 0 75px #d97706;
+  }
+}
+
+/* Katakana Under-Name Accent */
+.hero-jp-title {
+  font-family: 'Noto Sans JP', sans-serif !important;
+  font-size: 1.25rem !important;
+  color: var(--hakai-gold) !important;
+  letter-spacing: 10px !important;
+  margin-bottom: 35px !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 14px rgba(212, 175, 55, 0.45) !important;
+  animation: hakaiFadeIn 1.4s ease !important;
+}
+
+/* Hero Paragraph in Orbitron */
+.hero-subtitle {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.95rem !important;
+  color: var(--hakai-gray) !important;
+  max-width: 720px !important;
+  margin: 0 auto 40px !important;
+  line-height: 1.9 !important;
+  letter-spacing: 1px !important;
+  animation: hakaiFadeIn 1.6s ease !important;
+}
+
+/* Hakai Signature Expanding Circular Buttons */
+.hero-buttons-hakai {
+  display: flex !important;
+  gap: 20px !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  margin-bottom: 30px !important;
+  animation: hakaiFadeIn 1.8s ease !important;
+}
+
+.btn-hakai {
+  padding: 14px 38px !important;
+  background: transparent !important;
+  border: 2px solid var(--hakai-amber) !important;
+  color: var(--hakai-amber) !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 4px !important;
+}
+
+.btn-hakai span {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.btn-hakai::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: var(--hakai-amber) !important;
+  transition: width 0.4s ease, height 0.4s ease !important;
+  transform: translate(-50%, -50%) !important;
+  border-radius: 50% !important;
+  z-index: 0 !important;
+}
+
+.btn-hakai:hover::before {
+  width: 350px !important;
+  height: 350px !important;
+}
+
+.btn-hakai:hover {
+  color: var(--hakai-black) !important;
+  box-shadow: 0 0 35px var(--hakai-amber-bright) !important;
+}
+
+.btn-hakai.secondary {
+  border-color: var(--hakai-cobalt) !important;
+  color: #60a5fa !important;
+}
+
+.btn-hakai.secondary::before {
+  background: var(--hakai-cobalt) !important;
+}
+
+.btn-hakai.secondary:hover {
+  color: var(--hakai-white) !important;
+  box-shadow: 0 0 35px var(--hakai-cobalt) !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. LIVE TERMINAL WINDOW (Screenshot 3 Match)
+   -------------------------------------------------------------------------- */
+.terminal-wrapper-hakai {
+  max-width: 860px !important;
+  margin: 45px auto 70px !important;
+  padding: 0 16px !important;
+  width: 100% !important;
+}
+
+.terminal-card-hakai {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  box-shadow: 0 18px 55px rgba(245, 158, 11, 0.15), 0 25px 60px rgba(0, 0, 0, 0.8) !important;
+  position: relative !important;
+}
+
+.terminal-header-hakai {
+  background: #16181f !important;
+  padding: 12px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;
+}
+
+.terminal-dot {
+  width: 11px !important;
+  height: 11px !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+}
+
+.terminal-dot.red { background: #ff5f56 !important; }
+.terminal-dot.yellow { background: #ffbd2e !important; }
+.terminal-dot.green { background: #27c93f !important; }
+
+.terminal-title-hakai {
+  margin-left: auto !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.72rem !important;
+  color: var(--hakai-gray) !important;
+  letter-spacing: 1.5px !important;
+}
+
+.terminal-body-hakai {
+  padding: 26px !important;
+  font-family: 'JetBrains Mono', Consolas, monospace !important;
+  font-size: 0.83rem !important;
+  line-height: 2 !important;
+  color: #cbd5e1 !important;
+  overflow-x: auto !important;
+  min-height: 290px !important;
+  background: #0a0a0a !important;
+}
+
+.term-line {
+  opacity: 0;
+  transform: translateX(-8px);
+  animation: termLineFade 0.4s ease forwards;
+}
+
+.term-line:nth-child(1) { animation-delay: 0.3s; }
+.term-line:nth-child(2) { animation-delay: 0.8s; }
+.term-line:nth-child(3) { animation-delay: 1.3s; }
+.term-line:nth-child(4) { animation-delay: 1.8s; }
+.term-line:nth-child(5) { animation-delay: 2.3s; }
+.term-line:nth-child(6) { animation-delay: 2.8s; }
+.term-line:nth-child(7) { animation-delay: 3.3s; }
+.term-line:nth-child(8) { animation-delay: 3.8s; }
+.term-line:nth-child(9) { animation-delay: 4.3s; }
+.term-line:nth-child(10) { animation-delay: 4.8s; }
+.term-line:nth-child(11) { animation-delay: 5.3s; }
+.term-line:nth-child(12) { animation-delay: 5.8s; }
+
+@keyframes termLineFade {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.term-prompt { color: var(--hakai-amber) !important; font-weight: 700 !important; }
+.term-cmd { color: #ffffff !important; font-weight: 700 !important; }
+.term-output { color: var(--hakai-gray) !important; }
+.term-success { color: #27c93f !important; font-weight: 700 !important; }
+.term-info { color: #38bdf8 !important; }
+.term-warn { color: #fbbf24 !important; font-weight: 700 !important; }
+
+/* --------------------------------------------------------------------------
+   6. CARDS WITH LIGHT-SWEEP REFLECTION & CORNER KANJI (Screenshot 2 Match)
+   -------------------------------------------------------------------------- */
+.sec-card-google,
+.download-card,
+.faq-item {
+  background: var(--hakai-card) !important;
+  border: 1px solid var(--hakai-border) !important;
+  border-radius: 6px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* Light-sweep reflection beam across the top edge */
+.sec-card-google::before,
+.download-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent, var(--hakai-amber), transparent) !important;
+  transition: left 0.55s ease !important;
+  z-index: 2 !important;
+}
+
+.sec-card-google:hover::before,
+.download-card:hover::before {
+  left: 100% !important;
+}
+
+.sec-card-google:hover,
+.download-card:hover {
+  border-color: var(--hakai-border-bright) !important;
+  transform: translateY(-6px) !important;
+  box-shadow: 0 15px 40px rgba(245, 158, 11, 0.25) !important;
+}
+
+/* Corner Kanji Tag */
+.card-jp-tag {
+  position: absolute !important;
+  top: 18px !important;
+  right: 18px !important;
+  font-family: 'Noto Sans JP', sans-serif !important;
+  font-size: 0.7rem !important;
+  color: var(--hakai-gold) !important;
+  opacity: 0.55 !important;
+  letter-spacing: 2px !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.sec-card-google:hover .card-jp-tag,
+.download-card:hover .card-jp-tag {
+  opacity: 1 !important;
+}
+
+.sec-card-google h3,
+.download-card h3 {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 1.05rem !important;
+  letter-spacing: 2px !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+}
+
+.sec-card-google p,
+.download-card p {
+  font-family: 'Orbitron', sans-serif !important;
+  color: var(--hakai-gray) !important;
+  font-size: 0.84rem !important;
+  line-height: 1.8 !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* --------------------------------------------------------------------------
+   7. SECTION HEADERS WITH LUMINOUS UNDERLINE
+   -------------------------------------------------------------------------- */
+.section-title {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem) !important;
+  font-weight: 900 !important;
+  letter-spacing: 5px !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+}
+
+.section-title::after {
+  content: '' !important;
+  display: block !important;
+  width: 70px !important;
+  height: 3px !important;
+  background: var(--hakai-amber) !important;
+  margin: 18px auto 0 !important;
+  box-shadow: 0 0 18px var(--hakai-amber-bright) !important;
+  border-radius: 2px !important;
+}
+
+.section-sub {
+  font-family: 'Noto Sans JP', sans-serif !important;
+  color: var(--hakai-gold) !important;
+  text-align: center !important;
+  margin-top: 12px !important;
+  margin-bottom: 25px !important;
+  letter-spacing: 4px !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+}
+
+.section-desc {
+  font-family: 'Orbitron', sans-serif !important;
+  text-align: center !important;
+  max-width: 700px !important;
+  margin: 0 auto 55px !important;
+  color: var(--hakai-gray) !important;
+  line-height: 1.9 !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Fade-in animations */
+@keyframes hakaiFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

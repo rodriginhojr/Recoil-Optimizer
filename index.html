@@ -103,28 +103,31 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   
-  <!-- Google Fonts: Orbitron, Plus Jakarta Sans & JetBrains Mono -->
+  <!-- Google Fonts: Orbitron, Noto Sans JP, Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700;900&family=Orbitron:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="hakai-decor.css">
 </head>
 <body>
 
-  <!-- Ambient Backdrop Glows & Technical Grid -->
+  <!-- Hakai Ambient Lighting & Backdrop Glows -->
+  <div id="hakai-ambient-bg"></div>
   <div class="mesh-glow-1" aria-hidden="true"></div>
   <div class="mesh-glow-2" aria-hidden="true"></div>
   <div class="grid-overlay" aria-hidden="true"></div>
 
-  <!-- 100% Single-Line Sticky Navbar (Google Style) -->
+  <!-- 100% Single-Line Sticky Navbar (Hakai Cyberpunk Minimalist) -->
   <header class="site-header">
     <nav class="navbar" aria-label="Navegación Principal">
       <a href="#" class="nav-brand">
         <img src="assets/LogoMark.png" alt="Recoil Optimizer Logo" class="nav-logo">
         <span class="nav-brand-title">Recoil <span class="nav-brand-accent">Optimizer</span></span>
+        <span class="nav-brand-jp">反動</span>
       </a>
 
       <ul class="nav-links">
@@ -171,29 +174,29 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section (Clean Antigravity-Style) -->
+    <!-- Hero Section (Hakai.lol Signature Cyberpunk Hero) -->
     <section class="hero container" id="hero">
-      <!-- Eyebrow Badge -->
-      <div class="badge badge-pulse">
-        <span class="pulse-dot"></span>
-        <span data-i18n="heroTag">Optimizador de Latencia de Kernel · Windows 7 a 11</span>
-      </div>
+      <!-- Framed Monospace Tagline (Hakai Signature) -->
+      <div class="hero-tagline-hakai">MANUAL DE OPTIMIZACIÓN DE WINDOWS // LATENCIA DPC CERO</div>
 
-      <!-- Hero Title & Subtitle -->
-      <h1 class="hero-title" data-i18n="heroTitle">
-        Exprime cada gota de FPS y elimina el stutter en tu Windows.
-      </h1>
+      <!-- Giant Glowing Name Title (Screenshot 1 Match) -->
+      <h1 class="hero-title-hakai">RECOIL</h1>
+
+      <!-- Katakana Subtitle Accent Directly Under Name -->
+      <div class="hero-jp-title">反 動 · 最 適 化 · カ ー ネ ル</div>
 
       <p class="hero-subtitle" data-i18n="heroSubtitle">
         Herramienta de optimización de kernel y baja latencia para jugadores y técnicos. Soporte universal desde Windows 7 SP1 hasta Windows 11 25H2. Cero bloatware y reversible en 1 clic.
       </p>
 
-      <!-- Direct & Confident CTAs (Google Style) -->
-      <div class="hero-actions">
-        <a href="https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x64.exe" download="RecoilOptimizer_x64.exe" id="hero-download-btn" class="btn-hero-download">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          <span data-i18n="btnDownloadHero">Descargar para Windows</span>
-          <span class="hero-arch-badge" id="hero-arch-badge">64 bits</span>
+      <!-- Hakai Expanding Circular Buttons -->
+      <div class="hero-buttons-hakai">
+        <a href="https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x64.exe" download="RecoilOptimizer_x64.exe" id="hero-download-btn" class="btn-hakai">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="btnDownloadHero">DESCARGAR X64 (64 BITS)</span>
+        </a>
+        <a href="#downloads" class="btn-hakai secondary">
+          <span>VER VERSIONES &amp; X86</span>
         </a>
       </div>
 
@@ -541,6 +544,33 @@
       </div>
     </section>
 
+    <!-- Hakai-Style Interactive Kernel Terminal Window (Screenshot 3 Match) -->
+    <div class="container">
+      <section class="terminal-wrapper-hakai" aria-label="Terminal de Auditoría de Kernel">
+        <div class="terminal-card-hakai">
+          <div class="terminal-header-hakai">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title-hakai">Recoil Kernel Daemon — Administrador</span>
+          </div>
+          <div class="terminal-body-hakai">
+            <div class="term-line"><span class="term-prompt">[RECOIL]</span> <span class="term-output">Cargando doctrina de latencia Ring-0...</span></div>
+            <div class="term-line"><span class="term-prompt">[RECOIL]</span> Se detectó <span class="term-cmd">RecoilOptimizer.exe</span></div>
+            <div class="term-line"><span class="term-prompt">[RECOIL]</span> Verificando la integridad del kernel... <span class="term-success">OK</span></div>
+            <div class="term-line"><span class="term-prompt">[NTAPI]</span> Temporizador global de Windows bloqueado en <span class="term-info">0.500 ms</span></div>
+            <div class="term-line"><span class="term-prompt">[RECOIL]</span> Comprobando requisitos de baja latencia... <span class="term-success">APROBADO</span></div>
+            <div class="term-line"><span class="term-prompt">[RECOIL]</span> Inicializando optimizaciones de hardware...</div>
+            <div class="term-line"><span class="term-success">✓ Telemetría y diagnóstico WerSvc desactivados</span></div>
+            <div class="term-line"><span class="term-success">✓ 117 Optimizaciones de registro y kernel aplicadas</span></div>
+            <div class="term-line"><span class="term-success">✓ Plan de energía configurado en Ultimate Performance</span></div>
+            <div class="term-line"><span class="term-success">✓ Hipervisor y servicios VBS desactivados para gaming</span></div>
+            <div class="term-line"><span class="term-success">✓ Pila de red TCP/IP y algoritmo Nagle optimizados</span></div>
+            <div class="term-line"><span class="term-warn">[RECOIL] Sistema optimizado al 100%. Latencia ultrabaja activa.</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- 4. Multi-Windows Compatibility Matrix -->
     <div id="os-matrix-mount"></div>
@@ -550,6 +580,7 @@
       <div class="section-header">
         <div class="section-tag">INGENIERÍA &amp; SEGURIDAD</div>
         <h2 class="section-title">Seguridad y Transparencia</h2>
+        <div class="section-sub">セキュリティと信頼性</div>
         <p class="section-desc">
           Transparencia absoluta. Sin trucos publicitarios, sin riesgos de ban en anti-cheats y con reversibilidad total garantizada.
         </p>
@@ -557,6 +588,7 @@
 
       <div class="security-grid-google">
         <div class="sec-card-google">
+          <span class="card-jp-tag">性能</span>
           <div class="sec-card-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
@@ -567,6 +599,7 @@
         </div>
 
         <div class="sec-card-google">
+          <span class="card-jp-tag">安全性</span>
           <div class="sec-card-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
           </div>
@@ -577,6 +610,7 @@
         </div>
 
         <div class="sec-card-google">
+          <span class="card-jp-tag">無常駐</span>
           <div class="sec-card-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
           </div>
@@ -587,6 +621,7 @@
         </div>
 
         <div class="sec-card-google">
+          <span class="card-jp-tag">暗号化</span>
           <div class="sec-card-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
@@ -604,6 +639,7 @@
         <div class="section-header">
           <div class="section-tag" data-i18n="downloadsTag">DISTRIBUCIÓN OFICIAL COMPLETA</div>
           <h2 class="section-title" data-i18n="downloadsTitle">Descargas Oficiales y Verificadas</h2>
+          <div class="section-sub">公式ダウンロードセンター</div>
           <p class="section-desc" data-i18n="downloadsDesc">
             Arquitectura nativa dual para cubrir tanto computadoras modernas de alto rendimiento como equipos antiguos.
           </p>
@@ -612,6 +648,7 @@
         <div class="download-grid">
           <!-- Card 64-bit -->
           <div id="card-x64" class="download-card">
+            <span class="card-jp-tag">最新版</span>
             <div class="recommended-ribbon" data-i18n="recommendedRibbon">RECOMENDADO PARA TU PC</div>
             <div class="download-header">
               <h3 class="arch-title">
@@ -650,6 +687,7 @@
 
           <!-- Card 32-bit -->
           <div id="card-x86" class="download-card">
+            <span class="card-jp-tag">互換性</span>
             <div class="recommended-ribbon" data-i18n="recommendedRibbon">RECOMENDADO PARA TU PC</div>
             <div class="download-header">
               <h3 class="arch-title">
@@ -695,6 +733,7 @@
       <div class="section-header">
         <div class="section-tag" data-i18n="faqTag">PREGUNTAS FRECUENTES</div>
         <h2 class="section-title" data-i18n="faqTitle">Respuestas Claras y Transparentes</h2>
+        <div class="section-sub">よくある質問</div>
         <p class="section-desc" data-i18n="faqDesc">Todo lo que necesitas saber antes de optimizar tu equipo.</p>
       </div>
 
