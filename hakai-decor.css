@@ -279,95 +279,89 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 /* --------------------------------------------------------------------------
-   5. LIVE TERMINAL WINDOW (Screenshot 3 Match)
+   5. DESKTOP APP WINDOW REPLICA: ADVANCED CYBERPUNK SOMBREADO & AURA GLOW
+   Replaces terminal panel with realistic ambient floating backlight and
+   multi-layered drop shadows (Screenshot 1 Match).
    -------------------------------------------------------------------------- */
-.terminal-wrapper-hakai {
-  max-width: 860px !important;
-  margin: 45px auto 70px !important;
-  padding: 0 16px !important;
+.hero-mockup-wrapper {
+  max-width: 890px !important;
+  margin: 35px auto 45px auto !important;
+  width: 100% !important;
+  position: relative !important;
+  perspective: 1200px !important;
+}
+
+/* Ambient Backlight Halo behind the Mockup Window */
+.hero-mockup-wrapper::after {
+  content: '' !important;
+  position: absolute !important;
+  inset: 12% 5% -35px 5% !important;
+  background: radial-gradient(ellipse at 50% 60%, rgba(245, 158, 11, 0.35) 0%, rgba(251, 191, 36, 0.16) 42%, rgba(245, 158, 11, 0.04) 68%, transparent 75%) !important;
+  filter: blur(45px) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  border-radius: 20px !important;
+}
+
+.app-window {
+  position: relative !important;
+  z-index: 1 !important;
+  background: linear-gradient(180deg, #131620 0%, #090a0f 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 35px 85px -15px rgba(0, 0, 0, 0.98),
+    0 15px 45px -5px rgba(0, 0, 0, 0.85),
+    0 0 50px rgba(245, 158, 11, 0.28),
+    0 0 100px rgba(245, 158, 11, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 0 25px rgba(245, 158, 11, 0.04) !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease, border-color 0.35s ease !important;
+  max-width: 100% !important;
   width: 100% !important;
 }
 
-.terminal-card-hakai {
-  background: #0a0a0a !important;
-  border: 1px solid rgba(245, 158, 11, 0.4) !important;
-  border-radius: 6px !important;
-  overflow: hidden !important;
-  box-shadow: 0 18px 55px rgba(245, 158, 11, 0.15), 0 25px 60px rgba(0, 0, 0, 0.8) !important;
-  position: relative !important;
+/* Hakai Signature Top Edge Light-Sweep Beam */
+.app-window::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent, #fbbf24, #f59e0b, transparent) !important;
+  transition: left 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  z-index: 5 !important;
+  pointer-events: none !important;
 }
 
-.terminal-header-hakai {
-  background: #16181f !important;
-  padding: 12px 20px !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;
+.app-window:hover::before {
+  left: 100% !important;
 }
 
-.terminal-dot {
-  width: 11px !important;
-  height: 11px !important;
-  border-radius: 50% !important;
-  display: inline-block !important;
+.app-window:hover {
+  transform: translateY(-5px) !important;
+  border-color: #f59e0b !important;
+  box-shadow:
+    0 45px 105px -15px rgba(0, 0, 0, 0.98),
+    0 20px 55px -5px rgba(0, 0, 0, 0.9),
+    0 0 70px rgba(245, 158, 11, 0.4),
+    0 0 130px rgba(245, 158, 11, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 0 30px rgba(245, 158, 11, 0.08) !important;
 }
 
-.terminal-dot.red { background: #ff5f56 !important; }
-.terminal-dot.yellow { background: #ffbd2e !important; }
-.terminal-dot.green { background: #27c93f !important; }
-
-.terminal-title-hakai {
-  margin-left: auto !important;
-  font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.72rem !important;
-  color: var(--hakai-gray) !important;
-  letter-spacing: 1.5px !important;
+/* Internal Panels Sombreado & Depth */
+.wpf-metric-card,
+.wpf-nav-item.active {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6), 0 0 12px rgba(245, 158, 11, 0.15) !important;
 }
 
-.terminal-body-hakai {
-  padding: 26px !important;
-  font-family: 'JetBrains Mono', Consolas, monospace !important;
-  font-size: 0.83rem !important;
-  line-height: 2 !important;
-  color: #cbd5e1 !important;
-  overflow-x: auto !important;
-  min-height: 290px !important;
-  background: #0a0a0a !important;
+.wpf-oscilloscope-panel {
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.9), 0 0 20px rgba(245, 158, 11, 0.1) !important;
 }
-
-.term-line {
-  opacity: 0;
-  transform: translateX(-8px);
-  animation: termLineFade 0.4s ease forwards;
-}
-
-.term-line:nth-child(1) { animation-delay: 0.3s; }
-.term-line:nth-child(2) { animation-delay: 0.8s; }
-.term-line:nth-child(3) { animation-delay: 1.3s; }
-.term-line:nth-child(4) { animation-delay: 1.8s; }
-.term-line:nth-child(5) { animation-delay: 2.3s; }
-.term-line:nth-child(6) { animation-delay: 2.8s; }
-.term-line:nth-child(7) { animation-delay: 3.3s; }
-.term-line:nth-child(8) { animation-delay: 3.8s; }
-.term-line:nth-child(9) { animation-delay: 4.3s; }
-.term-line:nth-child(10) { animation-delay: 4.8s; }
-.term-line:nth-child(11) { animation-delay: 5.3s; }
-.term-line:nth-child(12) { animation-delay: 5.8s; }
-
-@keyframes termLineFade {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.term-prompt { color: var(--hakai-amber) !important; font-weight: 700 !important; }
-.term-cmd { color: #ffffff !important; font-weight: 700 !important; }
-.term-output { color: var(--hakai-gray) !important; }
-.term-success { color: #27c93f !important; font-weight: 700 !important; }
-.term-info { color: #38bdf8 !important; }
-.term-warn { color: #fbbf24 !important; font-weight: 700 !important; }
 
 /* --------------------------------------------------------------------------
    6. CARDS WITH LIGHT-SWEEP REFLECTION & CORNER KANJI (Screenshot 2 Match)
