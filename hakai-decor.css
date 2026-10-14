@@ -1,0 +1,572 @@
+/* ==========================================================================
+   RECOIL OPTIMIZER — HAKAI.LOL PREMIUM DECORATION & CYBERPUNK HUD LAYER
+   Aesthetic: Samurai & Precision Kernel Cyberpunk | Amber & Obsidian Palette
+   Inspired by: hakai.lol (Custom Cursors, Glowing Sweeps, Katakana Accents,
+   Interactive Staggered Terminal, Radial Hover Inks & Luminous Headings)
+   ========================================================================== */
+
+:root {
+  --hakai-amber: #f59e0b;
+  --hakai-amber-bright: #fbbf24;
+  --hakai-gold: #d4af37;
+  --hakai-cobalt: #3b82f6;
+  --hakai-black: #080808;
+  --hakai-card: rgba(14, 17, 24, 0.88);
+  --hakai-border: rgba(245, 158, 11, 0.22);
+  --hakai-border-hover: rgba(245, 158, 11, 0.85);
+  --hakai-glow: rgba(245, 158, 11, 0.35);
+  --hakai-glow-bright: rgba(251, 191, 36, 0.65);
+  --hakai-white: #f8fafc;
+  --hakai-gray: #8e9bb0;
+  --hakai-discord: #5865f2;
+}
+
+/* --------------------------------------------------------------------------
+   1. CUSTOM TACTICAL GAMING CURSORS (Hakai.lol Signature SVG Reticles)
+   -------------------------------------------------------------------------- */
+html, body {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M4 2 L4 26 L10 20 L14 30 L18 28 L14 18 L22 18 Z' fill='%23f59e0b' stroke='%23ffffff' stroke-width='1.2'/%3E%3C/svg%3E") 4 2, auto;
+}
+
+a, button, .btn, .app-item, nav a, input, select, .toggle-switch, .mock-driver-card, .sec-card-google, .download-card {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M4 2 L4 26 L10 20 L14 30 L18 28 L14 18 L22 18 Z' fill='%23fbbf24' stroke='%23ffffff' stroke-width='1.5'/%3E%3C/svg%3E") 4 2, pointer;
+}
+
+/* --------------------------------------------------------------------------
+   2. TYPOGRAPHIC ENHANCEMENTS & KATAKANA ACCENTS
+   -------------------------------------------------------------------------- */
+.nav-brand-title {
+  font-family: 'Orbitron', var(--font-sans), sans-serif;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.nav-brand-jp {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.68rem;
+  color: var(--hakai-gold);
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-left: 8px;
+  opacity: 0.85;
+}
+
+/* Hero Monospace Tagline */
+.hero-tagline-hakai {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--hakai-amber);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: rgba(245, 158, 11, 0.05);
+  padding: 8px 22px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.12);
+  animation: hakaiFadeIn 1s ease;
+}
+
+/* Hero Title High-Glow & Orbitron Polish */
+.hero-title {
+  font-family: 'Orbitron', var(--font-sans), sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.01em !important;
+  text-shadow: 0 0 35px var(--hakai-glow), 0 0 80px rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Hero Katakana Subtitle */
+.hero-jp-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.15rem;
+  color: var(--hakai-gold);
+  letter-spacing: 8px;
+  margin-top: -6px;
+  margin-bottom: 22px;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  font-weight: 700;
+  animation: hakaiFadeIn 1.3s ease;
+}
+
+/* Section Titles with Hakai Luminous Center Underline */
+.section-title {
+  font-family: 'Orbitron', var(--font-sans), sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  position: relative;
+  text-align: center;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: var(--hakai-amber);
+  margin: 16px auto 0 auto;
+  border-radius: 2px;
+  box-shadow: 0 0 16px var(--hakai-amber-bright), 0 0 30px var(--hakai-amber);
+}
+
+.section-sub {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--hakai-gold);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   3. CARD TOP LIGHT-SWEEP BEAM (Hakai.lol Hover Signature)
+   -------------------------------------------------------------------------- */
+.download-card,
+.sec-card-google,
+.hero-stat-card,
+.community-card,
+.app-item,
+.terminal-card-hakai {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              box-shadow 0.35s ease !important;
+}
+
+.download-card::before,
+.sec-card-google::before,
+.hero-stat-card::before,
+.community-card::before,
+.app-item::before,
+.terminal-card-hakai::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--hakai-amber), transparent);
+  transition: left 0.55s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.download-card:hover::before,
+.sec-card-google:hover::before,
+.hero-stat-card:hover::before,
+.community-card:hover::before,
+.app-item:hover::before,
+.terminal-card-hakai:hover::before {
+  left: 100%;
+}
+
+.download-card:hover,
+.sec-card-google:hover,
+.community-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: var(--hakai-amber) !important;
+  box-shadow: 0 18px 45px rgba(245, 158, 11, 0.22) !important;
+}
+
+/* Japanese Micro-Tags in Card Top-Right */
+.card-jp-tag {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.65rem;
+  color: var(--hakai-gold);
+  letter-spacing: 2px;
+  opacity: 0.45;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.download-card:hover .card-jp-tag,
+.sec-card-google:hover .card-jp-tag {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   4. FULL-WIDTH TACTICAL STATS STRIP (Hakai Stats Bar)
+   -------------------------------------------------------------------------- */
+.stats-ribbon-hakai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(30px, 5vw, 70px);
+  flex-wrap: wrap;
+  padding: 45px 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+  background: rgba(14, 17, 24, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid var(--hakai-border);
+  border-bottom: 1px solid var(--hakai-border);
+  border-radius: var(--radius-md);
+}
+
+.stat-item-hakai {
+  text-align: center;
+}
+
+.stat-num-hakai {
+  font-family: 'Orbitron', var(--font-hud), monospace;
+  font-size: clamp(2.2rem, 3.8vw, 3rem);
+  font-weight: 900;
+  color: var(--hakai-amber);
+  text-shadow: 0 0 20px var(--hakai-glow), 0 0 40px var(--hakai-glow);
+  line-height: 1.1;
+}
+
+.stat-label-hakai {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--hakai-gray);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   5. INTERACTIVE TERMINAL WINDOW (Hakai.lol Live Daemon Window)
+   -------------------------------------------------------------------------- */
+.terminal-wrapper-hakai {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 16px;
+}
+
+.terminal-card-hakai {
+  background: #090a0f;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(245, 158, 11, 0.12);
+}
+
+.terminal-header-hakai {
+  background: #141720;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.terminal-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-dot.red { background: #ff5f56; }
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.green { background: #27c93f; }
+
+.terminal-title-hakai {
+  margin-left: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--hakai-gray);
+  letter-spacing: 1.5px;
+}
+
+.terminal-body-hakai {
+  padding: 24px;
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 2.1;
+  color: #cbd5e1;
+  overflow-x: auto;
+  min-height: 280px;
+  background: radial-gradient(ellipse at top right, rgba(245, 158, 11, 0.04) 0%, transparent 60%), #090a0f;
+}
+
+.term-line {
+  opacity: 0;
+  transform: translateX(-8px);
+  animation: termLineFade 0.4s ease forwards;
+}
+
+.term-line:nth-child(1) { animation-delay: 0.3s; }
+.term-line:nth-child(2) { animation-delay: 0.8s; }
+.term-line:nth-child(3) { animation-delay: 1.4s; }
+.term-line:nth-child(4) { animation-delay: 2.0s; }
+.term-line:nth-child(5) { animation-delay: 2.6s; }
+.term-line:nth-child(6) { animation-delay: 3.2s; }
+.term-line:nth-child(7) { animation-delay: 3.8s; }
+.term-line:nth-child(8) { animation-delay: 4.4s; }
+.term-line:nth-child(9) { animation-delay: 5.0s; }
+
+@keyframes termLineFade {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.term-prompt { color: var(--hakai-amber); font-weight: 700; }
+.term-cmd { color: #ffffff; font-weight: 700; }
+.term-out { color: #94a3b8; }
+.term-success { color: #10b981; font-weight: 700; }
+.term-info { color: #38bdf8; }
+.term-warn { color: var(--hakai-gold); }
+
+/* --------------------------------------------------------------------------
+   6. CURATED APPS & RECOMMENDED TOOLS GRID (Hakai.lol Curated Stack)
+   -------------------------------------------------------------------------- */
+.apps-grid-hakai {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.app-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: rgba(14, 17, 24, 0.72);
+  border: 1px solid var(--hakai-border);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--hakai-white);
+  transition: all 0.3s ease;
+}
+
+.app-item:hover {
+  border-color: var(--hakai-amber);
+  background: rgba(245, 158, 11, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+}
+
+.app-item .app-name {
+  font-family: 'Orbitron', var(--font-sans), sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.app-item .app-jp-name {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.68rem;
+  color: var(--hakai-gold);
+  margin-top: 4px;
+  display: block;
+}
+
+.app-item .app-arrow {
+  color: var(--hakai-amber);
+  font-size: 1.3rem;
+  font-weight: 900;
+  transition: transform 0.3s ease;
+}
+
+.app-item:hover .app-arrow {
+  transform: translateX(6px);
+  color: var(--hakai-amber-bright);
+}
+
+/* --------------------------------------------------------------------------
+   7. COMMUNITY SECTION (Discord & Community Cards)
+   -------------------------------------------------------------------------- */
+.community-grid-hakai {
+  max-width: 900px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.community-card {
+  padding: 38px 28px;
+  background: var(--hakai-card);
+  border: 1px solid rgba(88, 101, 242, 0.35);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.community-card.discord:hover {
+  border-color: var(--hakai-discord);
+  box-shadow: 0 16px 45px rgba(88, 101, 242, 0.28);
+}
+
+.community-card .comm-icon {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+  display: block;
+  color: var(--hakai-discord);
+}
+
+.community-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.community-card p {
+  color: var(--hakai-gray);
+  font-size: 0.86rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.community-card .comm-handle {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--hakai-gold);
+  font-size: 0.84rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.btn-comm {
+  padding: 12px 30px;
+  background: var(--hakai-discord);
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2.5px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+}
+
+.btn-comm:hover {
+  background: #4752c4;
+  box-shadow: 0 0 25px rgba(88, 101, 242, 0.6);
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   8. HAKAI-STYLE CHANGELOG
+   -------------------------------------------------------------------------- */
+.changelog-hakai {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.log-entry-hakai {
+  display: flex;
+  gap: 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+}
+
+.log-version-hakai {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--hakai-amber);
+  min-width: 110px;
+  letter-spacing: 1px;
+}
+
+.log-content-hakai h4 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.log-content-hakai ul {
+  list-style: none;
+  padding: 0;
+}
+
+.log-content-hakai li {
+  font-size: 0.84rem;
+  color: var(--hakai-gray);
+  padding: 4px 0 4px 20px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.log-content-hakai li:hover {
+  color: #ffffff;
+}
+
+.log-content-hakai li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--hakai-amber);
+  font-size: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   9. EXPANDING CENTER RADIAL INK HOVER ON PRIMARY BUTTONS
+   -------------------------------------------------------------------------- */
+.btn-hero-download,
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-hero-download::before,
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: var(--hakai-amber-bright);
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1), height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.btn-hero-download:hover::before,
+.btn-primary:hover::before {
+  width: 320px;
+  height: 320px;
+}
+
+/* --------------------------------------------------------------------------
+   10. SCROLL-TRIGGERED REVEAL ANIMATIONS (IntersectionObserver Support)
+   -------------------------------------------------------------------------- */
+.hakai-reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hakai-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes hakaiFadeIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .hero-tagline-hakai { font-size: 0.65rem; letter-spacing: 3px; padding: 6px 14px; }
+  .hero-jp-title { font-size: 0.95rem; letter-spacing: 5px; }
+  .stats-ribbon-hakai { gap: 28px; padding: 30px 14px; }
+  .stat-num-hakai { font-size: 2rem; }
+  .log-entry-hakai { flex-direction: column; gap: 8px; }
+}
