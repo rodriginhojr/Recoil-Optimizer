@@ -439,8 +439,37 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 /* --------------------------------------------------------------------------
-   7. SECTION HEADERS WITH LUMINOUS UNDERLINE
+   7. SEAMLESS LUXURY COLOR TRANSITIONS & SOFT AMBIENT SOMBREADO
+   Eliminates all harsh dividing lines and muddy color jumps.
    -------------------------------------------------------------------------- */
+.download-section {
+  background: transparent !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  position: relative !important;
+  padding: 70px 0 60px 0 !important;
+}
+
+/* Beautiful soft ambient radial sombreado transition behind the downloads section */
+.download-section::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -40px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: min(100%, 1050px) !important;
+  height: 380px !important;
+  background: radial-gradient(ellipse at 50% 35%, rgba(245, 158, 11, 0.16) 0%, rgba(251, 191, 36, 0.05) 45%, rgba(8, 8, 8, 0) 72%) !important;
+  filter: blur(55px) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Remove harsh blocky underline on titles completely */
+.section-title::after {
+  display: none !important;
+}
+
 .section-title {
   font-family: 'Orbitron', sans-serif !important;
   font-size: clamp(1.8rem, 3.5vw, 2.5rem) !important;
@@ -449,28 +478,36 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   color: #ffffff !important;
   text-transform: uppercase !important;
   text-align: center !important;
-}
-
-.section-title::after {
-  content: '' !important;
-  display: block !important;
-  width: 70px !important;
-  height: 3px !important;
-  background: var(--hakai-amber) !important;
-  margin: 18px auto 0 !important;
-  box-shadow: 0 0 18px var(--hakai-amber-bright) !important;
-  border-radius: 2px !important;
+  text-shadow: 0 0 30px rgba(245, 158, 11, 0.35) !important;
+  margin-bottom: 8px !important;
 }
 
 .section-sub {
   font-family: 'Noto Sans JP', sans-serif !important;
   color: var(--hakai-gold) !important;
   text-align: center !important;
-  margin-top: 12px !important;
-  margin-bottom: 25px !important;
-  letter-spacing: 4px !important;
-  font-size: 0.85rem !important;
+  margin-top: 14px !important;
+  margin-bottom: 24px !important;
+  letter-spacing: 6px !important;
+  font-size: 0.88rem !important;
   font-weight: 700 !important;
+  text-shadow: 0 0 14px rgba(212, 175, 55, 0.35) !important;
+}
+
+.section-tag {
+  display: inline-block !important;
+  color: var(--hakai-amber) !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 4px !important;
+  margin-bottom: 16px !important;
+  padding: 6px 18px !important;
+  background: rgba(245, 158, 11, 0.05) !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.12) !important;
 }
 
 .section-desc {
