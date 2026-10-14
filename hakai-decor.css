@@ -495,3 +495,8 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
     transform: translateY(0);
   }
 }
+
+#faq {
+  padding-bottom: 100px !important;
+}
+
