@@ -223,76 +223,187 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   animation: hakaiFadeIn 1.6s ease !important;
 }
 
-/* Hakai Signature Expanding Circular Buttons */
+/* Hakai Luxury Hero CTA Buttons & HUD PIN Capsule */
 .hero-buttons-hakai {
   display: flex !important;
-  gap: 20px !important;
+  gap: 18px !important;
   flex-wrap: wrap !important;
   justify-content: center !important;
-  margin-bottom: 30px !important;
-  animation: hakaiFadeIn 1.8s ease !important;
+  align-items: center !important;
+  margin-bottom: 24px !important;
+  animation: hakaiFadeIn 1.6s ease !important;
 }
 
+/* Primary CTA: Solid Solar Amber with Specular Shine & Deep Drop Glow */
 .btn-hakai {
-  padding: 14px 38px !important;
-  background: transparent !important;
-  border: 2px solid var(--hakai-amber) !important;
-  color: var(--hakai-amber) !important;
+  padding: 15px 36px !important;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 55%, #d97706 100%) !important;
+  border: 1px solid rgba(254, 240, 138, 0.6) !important;
+  color: #09090b !important;
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.85rem !important;
-  font-weight: 700 !important;
-  letter-spacing: 3px !important;
-  transition: all 0.3s ease !important;
+  font-size: 0.88rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 2.5px !important;
   text-decoration: none !important;
   display: inline-flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  justify-content: center !important;
+  gap: 12px !important;
   position: relative !important;
   overflow: hidden !important;
-  border-radius: 4px !important;
+  border-radius: 6px !important;
+  box-shadow:
+    0 10px 25px -4px rgba(245, 158, 11, 0.45),
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -2px 0 rgba(180, 83, 9, 0.5) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: transform, box-shadow !important;
+}
+
+.btn-hakai svg {
+  stroke: #09090b !important;
+  stroke-width: 2.5 !important;
+  transition: transform 0.3s ease !important;
 }
 
 .btn-hakai span {
   position: relative !important;
+  z-index: 2 !important;
+  color: #09090b !important;
+}
+
+/* Specular diagonal sweep on hover */
+.btn-hakai::after {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -120% !important;
+  width: 55% !important;
+  height: 200% !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.45) 50%, transparent 100%) !important;
+  transform: rotate(25deg) !important;
+  pointer-events: none !important;
+  transition: left 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
   z-index: 1 !important;
 }
 
-.btn-hakai::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  width: 0 !important;
-  height: 0 !important;
-  background: var(--hakai-amber) !important;
-  transition: width 0.4s ease, height 0.4s ease !important;
-  transform: translate(-50%, -50%) !important;
-  border-radius: 50% !important;
-  z-index: 0 !important;
-}
-
-.btn-hakai:hover::before {
-  width: 350px !important;
-  height: 350px !important;
-}
-
 .btn-hakai:hover {
-  color: var(--hakai-black) !important;
-  box-shadow: 0 0 35px var(--hakai-amber-bright) !important;
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow:
+    0 16px 36px -4px rgba(245, 158, 11, 0.65),
+    0 0 35px rgba(251, 191, 36, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
+  filter: brightness(1.04) !important;
 }
 
+.btn-hakai:hover::after {
+  left: 170% !important;
+}
+
+.btn-hakai:hover svg {
+  transform: translateY(2px) !important;
+}
+
+.btn-hakai:active {
+  transform: translateY(-1px) scale(0.99) !important;
+}
+
+/* Secondary CTA: Deep Obsidian Glass with Cobalt Neon Rim */
 .btn-hakai.secondary {
-  border-color: var(--hakai-cobalt) !important;
-  color: #60a5fa !important;
+  background: rgba(15, 23, 42, 0.65) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(59, 130, 246, 0.5) !important;
+  color: #f1f5f9 !important;
+  box-shadow:
+    0 10px 24px -6px rgba(0, 0, 0, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 0 20px rgba(59, 130, 246, 0.08) !important;
 }
 
-.btn-hakai.secondary::before {
-  background: var(--hakai-cobalt) !important;
+.btn-hakai.secondary span {
+  color: #f1f5f9 !important;
+}
+
+.btn-hakai.secondary::after {
+  background: linear-gradient(90deg, transparent 0%, rgba(147, 197, 253, 0.3) 50%, transparent 100%) !important;
 }
 
 .btn-hakai.secondary:hover {
-  color: var(--hakai-white) !important;
-  box-shadow: 0 0 35px var(--hakai-cobalt) !important;
+  background: rgba(30, 58, 138, 0.35) !important;
+  border-color: #60a5fa !important;
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow:
+    0 16px 36px -6px rgba(0, 0, 0, 0.75),
+    0 0 30px rgba(59, 130, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 0 25px rgba(59, 130, 246, 0.15) !important;
+}
+
+.btn-hakai.secondary:hover span {
+  color: #ffffff !important;
+  text-shadow: 0 0 12px rgba(96, 165, 250, 0.6) !important;
+}
+
+/* PIN Capsule Note */
+.hero-pin-note {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 8px 18px !important;
+  margin: 0 auto 24px auto !important;
+  border-radius: 9999px !important;
+  background: rgba(18, 18, 22, 0.8) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.8rem !important;
+  color: #cbd5e1 !important;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.3s ease !important;
+}
+
+.hero-pin-note:hover {
+  border-color: rgba(245, 158, 11, 0.5) !important;
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(245, 158, 11, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+.hero-pin-note strong {
+  color: var(--hakai-amber-bright) !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.5) !important;
+}
+
+.btn-copy-pin-mini {
+  background: rgba(245, 158, 11, 0.16) !important;
+  border: 1px solid rgba(245, 158, 11, 0.45) !important;
+  color: var(--hakai-amber-bright) !important;
+  padding: 4px 12px !important;
+  border-radius: 999px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  letter-spacing: 0.5px !important;
+}
+
+.btn-copy-pin-mini:hover {
+  background: var(--hakai-amber) !important;
+  color: #09090b !important;
+  border-color: var(--hakai-amber-bright) !important;
+  box-shadow: 0 0 16px var(--hakai-amber-bright) !important;
+  transform: translateY(-1px) scale(1.04) !important;
 }
 
 /* --------------------------------------------------------------------------
