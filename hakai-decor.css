@@ -77,7 +77,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   align-items: center !important;
   justify-content: center !important;
   gap: 20px !important;
-  padding: 6px 20px 6px 18px !important;
+  padding: 6px 24px 6px 20px !important;
   border-radius: 9999px !important;
   background: rgba(10, 11, 16, 0.92) !important;
   backdrop-filter: blur(24px) saturate(180%) !important;
@@ -89,6 +89,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
   box-sizing: border-box !important;
   flex-wrap: nowrap !important;
+  overflow: hidden !important;
 }
 
 .nav-logo,
