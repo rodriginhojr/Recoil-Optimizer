@@ -1,6 +1,6 @@
 /**
  * Recoil Optimizer — Multi-OS Compatibility Matrix Specialist (Subagent #7 / Wave 2 #10)
- * Interactive Universal Windows Matrix (Windows 7 SP1 to Windows 11 25H2)
+ * Interactive Universal Windows Matrix (Windows 7 to Windows 11)
  * Zero-dependency, skin-adaptive, bilingual (ES/EN) Swiss Technical HUD module.
  */
 (function () {
@@ -14,11 +14,11 @@
     win7: {
       id: 'win7',
       code: 'NT 6.1 · Build 7601',
-      shortTab: 'Windows 7 SP1',
+      shortTab: 'Windows 7',
       archBadge: 'x86 / x64',
       defaultArch: 'x86',
       supportedArchs: ['x86', 'x64'],
-      releaseSpan: 'SP1 + Platform Update (KB2670838)',
+      releaseSpan: 'Platform Update (KB2670838)',
       binaryX86: {
         name: 'RecoilOptimizer_x86.exe',
         size: '63.8 MB',
@@ -33,7 +33,7 @@
       },
       es: {
         editionTag: 'Edición Legacy Verificada',
-        title: 'Windows 7 SP1 (x86 / x64)',
+        title: 'Windows 7 (x86 / x64)',
         subtitle:
           'Compatibilidad retrospectiva real en 32 y 64 bits con cargador nativo y cero errores de runtime.',
         statusBadge: 'VERIFICADO SIN ERRORES PE32/PE32+',
@@ -51,7 +51,7 @@
           {
             badge: 'C SHIM',
             title: 'C NativeShim & D3DCompiler',
-            desc: 'Pre-carga local de D3DCompiler_47 para renderizado DirectX sin cuelgues en SP1.'
+            desc: 'Pre-carga local de D3DCompiler_47 para renderizado DirectX sin cuelgues.'
           },
           {
             badge: 'DRIVERS',
@@ -67,7 +67,7 @@
       },
       en: {
         editionTag: 'Verified Legacy Edition',
-        title: 'Windows 7 SP1 (x86 / x64)',
+        title: 'Windows 7 (x86 / x64)',
         subtitle:
           'True native 32-bit and 64-bit execution with dedicated C launcher and zero runtime errors.',
         statusBadge: 'ZERO PE32/PE32+ FORMAT ERRORS',
@@ -85,7 +85,7 @@
           {
             badge: 'C SHIM',
             title: 'C NativeShim & D3DCompiler',
-            desc: 'Bundled D3DCompiler_47 preloader prevents DirectX shader crashes on clean SP1.'
+            desc: 'Bundled D3DCompiler_47 preloader prevents DirectX shader crashes.'
           },
           {
             badge: 'DRIVERS',
@@ -257,8 +257,8 @@
 
     win10: {
       id: 'win10',
-      code: 'NT 10.0 · 1809 – 22H2',
-      shortTab: 'Windows 10 (1809–22H2)',
+      code: 'NT 10.0',
+      shortTab: 'Windows 10',
       archBadge: 'x64 / x86',
       defaultArch: 'x64',
       supportedArchs: ['x64', 'x86'],
@@ -277,12 +277,12 @@
       },
       es: {
         editionTag: 'Estándar Competitivo Esports',
-        title: 'Windows 10 (1809 – 22H2)',
+        title: 'Windows 10 (x86 / x64)',
         subtitle:
           'Ajuste competitivo para esports: scanout directo FSE y prioridad de hilos en tiempo real.',
         statusBadge: 'ESTÁNDAR OFICIAL ESPORTS',
         archNote:
-          'Optimizado para Windows 10 1809, 1909, 20H2, 21H2, 22H2 y ediciones LTSC (64 bits recomendado, 32 bits soportado).',
+          'Optimizado para Windows 10 y ediciones LTSC (64 bits recomendado, 32 bits soportado).',
         ctaPrimaryX86: 'Seleccionar RecoilOptimizer_x86.exe (32-Bit Win10)',
         ctaPrimaryX64: 'Seleccionar RecoilOptimizer_x64.exe (64-Bit Win10)',
         ctaSecondaryArch: 'Cambiar arquitectura objetivo',
@@ -311,12 +311,12 @@
       },
       en: {
         editionTag: 'Esports Competitive Standard',
-        title: 'Windows 10 (1809 – 22H2)',
+        title: 'Windows 10 (x86 / x64)',
         subtitle:
           'Esports tournament tuning: direct FSE scanout and real-time thread scheduling.',
         statusBadge: 'TOURNAMENT ESPORTS STANDARD',
         archNote:
-          'Engineered for Windows 10 1809 through 22H2 & Enterprise LTSC (64-bit recommended, 32-bit supported).',
+          'Engineered for Windows 10 & Enterprise LTSC (64-bit recommended, 32-bit supported).',
         ctaPrimaryX86: 'Select RecoilOptimizer_x86.exe (32-Bit Win10)',
         ctaPrimaryX64: 'Select RecoilOptimizer_x64.exe (64-Bit Win10)',
         ctaSecondaryArch: 'Switch target architecture',
@@ -379,12 +379,12 @@
 
     win11: {
       id: 'win11',
-      code: 'NT 10.0 · 21H2 – 24H2 / 25H2',
-      shortTab: 'Windows 11 (21H2–25H2)',
+      code: 'NT 10.0',
+      shortTab: 'Windows 11',
       archBadge: 'x64 NEXT-GEN',
       defaultArch: 'x64',
       supportedArchs: ['x64'],
-      releaseSpan: 'Builds 22000 – 26100+ (24H2 / 25H2 Ready)',
+      releaseSpan: 'Builds 22000 – 26100+',
       binaryX86: {
         name: 'RecoilOptimizer_x86.exe',
         size: '63.8 MB',
@@ -399,10 +399,10 @@
       },
       es: {
         editionTag: 'Arquitectura Next-Gen',
-        title: 'Windows 11 (21H2 – 24H2 / 25H2)',
+        title: 'Windows 11 (x64)',
         subtitle:
           'Optimización para silicio híbrido Intel P/E-Core y AMD Ryzen X3D en builds modernas.',
-        statusBadge: 'SOPORTE COMPLETO 24H2 / 25H2',
+        statusBadge: 'SOPORTE COMPLETO',
         archNote:
           'Diseñado para sistemas modernos de 64 bits (`RecoilOptimizer_x64.exe`, 69.0 MB), procesadores Intel Core Ultra / Hybrid y AMD Ryzen X3D.',
         ctaPrimaryX86: 'Seleccionar RecoilOptimizer_x86.exe (x86)',
@@ -433,10 +433,10 @@
       },
       en: {
         editionTag: 'Next-Gen Architecture',
-        title: 'Windows 11 (21H2 – 24H2 / 25H2)',
+        title: 'Windows 11 (x64)',
         subtitle:
           'Precision tuning for Intel Hybrid P/E-Cores and AMD Ryzen X3D on modern builds.',
-        statusBadge: '24H2 / 25H2 VERIFIED READY',
+        statusBadge: 'VERIFIED READY',
         archNote:
           'Built for modern 64-bit systems (`RecoilOptimizer_x64.exe`, 69.0 MB), Intel Hybrid P/E-Core CPUs, and AMD Ryzen 3D V-Cache processors.',
         ctaPrimaryX86: 'Select RecoilOptimizer_x86.exe (x86)',
@@ -504,9 +504,9 @@
   const UI_COPY = {
     es: {
       sectionTag: 'COMPATIBILIDAD UNIVERSAL DE KERNEL · NT 6.1 A NT 10.0',
-      sectionTitle: 'Matriz Universal Multi-Windows (Win 7 SP1 a Win 11 25H2)',
+      sectionTitle: 'Matriz Universal Multi-Windows (Windows 7 a 11)',
       sectionDesc:
-        'Compatibilidad nativa desde Windows 7 SP1 hasta Windows 11 25H2 en un solo motor.',
+        'Compatibilidad nativa desde Windows 7 hasta Windows 11 en un solo motor.',
       detectedPillPrefix: 'TU SO DETECTADO:',
       inspectingKernelPrefix: 'INSPECCIONANDO KERNEL:',
       selectOsPrompt: 'SELECCIONA GENERACIÓN DE WINDOWS:',
@@ -532,9 +532,9 @@
     },
     en: {
       sectionTag: 'UNIVERSAL KERNEL COMPATIBILITY · NT 6.1 TO NT 10.0',
-      sectionTitle: 'Universal Multi-Windows Matrix (Win 7 SP1 to Win 11 25H2)',
+      sectionTitle: 'Universal Multi-Windows Matrix (Windows 7 to 11)',
       sectionDesc:
-        'Native compatibility from Windows 7 SP1 to Windows 11 25H2 in a single engine.',
+        'Native compatibility from Windows 7 to Windows 11 in a single engine.',
       detectedPillPrefix: 'YOUR DETECTED OS:',
       inspectingKernelPrefix: 'INSPECTING KERNEL:',
       selectOsPrompt: 'SELECT WINDOWS GENERATION:',
@@ -587,8 +587,8 @@
       return {
         osKey: 'win7',
         arch,
-        labelEs: `Windows 7 SP1 (${arch})`,
-        labelEn: `Windows 7 SP1 (${arch})`
+        labelEs: `Windows 7 (${arch})`,
+        labelEn: `Windows 7 (${arch})`
       };
     }
     if (/Windows NT 6\.[23]/i.test(ua)) {
@@ -658,8 +658,8 @@
           detectedOsSummary = {
             osKey: 'win7',
             arch,
-            labelEs: `Windows 7 SP1 (${arch})`,
-            labelEn: `Windows 7 SP1 (${arch})`
+            labelEs: `Windows 7 (${arch})`,
+            labelEn: `Windows 7 (${arch})`
           };
         } else if (/Windows NT 6\.[23]/i.test(ua)) {
           detectedOsSummary = {

@@ -30,7 +30,7 @@ const i18n = {
     btnDownloadNav: 'Descargar Gratis',
     heroTag: 'SUITE DE KERNEL & BAJA LATENCIA // WINDOWS 7 A WINDOWS 11',
     heroTitle: 'Exprime cada gota de FPS y elimina el stutter en tu Windows.',
-    heroSubtitle: 'Optimización de kernel y baja latencia para esports. Windows 7 SP1 a 11 25H2. Cero servicios residentes y 100% reversible.',
+    heroSubtitle: 'Optimización de kernel y baja latencia para esports. Windows 7/8.1, 10 y 11. Cero servicios residentes y 100% reversible.',
     btnDownloadHero: 'Descargar para Windows',
     btnExploreTweaks: 'Ver los 117 Tweaks',
     microTrust1: '100% Seguro con Vanguard / EAC / FACEIT',
@@ -136,12 +136,12 @@ const i18n = {
     dpkText: 'Al ejecutar la aplicación por primera vez se te solicitará este PIN de 4 dígitos (3910). Es un interruptor de seguridad gratuito para garantizar que descargaste de la fuente oficial y conozcas la reversibilidad en 1 clic.',
     cardX64Title: 'Windows 64 bits (x64)',
     cardX64Desc: 'Para equipos modernos de 64 bits.',
-    cardX64Spec1: 'Windows 11, Windows 10 y Windows 7/8 (64-bit)',
+    cardX64Spec1: 'Windows 7/8.1, 10 y 11 (64-bit)',
     cardX64Spec2: 'Optimizado para Intel Core Ultra y AMD Ryzen X3D',
     cardX64Spec3: 'Soporte multinúcleo y latencia ultra-baja de kernel',
     cardX86Title: 'Windows 32 bits (x86)',
     cardX86Desc: 'Para PCs de 32 bits y recursos reducidos.',
-    cardX86Spec1: 'Windows 10, Windows 8 y Windows 7 SP1 (32-bit)',
+    cardX86Spec1: 'Windows 7/8.1 y 10 (32-bit)',
     cardX86Spec2: 'Ejecución nativa PE32 sin errores de compatibilidad',
     cardX86Spec3: 'Mismos 117 tweaks y reversibilidad total en 1 clic',
     btnVerifyHash: '🔍 Validar ↓',
@@ -170,7 +170,7 @@ const i18n = {
     feat4Title: 'MSI Mode & Prioridad GPU',
     feat4Desc: 'Configura Message Signaled Interrupts (MSI) en tarjetas gráficas NVIDIA GeForce, AMD Radeon e Intel Arc, evitando cuellos de botella por colisiones de interrupción en buses PCIe.',
     feat5Title: 'Matriz Universal Multi-Windows',
-    feat5Desc: 'Funciona nativamente en Windows 7 SP1 (32 y 64 bits), Windows 8.1, Windows 10 (todas las versiones) y Windows 11 (hasta 24H2/25H2), aplicando filtros de seguridad que evitan cualquier incompatibilidad.',
+    feat5Desc: 'Funciona nativamente en Windows 7, Windows 8.1, Windows 10 y Windows 11 (32 y 64 bits), aplicando filtros de seguridad que evitan cualquier incompatibilidad.',
     feat6Title: '100% Reversible y No-Destructivo',
     feat6Desc: 'Todos los ajustes guardan un snapshot de fábrica previo en formato UTF-16 LE con BOM. Si en algún momento quieres volver exactamente al estado original de Windows, un solo clic restaura todo.',
     secZeroTelemetry: 'Cero Telemetría',
@@ -199,7 +199,7 @@ const i18n = {
     footerColArch: 'Arquitecturas',
     footerColSec: 'Seguridad & Soporte',
     footerCopyright: '© 2024-2026 Recoil Optimizer Project. Todos los derechos reservados.',
-    footerStatus: 'Todos los Sistemas Operativos Soportados (Win 7 — Win 11 25H2)'
+    footerStatus: 'Todos los Sistemas Operativos Soportados (Windows 7 — Windows 11)'
   },
   en: {
     navBenchmarks: 'Telemetry',
@@ -213,7 +213,7 @@ const i18n = {
     btnDownloadNav: 'Download Free',
     heroTag: 'KERNEL LOW-LATENCY SUITE // WINDOWS 7 TO WINDOWS 11',
     heroTitle: 'Squeeze every drop of FPS and eliminate Windows micro-stutter.',
-    heroSubtitle: 'Kernel optimization and ultra-low latency for esports. Windows 7 SP1 to 11 25H2. Zero resident services and 100% reversible.',
+    heroSubtitle: 'Kernel optimization and ultra-low latency for esports. Windows 7/8.1, 10, and 11. Zero resident services and 100% reversible.',
     btnDownloadHero: 'Download for Windows',
     btnExploreTweaks: 'Explore all 117 Tweaks',
     microTrust1: '100% Safe with Vanguard / EAC / FACEIT',
@@ -319,12 +319,12 @@ const i18n = {
     dpkText: 'When running the application for the first time, you will be asked for this 4-digit PIN (3910). It is a free safety interlock ensuring you downloaded from the official source and understand the 1-click rollback feature.',
     cardX64Title: 'Windows 64-bit (x64)',
     cardX64Desc: 'For modern 64-bit PCs.',
-    cardX64Spec1: 'Windows 11, 10, and 64-bit 7/8',
+    cardX64Spec1: 'Windows 7/8.1, 10, and 11 (64-bit)',
     cardX64Spec2: 'Optimized for Intel Core Ultra and AMD Ryzen X3D',
     cardX64Spec3: 'Multicore support and low kernel latency',
     cardX86Title: 'Windows 32-bit (x86)',
     cardX86Desc: 'For 32-bit PCs and low-spec systems.',
-    cardX86Spec1: '32-bit Windows 10, 8, and 7 SP1',
+    cardX86Spec1: '32-bit Windows 7/8.1 and 10'
     cardX86Spec2: 'Native PE32 execution without compatibility errors',
     cardX86Spec3: 'Same 117 tweaks and full rollback protection',
     btnVerifyHash: '🔍 Verify ↓',
@@ -353,7 +353,7 @@ const i18n = {
     feat4Title: 'MSI Mode & GPU Priority',
     feat4Desc: 'Enables Message Signaled Interrupts (MSI) across NVIDIA GeForce, AMD Radeon, and Intel Arc, eliminating PCIe interrupt collisions.',
     feat5Title: 'Universal Multi-Windows Matrix',
-    feat5Desc: 'Runs natively across Windows 7 SP1 (32 and 64-bit), Windows 8.1, Windows 10, and Windows 11 (up to 25H2) with hardware safety gates.',
+    feat5Desc: 'Runs natively across Windows 7, Windows 8.1, Windows 10, and Windows 11 (32 and 64-bit) with hardware safety gates.',
     feat6Title: '100% Reversible & Safe',
     feat6Desc: 'Every single tweak saves a factory snapshot in UTF-16 LE with BOM. A single click restores stock Windows settings instantly.',
     secZeroTelemetry: 'Zero Telemetry',
@@ -382,7 +382,7 @@ const i18n = {
     footerColArch: 'Architectures',
     footerColSec: 'Security & Support',
     footerCopyright: '© 2024-2026 Recoil Optimizer Project. All rights reserved.',
-    footerStatus: 'Universal Support Across Windows 7 to Windows 11 25H2'
+    footerStatus: 'Universal Support Across Windows 7 to 11'
   }
 };
 
@@ -456,7 +456,7 @@ function detectSystem() {
     osName = is64 ? 'Windows 10 / 11 (64 bits)' : 'Windows 10 (32 bits)';
   } else if (ua.includes('Windows NT 6.1')) {
     isWin7 = true;
-    osName = is64 ? 'Windows 7 SP1 (64 bits)' : 'Windows 7 SP1 (32 bits)';
+    osName = is64 ? 'Windows 7 (64 bits)' : 'Windows 7 (32 bits)';
   } else if (ua.includes('Windows NT 6.2') || ua.includes('Windows NT 6.3')) {
     isWin8 = true;
     osName = is64 ? 'Windows 8.1 (64 bits)' : 'Windows 8.1 (32 bits)';
