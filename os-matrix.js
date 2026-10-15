@@ -1655,7 +1655,6 @@
             aria-selected="${isActive ? 'true' : 'false'}"
           >
             <div class="os-tab-top">
-              <span class="os-tab-ntcode">${item.code}</span>
               <span class="os-tab-arch-pill">${item.archBadge}</span>
             </div>
             <div class="os-tab-name">${item.shortTab}</div>
@@ -1713,10 +1712,6 @@
             <div class="os-detected-pill client-pill">
               <span>${copy.detectedPillPrefix}</span>
               <strong>${lang === 'en' ? detectedOsSummary.labelEn : detectedOsSummary.labelEs}</strong>
-            </div>
-            <div class="os-detected-pill inspect-pill">
-              <span>${copy.inspectingKernelPrefix}</span>
-              <strong>${osData.shortTab} &middot; ${osData.releaseSpan}</strong>
             </div>
           </div>
         </div>

@@ -990,12 +990,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 .os-detected-pill.inspect-pill {
-  border-color: rgba(245, 158, 11, 0.35) !important;
-}
-
-.os-detected-pill.inspect-pill strong {
-  color: #f59e0b !important;
-  text-shadow: 0 0 10px rgba(245, 158, 11, 0.45) !important;
+  display: none !important;
 }
 
 /* 4 OS Selector Cards */
@@ -1066,18 +1061,12 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   width: 100% !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
+  justify-content: flex-end !important;
   gap: 8px !important;
 }
 
 .os-tab-ntcode {
-  font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.70rem !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.8px !important;
-  color: #94a3b8 !important;
-  text-transform: uppercase !important;
-  transition: color 0.3s ease !important;
+  display: none !important;
 }
 
 /* Architecture Badge */
