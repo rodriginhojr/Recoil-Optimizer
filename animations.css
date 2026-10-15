@@ -13,71 +13,13 @@
 }
 
 /* ----------------------------------------------------------------------------
-   1. TOP VIEWPORT SCROLL PROGRESS LASER BAR (#scroll-laser-bar)
+   1. TOP VIEWPORT SCROLL PROGRESS LASER BAR (ELIMINATED PER USER DIRECTIVE)
    ---------------------------------------------------------------------------- */
 #scroll-laser-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 2.5px;
-  z-index: 100000;
-  pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--primary-glow, rgba(245, 158, 11, 0.28)) 15%,
-    var(--primary, #f59e0b) 82%,
-    #ffffff 100%
-  );
-  box-shadow:
-    0 0 10px var(--primary, #f59e0b),
-    0 0 22px var(--primary-glow, rgba(245, 158, 11, 0.28));
-  transform-origin: left center;
-  will-change: width;
-  transition: opacity 0.3s ease;
-}
-
-/* Glowing laser head at the leading edge */
-#scroll-laser-bar::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -2px;
-  width: 64px;
-  height: 5px;
-  transform: translateY(-50%);
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--primary, #f59e0b) 60%,
-    #ffffff 100%
-  );
-  box-shadow:
-    0 0 8px #ffffff,
-    0 0 16px var(--primary, #f59e0b),
-    0 0 32px var(--primary, #f59e0b),
-    0 0 48px var(--primary-glow, rgba(245, 158, 11, 0.28));
-  opacity: var(--laser-active, 0);
-  transition: opacity 0.25s ease;
-}
-
-/* Subtle vertical lens flare spark on the leading laser tip */
-#scroll-laser-bar::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  right: 0;
-  width: 6px;
-  height: 9px;
-  border-radius: 50%;
-  background: #ffffff;
-  box-shadow:
-    0 0 10px #ffffff,
-    0 0 20px var(--primary, #f59e0b);
-  opacity: var(--laser-active, 0);
-  transition: opacity 0.25s ease;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 /* ----------------------------------------------------------------------------

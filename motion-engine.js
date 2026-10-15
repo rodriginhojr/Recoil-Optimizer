@@ -58,35 +58,18 @@
   let countObserver = null;
 
   /* --------------------------------------------------------------------------
-     1. TOP VIEWPORT SCROLL PROGRESS LASER BAR (#scroll-laser-bar)
+     1. TOP VIEWPORT SCROLL PROGRESS LASER BAR (ELIMINATED PER USER DIRECTIVE)
      -------------------------------------------------------------------------- */
   function initScrollLaserBar() {
-    if (!document.body) return;
-
-    laserBar = document.getElementById('scroll-laser-bar');
-    if (!laserBar) {
-      laserBar = document.createElement('div');
-      laserBar.id = 'scroll-laser-bar';
-      laserBar.setAttribute('aria-hidden', 'true');
-      document.body.prepend(laserBar);
+    const existing = document.getElementById('scroll-laser-bar');
+    if (existing) {
+      existing.remove();
     }
-
-    updateScrollLaserBar();
+    laserBar = null;
   }
 
   function updateScrollLaserBar() {
     scrollTicking = false;
-    if (!laserBar) return;
-
-    const docEl = document.documentElement;
-    const scrollTop = window.scrollY || docEl.scrollTop || 0;
-    const scrollableHeight = Math.max(1, docEl.scrollHeight - window.innerHeight);
-    const rawProgress = (scrollTop / scrollableHeight) * 100;
-    const progress = Math.min(100, Math.max(0, rawProgress));
-
-    laserBar.style.width = `${progress.toFixed(2)}%`;
-    laserBar.style.setProperty('--scroll-progress', `${progress.toFixed(2)}%`);
-    laserBar.style.setProperty('--laser-active', progress > 0.35 ? '1' : '0');
   }
 
   function onWindowScroll() {

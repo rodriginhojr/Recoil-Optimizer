@@ -2288,6 +2288,15 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   color: #c7d2fe !important;
 }
 
+/* Eliminate top scroll progress laser bar per user directive */
+#scroll-laser-bar {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
+}
+
 
 
 
