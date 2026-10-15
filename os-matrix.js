@@ -505,8 +505,7 @@
     es: {
       sectionTag: 'COMPATIBILIDAD UNIVERSAL DE KERNEL · NT 6.1 A NT 10.0',
       sectionTitle: 'Matriz Universal Multi\u2011Windows<br><span class="os-title-range">(Windows 7 a 11)</span>',
-      sectionDesc:
-        'Compatibilidad nativa desde Windows 7 hasta Windows 11 en un solo motor.',
+      sectionDesc: '',
       detectedPillPrefix: 'TU SO DETECTADO:',
       inspectingKernelPrefix: 'INSPECCIONANDO KERNEL:',
       selectOsPrompt: 'SELECCIONA GENERACIÓN DE WINDOWS:',
@@ -533,8 +532,7 @@
     en: {
       sectionTag: 'UNIVERSAL KERNEL COMPATIBILITY · NT 6.1 TO NT 10.0',
       sectionTitle: 'Universal Multi\u2011Windows Matrix<br><span class="os-title-range">(Windows 7 to 11)</span>',
-      sectionDesc:
-        'Native compatibility from Windows 7 to Windows 11 in a single engine.',
+      sectionDesc: '',
       detectedPillPrefix: 'YOUR DETECTED OS:',
       inspectingKernelPrefix: 'INSPECTING KERNEL:',
       selectOsPrompt: 'SELECT WINDOWS GENERATION:',
@@ -1714,7 +1712,6 @@
       <div class="os-matrix-wrap">
         <div class="os-matrix-header">
           <h2 class="os-matrix-title">${copy.sectionTitle}</h2>
-          <p class="os-matrix-desc">${copy.sectionDesc}</p>
           <div class="os-matrix-detected-bar">
             <div class="os-detected-pill client-pill">
               <span>${copy.detectedPillPrefix}</span>

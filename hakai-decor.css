@@ -1023,9 +1023,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 .os-matrix-desc {
-  color: #94a3b8 !important;
-  font-size: 0.95rem !important;
-  line-height: 1.6 !important;
+  display: none !important;
 }
 
 .os-matrix-detected-bar {
