@@ -57,36 +57,38 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   position: sticky !important;
   top: 10px !important;
   z-index: 1000 !important;
-  max-width: 1240px !important;
-  width: calc(100% - 32px) !important;
-  margin: 0 auto 12px auto !important;
-  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 12px auto !important;
+  padding: 0 16px !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+  box-sizing: border-box !important;
 }
 
 .navbar {
-  max-width: 1240px !important;
-  width: 100% !important;
+  width: fit-content !important;
+  max-width: calc(100vw - 32px) !important;
   margin: 0 auto !important;
-  padding: 7px 18px !important;
-  min-height: 50px !important;
-  display: flex !important;
+  display: inline-flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
-  gap: 16px !important;
-  box-sizing: border-box !important;
+  justify-content: center !important;
+  gap: 20px !important;
+  padding: 6px 20px 6px 18px !important;
   border-radius: 9999px !important;
-  background: rgba(10, 11, 16, 0.90) !important;
+  background: rgba(10, 11, 16, 0.92) !important;
   backdrop-filter: blur(24px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   box-shadow:
     0 16px 36px -8px rgba(0, 0, 0, 0.75),
     0 0 20px rgba(0, 0, 0, 0.5),
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-  overflow: hidden !important;
+  box-sizing: border-box !important;
+  flex-wrap: nowrap !important;
 }
 
 .nav-logo,
@@ -137,7 +139,14 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
-  flex-shrink: 1 !important;
+  flex-shrink: 0 !important;
+}
+
+.nav-actions {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-shrink: 0 !important;
 }
 
 .nav-links a {
@@ -2517,7 +2526,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   align-items: center !important;
   justify-content: center !important;
   gap: 7px !important;
-  padding: 4px 12px !important;
+  padding: 5px 14px !important;
   min-height: 32px !important;
   height: 32px !important;
   border-radius: 9999px !important;
@@ -2604,19 +2613,22 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 
 @media (max-width: 480px) {
   .site-header {
-    width: calc(100% - 16px) !important;
+    width: 100% !important;
     top: 6px !important;
+    padding: 0 8px !important;
+    margin: 8px auto !important;
   }
   .navbar {
-    padding: 6px 12px !important;
+    padding: 6px 14px !important;
     min-height: 44px !important;
+    max-width: calc(100vw - 16px) !important;
   }
   .nav-brand-title {
     font-size: 0.95rem !important;
     letter-spacing: 1px !important;
   }
   .nav-discord-contact {
-    padding: 3px 8px !important;
+    padding: 3px 10px !important;
     font-size: 0.65rem !important;
     min-height: 28px !important;
     height: 28px !important;
