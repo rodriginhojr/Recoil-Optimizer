@@ -50,52 +50,52 @@ const i18n = {
     statTimerLabel: 'Kernel Timer NTAPI',
     statFpsLabel: 'FPS / 1% Low Boost',
     statRamLabel: 'RAM Residual en Fondo',
-    wpfWindowTitle: 'Recoil Studio // RecoilOptimizer.exe',
-    wpfAdminBadge: '🛡️ RING-0 / ADMIN',
+    wpfWindowTitle: 'Recoil Studio · RecoilOptimizer.exe',
+    wpfAdminBadge: '🛡️ RING-3 SEGURO',
     wpfProfilePill: 'PERFIL:',
     wpfScoreLabel: '❤ SALUD:',
-    wpfStatusReady: 'ESTADO: SISTEMA ÓPTIMO // CONEXIÓN RING-3 SEGURA',
+    wpfStatusReady: 'ESTADO: SISTEMA PROTEGIDO · RING-3 SEGURO',
     wpfStatusStock: 'ESTADO: VALORES DE FÁBRICA WINDOWS RESTAURADOS // DPC STOCK',
-    btnOscStress: '⚡ Simular Pico DPC',
+    btnOscStress: '⚡ Probar Resiliencia DPC',
     mockTabDashboard: 'Dashboard',
     mockTabSmartTune: 'Smart Tune',
     mockTabTweaks: 'Optimizaciones',
     mockTabAutoDriver: 'AutoDriver',
-    mockTabSecurity: 'Seguridad & Rollback',
-    mockStatTimerTitle: 'Kernel Timer Resolution',
-    mockStatTimerSub: '● Reloj NtSetTimerResolution 0.5ms',
-    mockStatActiveTitle: 'Tweaks Activos',
-    mockStatActiveSub: '● Cero jitter ISR/DPC',
-    mockStatHealthTitle: 'Salud del Sistema',
-    mockStatHealthSub: '● Snapshot VSS activo',
-    oscilloscopeTitle: '● TELEMETRÍA DPC & ISR KERNEL EN VIVO (60 FPS)',
+    mockTabSecurity: 'Seguridad',
+    mockStatTimerTitle: 'Kernel Timer',
+    mockStatTimerSub: '0.500 ms fijo',
+    mockStatActiveTitle: 'Latencia DPC',
+    mockStatActiveSub: '18 µs ultra-baja',
+    mockStatHealthTitle: 'Estabilidad FPS',
+    mockStatHealthSub: '+44% 1% Low boost',
+    oscilloscopeTitle: 'Telemetría de Kernel en Vivo (60 FPS)',
     mockTweak1Sub: 'Elimina el límite del 10% de paquetes de Windows durante sesiones de juego',
     mockTweak2Sub: 'Reduce la latencia de interrupciones de la GPU a la CPU a submilisegundos',
     mockTweak3Sub: 'Auto-adaptativo: Protegido en AMD Dual-CCD X3D e Intel Hybrid',
     mockPaneTweak2Name: 'GPU MSI Mode (Message Signaled-Based Interrupts)',
     mockPaneTweak4Name: 'CPU Core Parking & C-States Tuning (Hardware Safe)',
-    smartTuneHeaderTitle: 'Smart Tune // Motor de Consenso Autónomo',
+    smartTuneHeaderTitle: '⚡ Smart Tune · Ajuste Inteligente',
     smartTuneHeaderDesc: 'Ajuste matemático óptimo según tu CPU, GPU, RAM y versión de Windows.',
-    smartTuneSafeBadge: '100% SEGURO',
-    hwCpuLabel: 'PROCESADOR DETECTADO:',
+    smartTuneSafeBadge: '🛡️ 100% SEGURO',
+    hwCpuLabel: '💻 PROCESADOR DETECTADO:',
     hwCpuVal: 'AMD Ryzen / Intel Core (Prioridad P-Cores)',
-    hwGpuLabel: 'GRÁFICA & MONITOR:',
+    hwGpuLabel: '🎮 GRÁFICA & MONITOR:',
     hwGpuVal: 'NVIDIA RTX / AMD Radeon (Modo MSI + HAGS)',
-    hwProfileLabel: 'PERFIL RECOMENDADO:',
+    hwProfileLabel: '🏆 PERFIL RECOMENDADO:',
     hwProfileVal: '⚡ Perfil Esports (117 Optimizaciones)',
     btnRunSmartTune: '⚡ EJECUTAR SMART TUNE (1 CLIC)',
     smartTuneStatusDone: '✓ 117 ajustes optimizados para tu procesador y GPU.',
-    tweaksPaneTitle: 'Catálogo Completo de 117 Tweaks',
+    tweaksPaneTitle: '⚙️ Catálogo Completo de 117 Tweaks',
     tweaksPaneDesc: 'Activa o desactiva con respaldo instantáneo.',
-    tweaksReversibleBadge: '117 REVERSIBLES',
+    tweaksReversibleBadge: '💎 117 REVERSIBLES',
     mockPaneTweak1: 'Prioridad en tiempo real en el planificador NT',
     mockPaneTweak2: 'Frecuencia fija de 0.500 ms sin drifting',
     mockPaneTweak3: 'Desactiva algoritmo de Nagle para envío inmediato',
     mockPaneTweak4: 'Bloquea módulos críticos del kernel en memoria física',
     mockPaneTweak5: 'Desactiva diagnósticos y telemetría en segundo plano',
-    autoDriverPaneTitle: 'AutoDriver // WHQL Guardian & Limpieza Pura',
+    autoDriverPaneTitle: '🎮 AutoDriver · WHQL Guardian & Limpieza Pura',
     autoDriverPaneDesc: 'Auditoría por PNP Hardware ID. Cero servicios residentes.',
-    autoDriverZeroRamBadge: '0 MB RAM RESIDUAL',
+    autoDriverZeroRamBadge: '💎 0 MB RAM RESIDUAL',
     mockDrv1Meta: 'PCI\\VEN_10DE — Telemetría purgada, latencia DPC mínima',
     mockDrv1Badge: '✓ LIMPIO SIN BLOATWARE',
     mockDrv2Meta: 'PCI\\VEN_10EC — Modo MSI activo (IRQ dedicada)',
@@ -106,16 +106,16 @@ const i18n = {
     btnCleanShaders: 'Limpiar 1.8 GB',
     btnBackupDrivers: '📦 Respaldar Drivers con pnputil',
     driverToastDone: '✓ Respaldo completado en DriverStore.',
-    secPaneTitle: 'Zero-Risk Sentinel // Reversibilidad 100%',
+    secPaneTitle: '🛡️ Seguridad y Reversibilidad Total',
     secPaneDesc: 'Respaldo atómico previo. Reversible a valores de fábrica en 1 clic.',
-    secTransparentBadge: 'TRANSPARENTE',
-    secBox1Title: 'Punto de Restauración Windows (VSS)',
+    secTransparentBadge: '💎 TRANSPARENTE',
+    secBox1Title: '🛡️ Punto de Restauración Windows (VSS)',
     secBox1Val: '✓ Creado & Verificado',
     secBox1Sub: 'Snapshot del sistema antes de optimizar',
-    secBox2Title: 'Respaldo de Registro UTF-16 LE',
+    secBox2Title: '💾 Respaldo de Registro UTF-16 LE',
     secBox2Val: '✓ 117 Claves Salvaguardadas',
     secBox2Sub: 'Copia exacta en formato nativo del registro',
-    secBox3Title: 'Arquitectura Sin Riesgo de BSOD',
+    secBox3Title: '💎 Arquitectura Sin Riesgo de BSOD',
     secBox3Val: '✓ 100% No Destructivo',
     secBox3Sub: 'Sin alterar BIOS ni archivos del kernel',
     btnRollbackAll: '🔄 REVERTIR TODO A VALORES DE FÁBRICA (1 CLIC)',
@@ -233,52 +233,52 @@ const i18n = {
     statTimerLabel: 'NTAPI Kernel Timer',
     statFpsLabel: 'FPS / 1% Low Boost',
     statRamLabel: 'Resident Background RAM',
-    wpfWindowTitle: 'Recoil Studio // RecoilOptimizer.exe',
-    wpfAdminBadge: '🛡️ RING-0 / ADMIN',
+    wpfWindowTitle: 'Recoil Studio · RecoilOptimizer.exe',
+    wpfAdminBadge: '🛡️ RING-3 SECURE',
     wpfProfilePill: 'PROFILE:',
     wpfScoreLabel: '❤ HEALTH:',
-    wpfStatusReady: 'STATUS: OPTIMAL SYSTEM // SECURE RING-3 ATTACH',
+    wpfStatusReady: 'STATUS: SYSTEM PROTECTED · RING-3 SECURE',
     wpfStatusStock: 'STATUS: STOCK WINDOWS DEFAULTS RESTORED // STOCK DPC',
-    btnOscStress: '⚡ Simulate DPC Spike',
+    btnOscStress: '⚡ Test DPC Resilience',
     mockTabDashboard: 'Dashboard',
     mockTabSmartTune: 'Smart Tune',
     mockTabTweaks: 'Optimizations',
     mockTabAutoDriver: 'AutoDriver',
-    mockTabSecurity: 'Security & Rollback',
-    mockStatTimerTitle: 'Kernel Timer Resolution',
-    mockStatTimerSub: '● NtSetTimerResolution 0.5ms locked',
-    mockStatActiveTitle: 'Active Tweaks',
-    mockStatActiveSub: '● Zero ISR/DPC jitter',
-    mockStatHealthTitle: 'System Health',
-    mockStatHealthSub: '● Active VSS snapshot',
-    oscilloscopeTitle: '● LIVE KERNEL DPC & ISR TELEMETRY (60 FPS)',
+    mockTabSecurity: 'Security',
+    mockStatTimerTitle: 'Kernel Timer',
+    mockStatTimerSub: '0.500 ms locked',
+    mockStatActiveTitle: 'DPC Latency',
+    mockStatActiveSub: '18 µs ultra-low',
+    mockStatHealthTitle: 'FPS Stability',
+    mockStatHealthSub: '+44% 1% Low boost',
+    oscilloscopeTitle: 'Live Kernel Telemetry (60 FPS)',
     mockTweak1Sub: 'Bypasses Windows 10% packet throttling during intense gaming sessions',
     mockTweak2Sub: 'Reduces GPU-to-CPU interrupt latency to sub-millisecond precision',
     mockTweak3Sub: 'Hardware-adaptive: Guarded on AMD Dual-CCD X3D and Intel Hybrid',
     mockPaneTweak2Name: 'GPU MSI Mode (Message Signaled-Based Interrupts)',
     mockPaneTweak4Name: 'CPU Core Parking & C-States Tuning (Hardware Safe)',
-    smartTuneHeaderTitle: 'Smart Tune // Autonomous Consensus Engine',
+    smartTuneHeaderTitle: '⚡ Smart Tune · Autonomous Consensus Engine',
     smartTuneHeaderDesc: 'Optimal mathematical tuning calibrated for your CPU, GPU, RAM, and Windows kernel.',
-    smartTuneSafeBadge: '100% SAFE',
-    hwCpuLabel: 'DETECTED CPU:',
+    smartTuneSafeBadge: '🛡️ 100% SAFE',
+    hwCpuLabel: '💻 DETECTED CPU:',
     hwCpuVal: 'AMD Ryzen / Intel Core (P-Core Priority)',
-    hwGpuLabel: 'GPU & DISPLAY:',
+    hwGpuLabel: '🎮 GPU & DISPLAY:',
     hwGpuVal: 'NVIDIA RTX / AMD Radeon (MSI Mode + HAGS)',
-    hwProfileLabel: 'RECOMMENDED PROFILE:',
+    hwProfileLabel: '🏆 RECOMMENDED PROFILE:',
     hwProfileVal: '⚡ Esports Profile (117 Optimizations)',
     btnRunSmartTune: '⚡ RUN SMART TUNE (1-CLICK)',
     smartTuneStatusDone: '✓ 117 optimizations applied for your CPU and GPU.',
-    tweaksPaneTitle: 'Complete 117 Tweaks Catalog',
+    tweaksPaneTitle: '⚙️ Complete 117 Tweaks Catalog',
     tweaksPaneDesc: 'Toggle in real time with instant rollback.',
-    tweaksReversibleBadge: '117 REVERSIBLE',
+    tweaksReversibleBadge: '💎 117 REVERSIBLE',
     mockPaneTweak1: 'Real-time thread priority in NT scheduler',
     mockPaneTweak2: 'Fixed 0.500 ms clock without drift',
     mockPaneTweak3: 'Disables Nagle algorithm for immediate packet dispatch',
     mockPaneTweak4: 'Locks critical kernel modules in physical RAM',
     mockPaneTweak5: 'Disables background diagnostics and telemetry',
-    autoDriverPaneTitle: 'AutoDriver // WHQL Guardian & Clean Purge',
+    autoDriverPaneTitle: '🎮 AutoDriver · WHQL Guardian & Clean Purge',
     autoDriverPaneDesc: 'Audited by PNP Hardware ID. Zero resident services.',
-    autoDriverZeroRamBadge: '0 MB RESIDENT RAM',
+    autoDriverZeroRamBadge: '💎 0 MB RESIDENT RAM',
     mockDrv1Meta: 'PCI\\VEN_10DE — Telemetry purged, minimal DPC latency',
     mockDrv1Badge: '✓ CLEAN ZERO-BLOAT',
     mockDrv2Meta: 'PCI\\VEN_10EC — MSI Mode active (Dedicated IRQ)',
@@ -289,16 +289,16 @@ const i18n = {
     btnCleanShaders: 'Clean 1.8 GB',
     btnBackupDrivers: '📦 Backup Drivers with pnputil',
     driverToastDone: '✓ Driver backup completed in DriverStore.',
-    secPaneTitle: 'Zero-Risk Sentinel // 100% Reversible',
+    secPaneTitle: '🛡️ Security & Zero-Risk Reversibility',
     secPaneDesc: 'Atomic pre-flight snapshot. Reversible to stock Windows in 1 click.',
-    secTransparentBadge: 'TRANSPARENT',
-    secBox1Title: 'Windows Restore Point (VSS)',
+    secTransparentBadge: '💎 TRANSPARENT',
+    secBox1Title: '🛡️ Windows Restore Point (VSS)',
     secBox1Val: '✓ Created & Verified',
     secBox1Sub: 'Pre-flight system snapshot',
-    secBox2Title: 'UTF-16 LE Registry Backup',
+    secBox2Title: '💾 UTF-16 LE Registry Backup',
     secBox2Val: '✓ 117 Keys Safeguarded',
     secBox2Sub: 'Exact replica in native registry format',
-    secBox3Title: 'Zero-BSOD Architecture',
+    secBox3Title: '💎 Zero-BSOD Architecture',
     secBox3Val: '✓ 100% Non-Destructive',
     secBox3Sub: 'No BIOS changes, no kernel file tampering',
     btnRollbackAll: '🔄 ROLLBACK ALL TO STOCK DEFAULTS (1-CLICK)',
@@ -312,21 +312,21 @@ const i18n = {
     labelRecoilWin: 'With Recoil Optimizer',
     metricLatTitle: 'System Latency (Input Lag)',
     badgeLowerBetter: 'Lower is Better',
-    downloadsTag: 'OFFICIAL VERIFIED DISTRIBUTION',
-    downloadsTitle: 'Official Verified Builds',
-    downloadsDesc: 'Dual native architecture for modern PCs and legacy systems.'
-    dpkBadge: 'OFFICIAL PUBLIC PIN // 3910 (FREE)',
+    downloadsTag: '📦 OFFICIAL VERIFIED DISTRIBUTION',
+    downloadsTitle: '📦 Official Verified Builds',
+    downloadsDesc: 'Dual native architecture for modern PCs and legacy systems.',
+    dpkBadge: '🔑 OFFICIAL PUBLIC PIN // 3910 (FREE)',
     dpkText: 'When running the application for the first time, you will be asked for this 4-digit PIN (3910). It is a free safety interlock ensuring you downloaded from the official source and understand the 1-click rollback feature.',
-    cardX64Title: 'Windows 64-bit (x64)',
+    cardX64Title: '💻 Windows 64-bit (x64)',
     cardX64Desc: 'For modern 64-bit PCs.',
-    cardX64Spec1: 'Windows 7, 8.1, 10, and 11 (64-bit)',
-    cardX64Spec2: 'Optimized for Intel Core Ultra and AMD Ryzen X3D',
-    cardX64Spec3: 'Multicore support and low kernel latency',
-    cardX86Title: 'Windows 32-bit (x86)',
+    cardX64Spec1: '✨ Windows 7, 8.1, 10, and 11 (64-bit)',
+    cardX64Spec2: '⚡ Optimized for Intel Core Ultra and AMD Ryzen X3D',
+    cardX64Spec3: '🎯 Multicore support and low kernel latency',
+    cardX86Title: '💻 Windows 32-bit (x86)',
     cardX86Desc: 'For 32-bit PCs and low-spec systems.',
-    cardX86Spec1: '32-bit Windows 7, 8.1 and 10',
-    cardX86Spec2: 'Native PE32 execution without compatibility errors',
-    cardX86Spec3: 'Same 117 tweaks and full rollback protection',
+    cardX86Spec1: '✨ 32-bit Windows 7, 8.1 and 10',
+    cardX86Spec2: '⚡ Native PE32 execution without compatibility errors',
+    cardX86Spec3: '🎯 Same 117 tweaks and full rollback protection',
     btnVerifyHash: '🔍 Verify ↓',
     btnDownloadX64: 'Download RecoilOptimizer_x64.exe',
     btnDownloadX86: 'Download RecoilOptimizer_x86.exe',
@@ -680,6 +680,76 @@ function setupMockTabs() {
   });
 }
 
+const MOCK_PROFILES = {
+  esports: {
+    timer: '0.500 ms',
+    dpc: '18 µs',
+    boost: '+44%',
+    tweaks: 117,
+    health: '100% ÓPTIMO',
+    statusEs: 'ESTADO: SISTEMA PROTEGIDO · RING-3 SEGURO',
+    statusEn: 'STATUS: SYSTEM PROTECTED · RING-3 SECURE',
+    toastEs: '¡Perfil Esports Pro activo: 117 optimizaciones al máximo rendimiento!',
+    toastEn: 'Esports Pro Profile active: 117 optimizations deployed at peak precision!'
+  },
+  ranked: {
+    timer: '0.500 ms',
+    dpc: '22 µs',
+    boost: '+38%',
+    tweaks: 94,
+    health: '98% ESTABLE',
+    statusEs: 'ESTADO: PERFIL RANKED // LATENCIA EQUILIBRADA',
+    statusEn: 'STATUS: RANKED PROFILE // BALANCED LOW LATENCY',
+    toastEs: '¡Perfil Ranked activo: balance competitivo con máxima estabilidad!',
+    toastEn: 'Ranked Profile active: competitive balance with rock-solid stability!'
+  },
+  lowlag: {
+    timer: '0.500 ms',
+    dpc: '12 µs',
+    boost: '+52%',
+    tweaks: 117,
+    health: '100% ULTRA-LOW',
+    statusEs: 'ESTADO: PERFIL ULTRA-LOW // JITTER CERO ABSOLUTO',
+    statusEn: 'STATUS: ULTRA-LOW PROFILE // ZERO ABSOLUTE JITTER',
+    toastEs: '¡Perfil Ultra-Low Latency activo: DPC a 12 µs y polling rate extremo!',
+    toastEn: 'Ultra-Low Latency Profile active: 12 µs DPC and peak polling rate!'
+  }
+};
+
+function setMockProfile(profileId) {
+  if (!MOCK_PROFILES[profileId]) return;
+  const p = MOCK_PROFILES[profileId];
+
+  // Update profile buttons
+  document.querySelectorAll('.wpf-profile-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-profile') === profileId);
+  });
+
+  // Update HUD metrics
+  const timerEl = document.getElementById('hud-val-timer');
+  const dpcEl = document.getElementById('hud-val-dpc');
+  const boostEl = document.getElementById('hud-val-boost');
+  const badgeEl = document.getElementById('mock-tweak-count-badge');
+  const healthEl = document.getElementById('wpf-live-health-val');
+  const statusMsg = document.getElementById('wpf-statusbar-msg');
+  const oscReadout = document.getElementById('osc-dom-readout');
+
+  if (timerEl) timerEl.textContent = p.timer;
+  if (dpcEl) dpcEl.textContent = p.dpc;
+  if (boostEl) boostEl.textContent = p.boost;
+  if (badgeEl) badgeEl.textContent = p.tweaks;
+  if (healthEl) healthEl.textContent = p.health;
+  if (statusMsg) {
+    statusMsg.textContent = window.currentLang === 'es' ? p.statusEs : p.statusEn;
+  }
+  if (oscReadout) {
+    oscReadout.textContent = `⏱️ ${p.timer} · 🎯 DPC ${p.dpc}`;
+  }
+
+  showToast(window.currentLang === 'es' ? p.toastEs : p.toastEn);
+}
+window.setMockProfile = setMockProfile;
+
 function toggleMockSwitch(switchEl) {
   if (!switchEl) return;
   switchEl.classList.toggle('active');
@@ -690,26 +760,33 @@ function toggleMockSwitch(switchEl) {
 
   const badge = document.getElementById('mock-tweak-count-badge');
   const num = document.getElementById('mock-tweaks-active-num');
+  const boostEl = document.getElementById('hud-val-boost');
   if (badge) badge.textContent = count;
   if (num) num.textContent = count;
+  if (boostEl) boostEl.textContent = count === 117 ? '+44%' : `+${Math.round((count / 117) * 44)}%`;
 
   // If user disables switches, reflect in status
   if (activeSwitches.length < allSwitches.length && !isRollbackActive) {
     const healthVal = document.getElementById('wpf-live-health-val');
-    if (healthVal) healthVal.textContent = '96%';
+    if (healthVal) healthVal.textContent = '96% MODIFICADO';
   }
 }
 window.toggleMockSwitch = toggleMockSwitch;
 
 function executeMockSmartTune() {
   const btn = document.getElementById('btn-mock-smarttune');
+  const btnQuick = document.getElementById('btn-quick-smarttune');
   const status = document.getElementById('mock-tune-status');
-  if (!btn) return;
-
-  btn.disabled = true;
-  btn.textContent = window.currentLang === 'es'
-    ? '⏳ Analizando topología y aplicando 117 ajustes...'
-    : '⏳ Analyzing topology & deploying 117 tweaks...';
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = window.currentLang === 'es'
+      ? '⏳ Analizando topología y aplicando 117 ajustes...'
+      : '⏳ Analyzing topology & deploying 117 tweaks...';
+  }
+  if (btnQuick) {
+    btnQuick.disabled = true;
+    btnQuick.textContent = window.currentLang === 'es' ? '⏳ Optimizando...' : '⏳ Optimizing...';
+  }
 
   setTimeout(() => {
     // Turn on all switches
@@ -723,24 +800,37 @@ function executeMockSmartTune() {
     const healthVal = document.getElementById('wpf-live-health-val');
     const timerFooter = document.getElementById('wpf-live-timer-footer');
     const statusMsg = document.getElementById('wpf-statusbar-msg');
+    const timerEl = document.getElementById('hud-val-timer');
+    const dpcEl = document.getElementById('hud-val-dpc');
+    const boostEl = document.getElementById('hud-val-boost');
 
-    if (healthVal) healthVal.textContent = '100%';
+    if (healthVal) healthVal.textContent = '100% ÓPTIMO';
     if (timerFooter) timerFooter.textContent = '0.500 ms';
+    if (timerEl) timerEl.textContent = '0.500 ms';
+    if (dpcEl) dpcEl.textContent = '18 µs';
+    if (boostEl) boostEl.textContent = '+44%';
+
     if (statusMsg) {
       statusMsg.textContent = window.currentLang === 'es'
-        ? 'ESTADO: SISTEMA ÓPTIMO // KERNEL BLOQUEADO 0.500 ms'
-        : 'STATUS: OPTIMAL SYSTEM // KERNEL LOCKED 0.500 ms';
+        ? 'ESTADO: SISTEMA PROTEGIDO · RING-3 SEGURO'
+        : 'STATUS: SYSTEM PROTECTED · RING-3 SECURE';
     }
 
     isRollbackActive = false;
     window.RecoilCanvasFX && window.RecoilCanvasFX.setOptimizationEnabled(true);
 
-    btn.disabled = false;
-    btn.textContent = window.currentLang === 'es'
-      ? '✓ SMART TUNE APLICADO (117 / 117)'
-      : '✓ SMART TUNE DEPLOYED (117 / 117)';
-    btn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-    btn.style.borderColor = '#10b981';
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = window.currentLang === 'es'
+        ? '✓ SMART TUNE APLICADO (117 / 117)'
+        : '✓ SMART TUNE DEPLOYED (117 / 117)';
+      btn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+      btn.style.borderColor = '#10b981';
+    }
+    if (btnQuick) {
+      btnQuick.disabled = false;
+      btnQuick.textContent = window.currentLang === 'es' ? '✓ SMART TUNE ACTIVO' : '✓ SMART TUNE ACTIVE';
+    }
 
     if (status) status.style.display = 'block';
 
@@ -789,6 +879,9 @@ function executeMockRollback() {
   const healthVal = document.getElementById('wpf-live-health-val');
   const timerFooter = document.getElementById('wpf-live-timer-footer');
   const statusMsg = document.getElementById('wpf-statusbar-msg');
+  const timerEl = document.getElementById('hud-val-timer');
+  const dpcEl = document.getElementById('hud-val-dpc');
+  const boostEl = document.getElementById('hud-val-boost');
 
   isRollbackActive = !isRollbackActive;
 
@@ -800,8 +893,12 @@ function executeMockRollback() {
     if (badge) badge.textContent = '0';
     if (num) num.textContent = '0';
 
-    if (healthVal) healthVal.textContent = '78%';
+    if (healthVal) healthVal.textContent = '78% STOCK';
     if (timerFooter) timerFooter.textContent = '15.625 ms';
+    if (timerEl) timerEl.textContent = '15.625 ms';
+    if (dpcEl) dpcEl.textContent = '260 µs';
+    if (boostEl) boostEl.textContent = '+0%';
+
     if (statusMsg) {
       statusMsg.textContent = window.currentLang === 'es'
         ? 'ESTADO: VALORES DE FÁBRICA RESTAURADOS // DPC STOCK 15.625 ms'
