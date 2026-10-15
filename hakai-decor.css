@@ -1012,6 +1012,14 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   text-transform: uppercase !important;
   color: #ffffff !important;
   text-shadow: 0 0 30px rgba(245, 158, 11, 0.35) !important;
+  line-height: 1.25 !important;
+}
+
+.os-matrix-title .os-title-range {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  font-size: 0.88em !important;
+  margin-top: 6px !important;
 }
 
 .os-matrix-desc {

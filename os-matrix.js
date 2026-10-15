@@ -504,7 +504,7 @@
   const UI_COPY = {
     es: {
       sectionTag: 'COMPATIBILIDAD UNIVERSAL DE KERNEL · NT 6.1 A NT 10.0',
-      sectionTitle: 'Matriz Universal Multi-Windows (Windows 7 a 11)',
+      sectionTitle: 'Matriz Universal Multi\u2011Windows<br><span class="os-title-range">(Windows 7 a 11)</span>',
       sectionDesc:
         'Compatibilidad nativa desde Windows 7 hasta Windows 11 en un solo motor.',
       detectedPillPrefix: 'TU SO DETECTADO:',
@@ -532,7 +532,7 @@
     },
     en: {
       sectionTag: 'UNIVERSAL KERNEL COMPATIBILITY · NT 6.1 TO NT 10.0',
-      sectionTitle: 'Universal Multi-Windows Matrix (Windows 7 to 11)',
+      sectionTitle: 'Universal Multi\u2011Windows Matrix<br><span class="os-title-range">(Windows 7 to 11)</span>',
       sectionDesc:
         'Native compatibility from Windows 7 to Windows 11 in a single engine.',
       detectedPillPrefix: 'YOUR DETECTED OS:',
@@ -780,10 +780,17 @@
         font-family: var(--font-display, var(--font-sans, 'Inter', sans-serif));
         font-size: clamp(1.85rem, 3.4vw, 2.75rem);
         font-weight: 800;
-        line-height: 1.15;
+        line-height: 1.25;
         letter-spacing: -0.025em;
         color: var(--text-main, #f8fafc);
         margin: 0 0 0.9rem;
+      }
+
+      .os-matrix-title .os-title-range {
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 0.88em;
+        margin-top: 6px;
       }
 
       .os-matrix-desc {
