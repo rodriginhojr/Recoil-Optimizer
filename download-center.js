@@ -27,8 +27,8 @@
       sizeBytesRaw: 72426444,
       sha256: '1CBD0BDA1C11F78395257065249EBCCFFA18889282EC07503C6250696508623E',
       downloadUrl: 'https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x64.exe',
-      targetOsEs: 'Windows 10 / 11 (24H2/25H2) & Win 7/8.1 x64',
-      targetOsEn: 'Windows 10 / 11 (24H2/25H2) & Win 7/8.1 x64'
+      targetOsEs: 'Windows 10, 11 y Windows 7, 8.1 (x64)',
+      targetOsEn: 'Windows 10, 11 and Windows 7, 8.1 (x64)'
     },
     x86: {
       id: 'x86',
@@ -40,8 +40,8 @@
       sizeBytesRaw: 66911237,
       sha256: 'F178F921585B6512BCDD5A50689DCB3775B115FBEDBF8B4B811D0C5D58E9146F',
       downloadUrl: 'https://recoiloptimizer.xyz/downloads/RecoilOptimizer_x86.exe',
-      targetOsEs: 'Windows 7 SP1 / 8 / 10 (32-bit x86)',
-      targetOsEn: 'Windows 7 SP1 / 8 / 10 (32-bit x86)'
+      targetOsEs: 'Windows 7, 8.1 y 10 (32-bit x86)',
+      targetOsEn: 'Windows 7, 8.1 and 10 (32-bit x86)'
     }
   });
 
@@ -96,7 +96,7 @@
         'Verificado: RecoilOptimizer_x64.exe • 69.0 MB (72,377,559 bytes) • Release v1.0.0 íntegro y libre de modificaciones.',
       sealValidX86Title: 'SELLO CRIPTOGRÁFICO AUTÉNTICO // BINARIO OFICIAL 32-BIT (x86)',
       sealValidX86Sub:
-        'Verificado: RecoilOptimizer_x86.exe • 63.8 MB (66,862,368 bytes) • Release v1.0.0 íntegro y compatible con Windows 7/8/10 32-bit.',
+        'Verificado: RecoilOptimizer_x86.exe • 63.8 MB (66,862,368 bytes) • Release v1.0.0 íntegro y compatible con Windows 7, 8.1 y 10 (32-bit).',
       sealPartialTitle: 'PREFIJO OFICIAL DETECTADO — COMPLETA LOS 64 CARACTERES',
       sealPartialSub:
         'El fragmento ingresado coincide con el inicio del hash oficial ({arch}). Haz clic en "Autocompletar" o pega los 64 caracteres.',
@@ -187,7 +187,7 @@
         'Verified: RecoilOptimizer_x64.exe • 69.0 MB (72,377,559 bytes) • Official Release v1.0.0 intact and untampered.',
       sealValidX86Title: 'AUTHENTIC CRYPTOGRAPHIC SEAL // OFFICIAL 32-BIT BINARY (x86)',
       sealValidX86Sub:
-        'Verified: RecoilOptimizer_x86.exe • 63.8 MB (66,862,368 bytes) • Official Release v1.0.0 intact and Windows 7/8/10 32-bit ready.',
+        'Verified: RecoilOptimizer_x86.exe • 63.8 MB (66,862,368 bytes) • Official Release v1.0.0 intact and Windows 7, 8.1 and 10 (32-bit) ready.',
       sealPartialTitle: 'OFFICIAL PREFIX DETECTED — COMPLETE ALL 64 CHARACTERS',
       sealPartialSub:
         'The entered fragment matches the beginning of the official ({arch}) hash. Click "Auto-Complete" or paste all 64 characters.',
