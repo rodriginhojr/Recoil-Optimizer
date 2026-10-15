@@ -1791,6 +1791,300 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   text-shadow: 0 0 8px rgba(16, 185, 129, 0.45) !important;
 }
 
+/* --------------------------------------------------------------------------
+   OFFICIAL DUAL DOWNLOAD HUB (HAKAI LUXURY CARDS & SPECULAR ACTION)
+   -------------------------------------------------------------------------- */
+.download-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  max-width: 960px !important;
+  margin: 2.5rem auto 0 !important;
+}
+
+@media (max-width: 768px) {
+  .download-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.download-card {
+  background: rgba(14, 17, 24, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  padding: 2.2rem 2rem !important;
+  position: relative !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  box-shadow:
+    0 16px 40px -8px rgba(0, 0, 0, 0.75),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.38s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: transform, box-shadow, border-color !important;
+}
+
+.download-card.recommended {
+  border-color: rgba(245, 158, 11, 0.45) !important;
+}
+
+/* Floating Recommended Ribbon */
+.recommended-ribbon {
+  position: absolute !important;
+  top: 18px !important;
+  left: 20px !important;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 55%, #d97706 100%) !important;
+  color: #09090b !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.68rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.5px !important;
+  padding: 5px 14px !important;
+  border-radius: 999px !important;
+  box-shadow:
+    0 4px 14px rgba(245, 158, 11, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6) !important;
+  z-index: 5 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+}
+
+.recommended-ribbon::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background: #09090b !important;
+  box-shadow: 0 0 6px rgba(9, 9, 11, 0.8) !important;
+}
+
+/* Card Header Spacing */
+.download-card .download-header {
+  margin-top: 1.8rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.download-card .arch-title {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.download-card .arch-title span:first-child {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 1.22rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.5px !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  transition: color 0.3s ease !important;
+}
+
+.download-card:hover .arch-title span:first-child {
+  color: #fbbf24 !important;
+  text-shadow: 0 0 16px rgba(245, 158, 11, 0.5) !important;
+}
+
+.download-card .arch-title .badge {
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.8px !important;
+  padding: 4px 12px !important;
+  border-radius: 999px !important;
+  font-size: 0.72rem !important;
+  border: 1px solid rgba(245, 158, 11, 0.45) !important;
+  background: rgba(245, 158, 11, 0.14) !important;
+  color: #fbbf24 !important;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.22) !important;
+}
+
+.download-card .arch-desc {
+  font-size: 0.88rem !important;
+  color: #94a3b8 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+/* Checkmarks List */
+.specs-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 1.4rem 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 13px !important;
+}
+
+.specs-list li {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  font-size: 0.88rem !important;
+  color: #cbd5e1 !important;
+  line-height: 1.5 !important;
+}
+
+.specs-list svg {
+  flex-shrink: 0 !important;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 3px !important;
+  border-radius: 50% !important;
+  background: rgba(16, 185, 129, 0.15) !important;
+  border: 1px solid rgba(16, 185, 129, 0.45) !important;
+  color: #10b981 !important;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.35) !important;
+}
+
+/* SHA256 Box */
+.hash-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: rgba(10, 12, 18, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px !important;
+  padding: 9px 14px !important;
+  margin: 1.25rem 0 1.5rem !important;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.hash-container:hover {
+  border-color: rgba(245, 158, 11, 0.45) !important;
+}
+
+.hash-text {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.74rem !important;
+  color: #94a3b8 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.btn-copy-hash {
+  background: rgba(245, 158, 11, 0.12) !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+  border-radius: 6px !important;
+  color: #fbbf24 !important;
+  cursor: pointer !important;
+  padding: 4px 8px !important;
+  font-size: 0.8rem !important;
+  transition: all 0.25s ease !important;
+}
+
+.btn-copy-hash:hover {
+  background: #fbbf24 !important;
+  color: #09090b !important;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.5) !important;
+  transform: scale(1.08) !important;
+}
+
+/* Primary CTA: Solid Solar Amber with Specular Glaze */
+.download-card .btn-primary {
+  padding: 16px 24px !important;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 55%, #d97706 100%) !important;
+  border: 1px solid rgba(254, 240, 138, 0.6) !important;
+  color: #09090b !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.88rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.5px !important;
+  text-align: center !important;
+  border-radius: 8px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow:
+    0 10px 25px -4px rgba(245, 158, 11, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
+  display: block !important;
+}
+
+.download-card .btn-primary::after {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -130% !important;
+  width: 55% !important;
+  height: 200% !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.45) 50%, transparent 100%) !important;
+  transform: rotate(25deg) !important;
+  pointer-events: none !important;
+  transition: left 0.7s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.download-card .btn-primary:hover {
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow:
+    0 16px 36px -4px rgba(245, 158, 11, 0.7),
+    0 0 30px rgba(251, 191, 36, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75) !important;
+}
+
+.download-card .btn-primary:hover::after {
+  left: 160% !important;
+}
+
+/* Secondary CTA: Deep Obsidian Cobalt Glass */
+.download-card .btn-secondary {
+  padding: 16px 24px !important;
+  background: rgba(18, 24, 36, 0.8) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(59, 130, 246, 0.45) !important;
+  color: #f1f5f9 !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.88rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.5px !important;
+  text-align: center !important;
+  border-radius: 8px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
+  display: block !important;
+}
+
+.download-card .btn-secondary::after {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -130% !important;
+  width: 55% !important;
+  height: 200% !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(147, 197, 253, 0.35) 50%, transparent 100%) !important;
+  transform: rotate(25deg) !important;
+  pointer-events: none !important;
+  transition: left 0.7s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.download-card .btn-secondary:hover {
+  background: rgba(30, 58, 138, 0.4) !important;
+  border-color: #60a5fa !important;
+  color: #ffffff !important;
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow:
+    0 16px 36px -4px rgba(0, 0, 0, 0.75),
+    0 0 25px rgba(59, 130, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+}
+
+.download-card .btn-secondary:hover::after {
+  left: 160% !important;
+}
+
+
 
 
 
