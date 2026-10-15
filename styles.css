@@ -2623,13 +2623,13 @@ p,
 }
 
 #security {
-  content-visibility: auto;
-  contain-intrinsic-size: auto none auto 460px;
+  content-visibility: visible;
+  contain: none;
 }
 
 #downloads {
-  content-visibility: auto;
-  contain-intrinsic-size: auto none auto 580px;
+  content-visibility: visible;
+  contain: none;
 }
 
 #faq {
