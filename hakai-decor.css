@@ -1015,8 +1015,8 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 .os-tabs-bar {
   display: grid !important;
   grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-  gap: 14px !important;
-  margin-bottom: 2rem !important;
+  gap: 10px !important;
+  margin-bottom: 1rem !important;
 }
 
 .os-tab-btn {
@@ -1026,8 +1026,8 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   align-items: center !important;
   justify-content: center !important;
   gap: 0 !important;
-  padding: 1.15rem 1.25rem !important;
-  border-radius: 12px !important;
+  padding: 0.7rem 1rem !important;
+  border-radius: 10px !important;
   background: rgba(14, 17, 24, 0.8) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
@@ -1037,7 +1037,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   text-align: center !important;
   overflow: hidden !important;
   box-shadow:
-    0 10px 24px -4px rgba(0, 0, 0, 0.7),
+    0 8px 20px -4px rgba(0, 0, 0, 0.7),
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
   transition: all 0.38s cubic-bezier(0.16, 1, 0.3, 1) !important;
   will-change: transform, box-shadow, border-color !important;
@@ -1073,6 +1073,8 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   pointer-events: none !important;
   transition: left 0.75s cubic-bezier(0.16, 1, 0.3, 1) !important;
   z-index: 4 !important;
+}
+
 /* Tab Sub-elements Purged for Pure Direct UI */
 .os-tab-top,
 .os-tab-arch-pill,
@@ -1084,9 +1086,9 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 /* OS Title */
 .os-tab-name {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 1.05rem !important;
+  font-size: 0.92rem !important;
   font-weight: 800 !important;
-  letter-spacing: 1.4px !important;
+  letter-spacing: 1.2px !important;
   color: #f8fafc !important;
   margin: 0 !important;
   text-align: center !important;
@@ -1186,24 +1188,24 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 .os-matrix-cockpit {
   display: grid !important;
   grid-template-columns: 1.12fr 0.88fr !important;
-  gap: 1.5rem !important;
+  gap: 1rem !important;
   align-items: stretch !important;
 }
 
 .os-panel-card {
   position: relative !important;
-  border-radius: 16px !important;
+  border-radius: 14px !important;
   background: rgba(14, 17, 24, 0.82) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  padding: 1.85rem !important;
+  padding: 1.15rem 1.25rem !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
   overflow: hidden !important;
   box-shadow:
-    0 16px 40px -8px rgba(0, 0, 0, 0.75),
+    0 12px 30px -8px rgba(0, 0, 0, 0.75),
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
   transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
 }
@@ -1226,9 +1228,9 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   flex-wrap: wrap !important;
   align-items: flex-start !important;
   justify-content: space-between !important;
-  gap: 1rem !important;
-  margin-bottom: 1.25rem !important;
-  padding-bottom: 1.2rem !important;
+  gap: 0.6rem !important;
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.7rem !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
 }
 
@@ -1237,38 +1239,38 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   align-items: center !important;
   gap: 0.45rem !important;
   font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.72rem !important;
+  font-size: 0.68rem !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.1em !important;
+  letter-spacing: 0.08em !important;
   color: #f59e0b !important;
-  margin-bottom: 0.35rem !important;
+  margin-bottom: 0.2rem !important;
   text-shadow: 0 0 10px rgba(245, 158, 11, 0.4) !important;
 }
 
 .os-detail-title {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 1.55rem !important;
+  font-size: 1.25rem !important;
   font-weight: 900 !important;
-  letter-spacing: 1.5px !important;
+  letter-spacing: 1.2px !important;
   color: #ffffff !important;
-  margin: 0 0 0.45rem !important;
+  margin: 0 0 0.25rem !important;
   text-shadow: 0 0 25px rgba(245, 158, 11, 0.25) !important;
 }
 
 .os-detail-subtitle {
-  font-size: 0.92rem !important;
-  line-height: 1.6 !important;
+  font-size: 0.82rem !important;
+  line-height: 1.4 !important;
   color: #94a3b8 !important;
   margin: 0 !important;
 }
 
 .os-status-seal {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.68rem !important;
+  font-size: 0.64rem !important;
   font-weight: 800 !important;
-  letter-spacing: 1.2px !important;
-  padding: 0.42rem 0.85rem !important;
+  letter-spacing: 1px !important;
+  padding: 0.3rem 0.65rem !important;
   border-radius: 999px !important;
   background: rgba(16, 185, 129, 0.12) !important;
   color: #10b981 !important;
@@ -1281,20 +1283,20 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 .os-highlights-grid {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 1rem !important;
-  margin-bottom: 1.35rem !important;
+  gap: 0.55rem !important;
+  margin-bottom: 0.75rem !important;
 }
 
 .os-highlight-item {
   position: relative !important;
-  padding: 1.1rem 1.15rem !important;
-  border-radius: 12px !important;
+  padding: 0.65rem 0.8rem !important;
+  border-radius: 10px !important;
   background: rgba(18, 22, 32, 0.72) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
   overflow: hidden !important;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
@@ -1314,12 +1316,12 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 .os-highlight-item:hover {
-  transform: translateY(-4px) scale(1.02) !important;
+  transform: translateY(-2px) scale(1.01) !important;
   border-color: rgba(245, 158, 11, 0.6) !important;
   background: rgba(24, 28, 42, 0.85) !important;
   box-shadow:
-    0 14px 30px -4px rgba(0, 0, 0, 0.8),
-    0 0 20px rgba(245, 158, 11, 0.2),
+    0 8px 20px -4px rgba(0, 0, 0, 0.8),
+    0 0 15px rgba(245, 158, 11, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -1336,15 +1338,15 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   display: flex !important;
   align-items: center !important;
   gap: 0.4rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.25rem !important;
 }
 
 .os-hl-badge {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.64rem !important;
+  font-size: 0.60rem !important;
   font-weight: 800 !important;
-  letter-spacing: 1px !important;
-  padding: 0.18rem 0.55rem !important;
+  letter-spacing: 0.8px !important;
+  padding: 0.12rem 0.45rem !important;
   border-radius: 4px !important;
   background: rgba(245, 158, 11, 0.12) !important;
   color: #f59e0b !important;
@@ -1360,51 +1362,51 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 
 .os-hl-title {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.94rem !important;
+  font-size: 0.84rem !important;
   font-weight: 800 !important;
-  letter-spacing: 0.8px !important;
+  letter-spacing: 0.6px !important;
   color: #f8fafc !important;
-  margin: 0 0 0.4rem !important;
-  line-height: 1.35 !important;
+  margin: 0 0 0.2rem !important;
+  line-height: 1.25 !important;
   transition: color 0.3s ease !important;
 }
 
 .os-hl-desc {
-  font-size: 0.82rem !important;
-  line-height: 1.55 !important;
+  font-size: 0.76rem !important;
+  line-height: 1.35 !important;
   color: #94a3b8 !important;
   margin: 0 !important;
 }
 
 /* Quick Select CTA Bay */
 .os-cta-box {
-  padding: 1.15rem 1.25rem !important;
-  border-radius: 14px !important;
+  padding: 0.75rem 0.95rem !important;
+  border-radius: 10px !important;
   background: rgba(12, 15, 22, 0.85) !important;
   border: 1px solid rgba(245, 158, 11, 0.3) !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 0.95rem !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  gap: 0.6rem !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
 
 .os-arch-toggle-group {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 0.4rem !important;
+  gap: 0.35rem !important;
   background: rgba(8, 10, 16, 0.92) !important;
-  padding: 0.28rem !important;
-  border-radius: 8px !important;
+  padding: 0.2rem !important;
+  border-radius: 6px !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 .os-arch-switch-btn {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.72rem !important;
+  font-size: 0.68rem !important;
   font-weight: 800 !important;
-  letter-spacing: 0.8px !important;
-  padding: 0.38rem 0.8rem !important;
-  border-radius: 6px !important;
+  letter-spacing: 0.6px !important;
+  padding: 0.26rem 0.6rem !important;
+  border-radius: 5px !important;
   border: none !important;
   background: transparent !important;
   color: #94a3b8 !important;
@@ -1420,15 +1422,15 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 
 .os-binary-meta {
   font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.78rem !important;
+  font-size: 0.72rem !important;
   color: #f8fafc !important;
   display: flex !important;
   align-items: center !important;
-  gap: 0.65rem !important;
+  gap: 0.4rem !important;
 }
 
 .os-binary-size {
-  padding: 0.18rem 0.55rem !important;
+  padding: 0.12rem 0.45rem !important;
   border-radius: 4px !important;
   background: rgba(16, 185, 129, 0.16) !important;
   color: #10b981 !important;
@@ -1438,18 +1440,18 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 
 .os-quick-select-btn {
   flex: 1 !important;
-  min-width: 240px !important;
+  min-width: 200px !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 0.7rem !important;
-  padding: 0.95rem 1.4rem !important;
-  border-radius: 10px !important;
+  gap: 0.5rem !important;
+  padding: 0.65rem 1rem !important;
+  border-radius: 8px !important;
   border: 1px solid rgba(254, 240, 138, 0.6) !important;
   background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 55%, #d97706 100%) !important;
   color: #09090b !important;
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.88rem !important;
+  font-size: 0.82rem !important;
   font-weight: 900 !important;
   letter-spacing: 1.2px !important;
   cursor: pointer !important;
@@ -1490,14 +1492,14 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 0.45rem !important;
-  padding: 0.95rem 1.1rem !important;
-  border-radius: 10px !important;
+  gap: 0.35rem !important;
+  padding: 0.65rem 0.85rem !important;
+  border-radius: 8px !important;
   border: 1px solid rgba(59, 130, 246, 0.45) !important;
   background: rgba(18, 24, 36, 0.8) !important;
   color: #f1f5f9 !important;
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.78rem !important;
+  font-size: 0.74rem !important;
   font-weight: 800 !important;
   letter-spacing: 1px !important;
   cursor: pointer !important;
@@ -1519,47 +1521,47 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   display: flex !important;
   align-items: flex-start !important;
   justify-content: space-between !important;
-  gap: 0.85rem !important;
-  margin-bottom: 1.15rem !important;
-  padding-bottom: 1.1rem !important;
+  gap: 0.6rem !important;
+  margin-bottom: 0.7rem !important;
+  padding-bottom: 0.65rem !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
 }
 
 .os-comp-tag {
   font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.70rem !important;
+  font-size: 0.66rem !important;
   font-weight: 800 !important;
   letter-spacing: 0.1em !important;
   color: #10b981 !important;
   text-transform: uppercase !important;
-  margin-bottom: 0.3rem !important;
+  margin-bottom: 0.2rem !important;
   text-shadow: 0 0 10px rgba(16, 185, 129, 0.4) !important;
 }
 
 .os-comp-title {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 1.35rem !important;
+  font-size: 1.15rem !important;
   font-weight: 900 !important;
   letter-spacing: 1.2px !important;
   color: #ffffff !important;
-  margin: 0 0 0.3rem !important;
+  margin: 0 0 0.2rem !important;
   text-shadow: 0 0 20px rgba(16, 185, 129, 0.25) !important;
 }
 
 .os-comp-sub {
-  font-size: 0.84rem !important;
+  font-size: 0.78rem !important;
   color: #94a3b8 !important;
   margin: 0 !important;
-  line-height: 1.5 !important;
+  line-height: 1.35 !important;
 }
 
 .os-sim-btn {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.72rem !important;
+  font-size: 0.68rem !important;
   font-weight: 800 !important;
   letter-spacing: 1px !important;
-  padding: 0.5rem 0.95rem !important;
-  border-radius: 8px !important;
+  padding: 0.38rem 0.75rem !important;
+  border-radius: 6px !important;
   border: 1px solid rgba(245, 158, 11, 0.5) !important;
   background: rgba(245, 158, 11, 0.12) !important;
   color: #fbbf24 !important;
@@ -1580,22 +1582,28 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  gap: 1rem !important;
-  padding: 0.65rem 1rem !important;
-  border-radius: 8px !important;
+  gap: 0.75rem !important;
+  padding: 0.4rem 0.75rem !important;
+  border-radius: 6px !important;
   background: rgba(8, 10, 16, 0.75) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  margin-bottom: 1.15rem !important;
-  font-size: 0.76rem !important;
+  margin-bottom: 0.65rem !important;
+  font-size: 0.72rem !important;
   font-family: 'JetBrains Mono', monospace !important;
 }
 
 .os-legend-item {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 0.5rem !important;
+  gap: 0.4rem !important;
   color: #cbd5e1 !important;
   font-weight: 600 !important;
+}
+
+.os-legend-swatch {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 2px !important;
 }
 
 .os-legend-swatch.recoil {
@@ -1607,13 +1615,13 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 .os-gauges-stack {
   display: flex !important;
   flex-direction: column !important;
-  gap: 0.95rem !important;
+  gap: 0.45rem !important;
 }
 
 .os-gauge-card {
   position: relative !important;
-  padding: 1rem 1.15rem !important;
-  border-radius: 12px !important;
+  padding: 0.55rem 0.85rem !important;
+  border-radius: 10px !important;
   background: rgba(18, 22, 32, 0.72) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
@@ -1636,13 +1644,13 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  gap: 0.5rem !important;
-  margin-bottom: 0.75rem !important;
+  gap: 0.4rem !important;
+  margin-bottom: 0.35rem !important;
 }
 
 .os-gauge-title {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.88rem !important;
+  font-size: 0.80rem !important;
   font-weight: 800 !important;
   letter-spacing: 0.8px !important;
   color: #f8fafc !important;
@@ -1654,17 +1662,17 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 .os-gauge-sub {
-  font-size: 0.74rem !important;
+  font-size: 0.68rem !important;
   color: #94a3b8 !important;
-  margin-top: 2px !important;
+  margin-top: 1px !important;
 }
 
 .os-gauge-delta {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.74rem !important;
+  font-size: 0.68rem !important;
   font-weight: 900 !important;
   letter-spacing: 0.8px !important;
-  padding: 0.22rem 0.65rem !important;
+  padding: 0.14rem 0.5rem !important;
   border-radius: 999px !important;
   background: rgba(16, 185, 129, 0.16) !important;
   color: #10b981 !important;
@@ -1676,13 +1684,13 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   display: grid !important;
   grid-template-columns: 1fr auto 1fr !important;
   align-items: center !important;
-  gap: 0.75rem !important;
+  gap: 0.5rem !important;
 }
 
 .os-gauge-col {
   background: rgba(10, 12, 18, 0.7) !important;
-  padding: 0.65rem 0.85rem !important;
-  border-radius: 8px !important;
+  padding: 0.38rem 0.65rem !important;
+  border-radius: 6px !important;
   border: 1px solid rgba(148, 163, 184, 0.14) !important;
 }
 
@@ -1692,9 +1700,14 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   box-shadow: inset 0 0 14px rgba(16, 185, 129, 0.08) !important;
 }
 
+.os-gauge-col-head {
+  gap: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
 .os-gauge-tag {
   font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.64rem !important;
+  font-size: 0.60rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.5px !important;
   text-transform: uppercase !important;
@@ -1703,7 +1716,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 
 .os-gauge-val {
   font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.88rem !important;
+  font-size: 0.80rem !important;
   font-weight: 800 !important;
   color: #f8fafc !important;
   font-variant-numeric: tabular-nums !important;
@@ -1716,7 +1729,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 
 .os-gauge-track {
   width: 100% !important;
-  height: 8px !important;
+  height: 5px !important;
   border-radius: 999px !important;
   background: rgba(255, 255, 255, 0.08) !important;
   overflow: hidden !important;
@@ -1733,7 +1746,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 
 .os-gauge-arrow {
   font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.85rem !important;
+  font-size: 0.75rem !important;
   color: #10b981 !important;
   font-weight: 800 !important;
   text-shadow: 0 0 8px rgba(16, 185, 129, 0.45) !important;

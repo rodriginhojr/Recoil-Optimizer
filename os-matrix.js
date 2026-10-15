@@ -35,7 +35,7 @@
         editionTag: 'Edición Legacy Verificada',
         title: 'Windows 7 (x86 / x64)',
         subtitle:
-          'Compatibilidad retrospectiva real en 32 y 64 bits con cargador nativo y cero errores de runtime.',
+          'Máxima compatibilidad para Windows 7 de 32 y 64 bits, sin errores ni librerías faltantes.',
         statusBadge: 'VERIFICADO SIN ERRORES PE32/PE32+',
         archNote:
           'Soporte nativo real de 32 bits (RecoilOptimizer_x86.exe, 63.8 MB) y 64 bits (69.0 MB) con cargador C NativeShim.',
@@ -44,24 +44,24 @@
         ctaSecondaryArch: 'Cambiar arquitectura objetivo',
         highlights: [
           {
-            badge: 'x86 / x64',
-            title: 'Binario Nativo 32/64-Bit',
-            desc: 'Compilaciones autónomas x86 y x64 que evitan el error 0xc000007b y dependencias rotas.'
+            badge: '32 / 64-BIT',
+            title: 'Binario Autónomo 32 y 64-Bit',
+            desc: 'Ejecutable directo que previene el error 0xc000007b sin requerir instalar nada extra.'
           },
           {
-            badge: 'C SHIM',
-            title: 'C NativeShim & D3DCompiler',
-            desc: 'Pre-carga local de D3DCompiler_47 para renderizado DirectX sin cuelgues.'
+            badge: 'DIRECTX',
+            title: 'Compatibilidad DirectX',
+            desc: 'Incluye librerías DirectX integradas para evitar cuelgues o cierres en juegos.'
           },
           {
             badge: 'DRIVERS',
-            title: 'pnputil Legacy & TLS 1.2',
-            desc: 'Sintaxis clásica de drivers y cifrado seguro SHA-256 para catálogos modernos.'
+            title: 'Gestor de Controladores',
+            desc: 'Detecta y gestiona tus controladores correctamente en versiones clásicas de Windows.'
           },
           {
-            badge: 'TIMER',
-            title: 'Timer 0.500 ms en NT 6.1',
-            desc: 'Ajuste directo de resolución de reloj NtSetTimerResolution y purga de servicios obsoletos.'
+            badge: 'RELOJ',
+            title: 'Reloj de Alta Precisión (0.5 ms)',
+            desc: 'Fuerza el reloj del sistema a máxima velocidad para clics y disparos inmediatos.'
           }
         ]
       },
@@ -69,7 +69,7 @@
         editionTag: 'Verified Legacy Edition',
         title: 'Windows 7 (x86 / x64)',
         subtitle:
-          'True native 32-bit and 64-bit execution with dedicated C launcher and zero runtime errors.',
+          'Maximum compatibility for 32-bit & 64-bit Windows 7, zero errors, no missing libraries.',
         statusBadge: 'ZERO PE32/PE32+ FORMAT ERRORS',
         archNote:
           'True native 32-bit (`RecoilOptimizer_x86.exe`, 63.8 MB) & 64-bit (`RecoilOptimizer_x64.exe`, 69.0 MB) support powered by our custom C `NativeShim` launcher.',
@@ -78,24 +78,24 @@
         ctaSecondaryArch: 'Switch target architecture',
         highlights: [
           {
-            badge: 'x86 / x64',
+            badge: '32 / 64-BIT',
             title: 'Native 32/64-Bit Binaries',
-            desc: 'Self-contained x86 & x64 builds eliminating 0xc000007b and missing image errors.'
+            desc: 'Self-contained builds preventing 0xc000007b errors without extra runtimes.'
           },
           {
-            badge: 'C SHIM',
-            title: 'C NativeShim & D3DCompiler',
-            desc: 'Bundled D3DCompiler_47 preloader prevents DirectX shader crashes.'
+            badge: 'DIRECTX',
+            title: 'DirectX Compatibility',
+            desc: 'Bundles required DirectX components to stop game crashes or shader failures.'
           },
           {
             badge: 'DRIVERS',
-            title: 'Legacy pnputil & TLS 1.2',
-            desc: 'Adaptive legacy driver flags and SHA-256 handshakes for secure catalog queries.'
+            title: 'Driver Management',
+            desc: 'Safely queries and manages hardware drivers on legacy Windows versions.'
           },
           {
-            badge: 'TIMER',
-            title: 'NT 6.1 Kernel Timer 0.500 ms',
-            desc: 'Direct NtSetTimerResolution clock lock and safe legacy service trimming.'
+            badge: 'CLOCK',
+            title: 'High Precision Clock (0.5 ms)',
+            desc: 'Locks system clock to maximum speed for lightning-fast click registration.'
           }
         ]
       },
@@ -157,7 +157,7 @@
         editionTag: 'Kernel NT 6.3 Optimizado',
         title: 'Windows 8 / 8.1 (x86 / x64)',
         subtitle:
-          'Ajustes de latencia baja sobre el kernel NT 6.3 con timer fijo y pila de red optimizada.',
+          'Optimización ligera para sistemas Windows 8.1 con respuesta rápida y menor consumo.',
         statusBadge: 'KERNEL NT 6.3 ULTRA-LIGERO',
         archNote:
           'Compatible con ediciones de 32 y 64 bits. Anula la fluctuación del reloj dinámico introducida en NT 6.2/6.3.',
@@ -166,24 +166,24 @@
         ctaSecondaryArch: 'Cambiar arquitectura objetivo',
         highlights: [
           {
-            badge: 'TICKLESS',
-            title: 'Dynamic Tick Purge',
-            desc: 'Anula la fluctuación del reloj dinámico para interrupciones deterministas.'
+            badge: 'RELOJ',
+            title: 'Reloj del Sistema Estable',
+            desc: 'Mantiene el reloj del sistema fijo y estable para evitar micro-pausas.'
           },
           {
-            badge: 'NDIS 6.4',
-            title: 'Pila TCP NDIS 6.4',
-            desc: 'Priorización de paquetes de red y desactivación de batching Nagle.'
+            badge: 'RED',
+            title: 'Conexión de Red Rápida',
+            desc: 'Prioriza los paquetes de tus juegos y reduce el ping desactivando retrasos de red.'
           },
           {
-            badge: 'APPX',
-            title: 'Debloat Modern UI',
-            desc: 'Suspende brokers de fondo AppX y telemetría heredada de Microsoft.'
+            badge: 'LIMPIEZA',
+            title: 'Limpieza de Servicios Inútiles',
+            desc: 'Cierra aplicaciones y servicios pesados de Windows para liberar recursos.'
           },
           {
-            badge: 'DWM FLIP',
-            title: 'DWM DirectFlip',
-            desc: 'Minimiza la cola de pre-renderizado del compositor de escritorio.'
+            badge: 'VENTANA',
+            title: 'Respuesta Inmediata de Ventana',
+            desc: 'Reduce la cola de renderizado del escritorio para que el ratón responda al instante.'
           }
         ]
       },
@@ -191,7 +191,7 @@
         editionTag: 'Optimized NT 6.3 Kernel',
         title: 'Windows 8 / 8.1 (x86 / x64)',
         subtitle:
-          'Low-latency tuning for the lightweight NT 6.3 kernel with fixed-tick timers.',
+          'Ultra-light optimization for Windows 8.1 with fast response and minimal resource footprint.',
         statusBadge: 'ULTRA-LIGHT NT 6.3 KERNEL',
         archNote:
           'Supports both 32-bit and 64-bit installs. Eliminates dynamic tick clock jitter introduced in NT 6.2/6.3.',
@@ -200,24 +200,24 @@
         ctaSecondaryArch: 'Switch target architecture',
         highlights: [
           {
-            badge: 'TICKLESS',
-            title: 'Dynamic Tick Purge',
-            desc: 'Disables tick coalescing for deterministic hardware interrupt delivery.'
+            badge: 'CLOCK',
+            title: 'Stable System Clock',
+            desc: 'Locks clock ticks to eliminate timer drift and micro-stutters.'
           },
           {
-            badge: 'NDIS 6.4',
-            title: 'NDIS 6.4 TCP Stack',
-            desc: 'Tunes packet queuing and disables Nagle latency batching.'
+            badge: 'NETWORK',
+            title: 'Fast Network Response',
+            desc: 'Prioritizes gaming network packets and cuts ping by disabling delay buffers.'
           },
           {
-            badge: 'APPX',
-            title: 'Modern UI Debloat',
-            desc: 'Suspends AppX background brokers and legacy Microsoft telemetry.'
+            badge: 'DEBLOAT',
+            title: 'Background Bloat Purge',
+            desc: 'Suspends unused Windows services and modern apps to free system memory.'
           },
           {
-            badge: 'DWM FLIP',
-            title: 'DWM DirectFlip',
-            desc: 'Reduces compositor frame queues and enforces 1:1 mouse input.'
+            badge: 'DISPLAY',
+            title: 'Instant Desktop Response',
+            desc: 'Trims compositor queues so your mouse movements feel instantaneous.'
           }
         ]
       },
@@ -279,7 +279,7 @@
         editionTag: 'Estándar Competitivo Esports',
         title: 'Windows 10 (x86 / x64)',
         subtitle:
-          'Ajuste competitivo para esports: scanout directo FSE y prioridad de hilos en tiempo real.',
+          'Ajuste competitivo para máxima fluidez, estabilidad de FPS y menor latencia de ratón.',
         statusBadge: 'ESTÁNDAR OFICIAL ESPORTS',
         archNote:
           'Optimizado para Windows 10 y ediciones LTSC (64 bits recomendado, 32 bits soportado).',
@@ -288,24 +288,24 @@
         ctaSecondaryArch: 'Cambiar arquitectura objetivo',
         highlights: [
           {
-            badge: 'FSE DIRECT',
-            title: 'Fullscreen Exclusive (FSE)',
-            desc: 'Scanout directo a la GPU eliminando la latencia del compositor.'
+            badge: 'PANTALLA',
+            title: 'Pantalla Completa Real',
+            desc: 'Envía los gráficos directo a la pantalla eliminando retrasos del escritorio.'
           },
           {
-            badge: 'DVR OFF',
-            title: 'Purga GameBar & DVR',
-            desc: 'Elimina captura en segundo plano y hooks que causan caídas de 1% Low.'
+            badge: 'GAME BAR',
+            title: 'Game Bar y DVR Apagados',
+            desc: 'Elimina la grabación oculta en segundo plano que provoca bajones de FPS.'
           },
           {
-            badge: 'MMCSS',
-            title: 'Scheduler MMCSS',
-            desc: 'Prioridad GPU 8 y eliminación de LazyMode para hilos del juego.'
+            badge: 'PRIORIDAD',
+            title: 'Prioridad Máxima al Juego',
+            desc: 'Garantiza que el juego tenga máxima prioridad en tu tarjeta gráfica y procesador.'
           },
           {
-            badge: 'MSI MODE',
-            title: 'Caché DX12 & MSI Mode',
-            desc: 'Optimización de shader cache y cola MSI de interrupciones PCIe.'
+            badge: 'DRIVERS',
+            title: 'Optimización de Gráficos (MSI)',
+            desc: 'Agiliza la comunicación de tu tarjeta de video para respuesta inmediata.'
           }
         ]
       },
@@ -313,7 +313,7 @@
         editionTag: 'Esports Competitive Standard',
         title: 'Windows 10 (x86 / x64)',
         subtitle:
-          'Esports tournament tuning: direct FSE scanout and real-time thread scheduling.',
+          'Competitive tuning for maximum smoothness, steady FPS, and lowest mouse latency.',
         statusBadge: 'TOURNAMENT ESPORTS STANDARD',
         archNote:
           'Engineered for Windows 10 & Enterprise LTSC (64-bit recommended, 32-bit supported).',
@@ -322,24 +322,24 @@
         ctaSecondaryArch: 'Switch target architecture',
         highlights: [
           {
-            badge: 'FSE DIRECT',
-            title: 'Fullscreen Exclusive (FSE)',
-            desc: 'Direct GPU scanout ownership, bypassing desktop composition lag.'
+            badge: 'DISPLAY',
+            title: 'True Exclusive Fullscreen',
+            desc: 'Sends frames directly to the display, bypassing desktop composition lag.'
           },
           {
-            badge: 'DVR OFF',
-            title: 'GameBar & DVR Purge',
-            desc: 'Removes background recording hooks that degrade 1% Low frametimes.'
+            badge: 'GAME BAR',
+            title: 'Game Bar & DVR Disabled',
+            desc: 'Removes hidden background capture that causes sudden frame drops.'
           },
           {
-            badge: 'MMCSS',
-            title: 'MMCSS Scheduler',
-            desc: 'Sets GPU Priority 8 and eliminates LazyMode yielding for game threads.'
+            badge: 'PRIORITY',
+            title: 'Top Gaming Priority',
+            desc: 'Grants maximum CPU and GPU scheduling priority directly to game threads.'
           },
           {
-            badge: 'MSI MODE',
-            title: 'DX12 Cache & MSI Mode',
-            desc: 'Flushes stale shader caches and enables PCIe Message Signaled Interrupts.'
+            badge: 'DRIVERS',
+            title: 'GPU Interrupt Tuning (MSI)',
+            desc: 'Speeds up graphics card communication for instant response times.'
           }
         ]
       },
@@ -401,7 +401,7 @@
         editionTag: 'Arquitectura Next-Gen',
         title: 'Windows 11 (x64)',
         subtitle:
-          'Optimización para silicio híbrido Intel P/E-Core y AMD Ryzen X3D en builds modernas.',
+          'Rendimiento optimizado para procesadores modernos Intel y AMD Ryzen.',
         statusBadge: 'SOPORTE COMPLETO',
         archNote:
           'Diseñado para sistemas modernos de 64 bits (`RecoilOptimizer_x64.exe`, 69.0 MB), procesadores Intel Core Ultra / Hybrid y AMD Ryzen X3D.',
@@ -410,24 +410,24 @@
         ctaSecondaryArch: 'Arquitectura x64 Nativa',
         highlights: [
           {
-            badge: 'P-CORE / X3D',
-            title: 'Thread Director & X3D',
-            desc: 'Fija hilos del juego en núcleos P (Intel) o en el CCD con 3D V-Cache (AMD).'
+            badge: 'CPU',
+            title: 'Prioridad de Procesador',
+            desc: 'Asigna tus juegos a los núcleos más rápidos del CPU para evitar caídas de FPS.'
           },
           {
-            badge: 'FLIP MODEL',
-            title: 'DXGI Flip Model',
-            desc: 'Presentación DirectFlip sin bordes y eliminación de micro-stutter MPO.'
+            badge: 'PANTALLA',
+            title: 'Respuesta Directa de Pantalla',
+            desc: 'Reduce el retraso de respuesta (input lag) y elimina micro-tirones al jugar.'
           },
           {
-            badge: 'HVCI SAFE',
-            title: 'VBS / HVCI Seguro',
-            desc: 'Audita la latencia de aislamiento de núcleo sin afectar Vanguard ni EAC.'
+            badge: 'SEGURIDAD',
+            title: 'Seguridad y Anticheats',
+            desc: 'Optimiza la seguridad del sistema sin afectar tus FPS ni juegos con Vanguard o EAC.'
           },
           {
-            badge: 'AI DEBLOAT',
-            title: 'Debloat Copilot & Recall',
-            desc: 'Desactiva telemetría de fondo, indexación de Recall y widgets residentes.'
+            badge: 'LIMPIEZA',
+            title: 'Apagado de IA y Telemetría',
+            desc: 'Desactiva funciones de IA, widgets y procesos de fondo para liberar memoria y CPU.'
           }
         ]
       },
@@ -435,7 +435,7 @@
         editionTag: 'Next-Gen Architecture',
         title: 'Windows 11 (x64)',
         subtitle:
-          'Precision tuning for Intel Hybrid P/E-Cores and AMD Ryzen X3D on modern builds.',
+          'Optimized performance for modern Intel and AMD Ryzen processors.',
         statusBadge: 'VERIFIED READY',
         archNote:
           'Built for modern 64-bit systems (`RecoilOptimizer_x64.exe`, 69.0 MB), Intel Hybrid P/E-Core CPUs, and AMD Ryzen 3D V-Cache processors.',
@@ -444,24 +444,24 @@
         ctaSecondaryArch: 'Native x64 Architecture',
         highlights: [
           {
-            badge: 'P-CORE / X3D',
-            title: 'Thread Director & X3D',
-            desc: 'Pins game threads to P-Cores (Intel) or 3D V-Cache CCDs (AMD).'
+            badge: 'CPU',
+            title: 'CPU Core Priority',
+            desc: 'Pins game threads to the fastest CPU cores to eliminate sudden FPS drops.'
           },
           {
-            badge: 'FLIP MODEL',
-            title: 'DXGI Flip Model',
-            desc: 'Windowed DirectFlip presentation and MPO micro-stutter removal.'
+            badge: 'DISPLAY',
+            title: 'Direct Screen Response',
+            desc: 'Cuts input lag and eliminates micro-stutters during full-screen gameplay.'
           },
           {
-            badge: 'HVCI SAFE',
-            title: 'VBS / HVCI Safe',
-            desc: 'Audits kernel isolation overhead without impacting Vanguard or EAC.'
+            badge: 'SECURITY',
+            title: 'Anticheat & Security Safe',
+            desc: 'Optimizes kernel security without hurting FPS or compatibility with Vanguard/EAC.'
           },
           {
-            badge: 'AI DEBLOAT',
-            title: 'Copilot & Recall Debloat',
-            desc: 'Disables background AI telemetry, Recall indexing, and idle widgets.'
+            badge: 'DEBLOAT',
+            title: 'AI & Telemetry Cleanup',
+            desc: 'Disables background AI, widgets, and idle telemetry to reclaim CPU and RAM.'
           }
         ]
       },
@@ -510,19 +510,19 @@
       inspectingKernelPrefix: 'INSPECCIONANDO KERNEL:',
       selectOsPrompt: 'SELECCIONA GENERACIÓN DE WINDOWS:',
       archSelectorLabel: 'ARQUITECTURA DE BINARIO:',
-      comparatorTag: 'TELEMETRÍA COMPARATIVA EN REPOSO',
-      comparatorTitle: 'Comparador de Recursos: Antes vs Después',
-      comparatorSub: 'Mediciones de latencia y procesos antes y después de optimizar.',
+      comparatorTag: 'COMPARADOR EN REPOSO',
+      comparatorTitle: 'Comparador: Antes vs Después',
+      comparatorSub: 'Impacto real en tu sistema antes y después de aplicar la optimización.',
       stockLegend: 'Windows Stock (Fábrica)',
       recoilLegend: 'Con Recoil Optimizer',
-      metricProcessesTitle: 'Procesos de Fondo en Reposo',
-      metricProcessesSub: 'Servicios residentes tras el arranque',
-      metricRamTitle: 'Consumo de RAM en Reposo',
-      metricRamSub: 'Memoria física en escritorio sin juegos',
-      metricTimerTitle: 'Resolución de Timer del Kernel',
-      metricTimerSub: 'Precisión del reloj NTAPI (NtSetTimerResolution)',
-      metricDpcTitle: 'Interrupciones DPC Promedio',
-      metricDpcSub: 'Latencia DPC de controladores (µs)',
+      metricProcessesTitle: 'Procesos en Segundo Plano',
+      metricProcessesSub: 'Menos procesos = más procesador libre para tus juegos',
+      metricRamTitle: 'Consumo de Memoria RAM',
+      metricRamSub: 'Menos memoria ocupada = partidas más estables y fluidas',
+      metricTimerTitle: 'Respuesta del Reloj (Timer)',
+      metricTimerSub: 'Menor tiempo = respuesta del ratón y clics más instantánea',
+      metricDpcTitle: 'Retraso de Drivers (Latencia DPC)',
+      metricDpcSub: 'Menor latencia = adiós a micro-tirones y congelamientos',
       quickSelectBadge: 'DESCARGA DIRECTA VERIFICADA',
       scrollHint: 'Resalta el ejecutable según tu arquitectura',
       targetHighlightBanner: 'BINARIO SELECCIONADO DESDE LA MATRIZ DE COMPATIBILIDAD',
@@ -537,19 +537,19 @@
       inspectingKernelPrefix: 'INSPECTING KERNEL:',
       selectOsPrompt: 'SELECT WINDOWS GENERATION:',
       archSelectorLabel: 'BINARY ARCHITECTURE:',
-      comparatorTag: 'IDLE SYSTEM TELEMETRY BENCHMARK',
-      comparatorTitle: 'Resource Comparator: Before vs After',
-      comparatorSub: 'Latency and process measurements before and after optimization.',
+      comparatorTag: 'IDLE BENCHMARK',
+      comparatorTitle: 'Resource Comparison: Before vs After',
+      comparatorSub: 'Real system impact before and after applying optimization.',
       stockLegend: 'Windows Stock (Default)',
       recoilLegend: 'With Recoil Optimizer',
       metricProcessesTitle: 'Idle Background Processes',
-      metricProcessesSub: 'Resident services after boot',
-      metricRamTitle: 'Idle RAM Consumption',
-      metricRamSub: 'Committed physical memory at desktop',
-      metricTimerTitle: 'Kernel Timer Resolution',
-      metricTimerSub: 'NTAPI clock precision (NtSetTimerResolution)',
-      metricDpcTitle: 'Average DPC Interrupt Latency',
-      metricDpcSub: 'Driver DPC latency (µs)',
+      metricProcessesSub: 'Fewer background services = more CPU headroom for games',
+      metricRamTitle: 'RAM Memory Consumption',
+      metricRamSub: 'Freed memory = smoother gameplay without page swaps',
+      metricTimerTitle: 'System Clock Precision (Timer)',
+      metricTimerSub: 'Lower time = near-instant mouse and keyboard clicks',
+      metricDpcTitle: 'Driver Delay (DPC Latency)',
+      metricDpcSub: 'Lower latency = eliminates stutters and frame spikes',
       quickSelectBadge: 'VERIFIED DIRECT BINARY MATCH',
       scrollHint: 'Highlights the binary for your architecture',
       targetHighlightBanner: 'BINARY SELECTED FROM OS COMPATIBILITY MATRIX',
@@ -724,7 +724,7 @@
       #${MOUNT_ID} {
         position: relative;
         z-index: 2;
-        padding: 2.25rem 0 !important;
+        padding: 1.25rem 0 !important;
         font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
         color: var(--text-main, #f8fafc);
       }
@@ -739,7 +739,7 @@
       .os-matrix-header {
         text-align: center;
         max-width: 860px;
-        margin: 0 auto 1.25rem;
+        margin: 0 auto 0.75rem;
       }
 
       .os-matrix-kicker-row {
@@ -757,7 +757,7 @@
         letter-spacing: 0.09em;
         text-transform: uppercase;
         color: var(--primary, #3b82f6);
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
       }
 
       .os-matrix-kicker-dot {
@@ -776,26 +776,26 @@
 
       .os-matrix-title {
         font-family: var(--font-display, var(--font-sans, 'Inter', sans-serif));
-        font-size: clamp(1.85rem, 3.4vw, 2.75rem);
+        font-size: clamp(1.45rem, 2.7vw, 2.1rem);
         font-weight: 800;
         line-height: 1.25;
         letter-spacing: -0.025em;
         color: var(--text-main, #f8fafc);
-        margin: 0 0 0.9rem;
+        margin: 0 0 0.5rem;
       }
 
       .os-matrix-title .os-title-range {
         display: inline-block;
         white-space: nowrap;
         font-size: 0.88em;
-        margin-top: 6px;
+        margin-top: 4px;
       }
 
       .os-matrix-desc {
-        font-size: 1.02rem;
-        line-height: 1.65;
+        font-size: 0.95rem;
+        line-height: 1.5;
         color: var(--text-muted, #94a3b8);
-        margin: 0 auto 1.25rem;
+        margin: 0 auto 0.95rem;
       }
 
       /* Dual Status Pills inside .os-matrix-detected-bar (Client OS + Inspected Kernel) */
@@ -839,8 +839,8 @@
       .os-tabs-bar {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 0.85rem;
-        margin-bottom: 1.75rem;
+        gap: 0.65rem;
+        margin-bottom: 0.95rem;
       }
 
       .os-tab-btn {
@@ -849,8 +849,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 1.1rem 1.25rem;
-        border-radius: 14px;
+        padding: 0.7rem 1rem;
+        border-radius: 10px;
         background: var(--bg-card, rgba(15, 23, 42, 0.7));
         border: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.16));
         color: var(--text-main, #f8fafc);
@@ -894,7 +894,7 @@
 
       .os-tab-name {
         font-family: var(--font-display, var(--font-sans, 'Inter', sans-serif));
-        font-size: 1.05rem;
+        font-size: 0.92rem;
         font-weight: 700;
         color: var(--text-main, #f8fafc);
         text-align: center;
@@ -904,16 +904,16 @@
       .os-matrix-cockpit {
         display: grid;
         grid-template-columns: 1.12fr 0.88fr;
-        gap: 1.5rem;
+        gap: 1rem;
         align-items: stretch;
       }
 
       .os-panel-card {
         position: relative;
-        border-radius: 18px;
+        border-radius: 14px;
         background: var(--bg-card, rgba(15, 23, 42, 0.78));
         border: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.16));
-        padding: 1.75rem;
+        padding: 1.15rem 1.25rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -938,9 +938,9 @@
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-between;
-        gap: 1rem;
-        margin-bottom: 1.15rem;
-        padding-bottom: 1.1rem;
+        gap: 0.6rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.7rem;
         border-bottom: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.14));
       }
 
@@ -949,34 +949,34 @@
         align-items: center;
         gap: 0.45rem;
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.72rem;
+        font-size: 0.68rem;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         color: var(--accent-amber, #f59e0b);
-        margin-bottom: 0.35rem;
+        margin-bottom: 0.2rem;
       }
 
       .os-detail-title {
         font-family: var(--font-display, var(--font-sans, 'Inter', sans-serif));
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 800;
         color: var(--text-main, #f8fafc);
-        margin: 0 0 0.4rem;
+        margin: 0 0 0.25rem;
       }
 
       .os-detail-subtitle {
-        font-size: 0.92rem;
-        line-height: 1.55;
+        font-size: 0.82rem;
+        line-height: 1.4;
         color: var(--text-muted, #94a3b8);
         margin: 0;
       }
 
       .os-status-seal {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.7rem;
+        font-size: 0.64rem;
         font-weight: 700;
-        padding: 0.38rem 0.75rem;
+        padding: 0.3rem 0.65rem;
         border-radius: 8px;
         background: rgba(16, 185, 129, 0.14);
         color: var(--accent-emerald, #10b981);
@@ -988,13 +988,13 @@
       .os-highlights-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0.9rem;
-        margin-bottom: 1.25rem;
+        gap: 0.55rem;
+        margin-bottom: 0.75rem;
       }
 
       .os-highlight-item {
-        padding: 1rem;
-        border-radius: 12px;
+        padding: 0.65rem 0.8rem;
+        border-radius: 10px;
         background: var(--bg-surface, rgba(15, 23, 42, 0.6));
         border: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.14));
         transition: border-color 0.2s ease, transform 0.2s ease;
@@ -1009,14 +1009,14 @@
         display: flex;
         align-items: center;
         gap: 0.4rem;
-        margin-bottom: 0.45rem;
+        margin-bottom: 0.25rem;
       }
 
       .os-hl-badge {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.64rem;
+        font-size: 0.60rem;
         font-weight: 700;
-        padding: 0.14rem 0.5rem;
+        padding: 0.12rem 0.45rem;
         border-radius: 4px;
         background: rgba(59, 130, 246, 0.15);
         color: var(--primary, #3b82f6);
@@ -1024,29 +1024,29 @@
       }
 
       .os-hl-title {
-        font-size: 0.9rem;
+        font-size: 0.84rem;
         font-weight: 700;
         color: var(--text-main, #f8fafc);
-        margin: 0 0 0.35rem;
-        line-height: 1.3;
+        margin: 0 0 0.2rem;
+        line-height: 1.25;
       }
 
       .os-hl-desc {
-        font-size: 0.8rem;
-        line-height: 1.5;
+        font-size: 0.76rem;
+        line-height: 1.35;
         color: var(--text-muted, #94a3b8);
         margin: 0;
       }
 
       /* Architecture Quick-Select Footer */
       .os-cta-box {
-        padding: 1rem 1.15rem;
-        border-radius: 12px;
+        padding: 0.75rem 0.95rem;
+        border-radius: 10px;
         background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(16, 185, 129, 0.07));
         border: 1px solid var(--border-glow, rgba(59, 130, 246, 0.35));
         display: flex;
         flex-direction: column;
-        gap: 0.85rem;
+        gap: 0.6rem;
       }
 
       .os-cta-top {
@@ -1054,25 +1054,25 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        gap: 0.75rem;
+        gap: 0.5rem;
       }
 
       .os-arch-toggle-group {
         display: inline-flex;
         align-items: center;
-        gap: 0.4rem;
+        gap: 0.35rem;
         background: var(--bg-deep, rgba(2, 6, 23, 0.8));
-        padding: 0.25rem;
-        border-radius: 8px;
+        padding: 0.2rem;
+        border-radius: 6px;
         border: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.2));
       }
 
       .os-arch-switch-btn {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.72rem;
+        font-size: 0.68rem;
         font-weight: 700;
-        padding: 0.32rem 0.7rem;
-        border-radius: 6px;
+        padding: 0.26rem 0.6rem;
+        border-radius: 5px;
         border: none;
         background: transparent;
         color: var(--text-muted, #94a3b8);
@@ -1094,15 +1094,15 @@
 
       .os-binary-meta {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         color: var(--text-main, #f8fafc);
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.4rem;
       }
 
       .os-binary-size {
-        padding: 0.15rem 0.5rem;
+        padding: 0.12rem 0.45rem;
         border-radius: 4px;
         background: rgba(16, 185, 129, 0.16);
         color: var(--accent-emerald, #10b981);
@@ -1112,27 +1112,27 @@
       .os-cta-buttons-row {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.65rem;
+        gap: 0.5rem;
       }
 
       .os-quick-select-btn {
         flex: 1;
-        min-width: 240px;
+        min-width: 200px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 0.6rem;
-        padding: 0.85rem 1.2rem;
-        border-radius: 10px;
+        gap: 0.5rem;
+        padding: 0.65rem 1rem;
+        border-radius: 8px;
         border: 1px solid var(--primary, #3b82f6);
         background: var(--primary, #3b82f6);
         color: #ffffff;
         font-family: var(--font-sans, 'Inter', sans-serif);
-        font-size: 0.9rem;
+        font-size: 0.82rem;
         font-weight: 700;
         cursor: pointer;
         transition: all 0.22s ease;
-        box-shadow: 0 8px 24px -6px var(--primary-glow, rgba(59, 130, 246, 0.5));
+        box-shadow: 0 6px 20px -4px var(--primary-glow, rgba(59, 130, 246, 0.5));
       }
 
       .os-quick-select-btn:hover {
@@ -1144,21 +1144,21 @@
         background: var(--accent-amber, #f59e0b);
         border-color: var(--accent-amber, #f59e0b);
         color: #090d16;
-        box-shadow: 0 8px 24px -6px rgba(245, 158, 11, 0.45);
+        box-shadow: 0 6px 20px -4px rgba(245, 158, 11, 0.45);
       }
 
       .os-quick-select-alt {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 0.4rem;
-        padding: 0.85rem 0.95rem;
-        border-radius: 10px;
+        gap: 0.35rem;
+        padding: 0.65rem 0.85rem;
+        border-radius: 8px;
         border: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.28));
         background: var(--bg-surface, rgba(15, 23, 42, 0.75));
         color: var(--text-main, #f8fafc);
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.76rem;
+        font-size: 0.74rem;
         font-weight: 600;
         cursor: pointer;
         transition: all 0.2s ease;
@@ -1174,42 +1174,43 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        gap: 0.75rem;
-        margin-bottom: 1rem;
-        padding-bottom: 0.95rem;
+        gap: 0.6rem;
+        margin-bottom: 0.7rem;
+        padding-bottom: 0.65rem;
         border-bottom: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.14));
       }
 
       .os-comp-tag {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.68rem;
+        font-size: 0.66rem;
         font-weight: 700;
         letter-spacing: 0.08em;
         color: var(--accent-emerald, #10b981);
         text-transform: uppercase;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.2rem;
       }
 
       .os-comp-title {
         font-family: var(--font-display, var(--font-sans, 'Inter', sans-serif));
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-weight: 800;
         color: var(--text-main, #f8fafc);
-        margin: 0 0 0.25rem;
+        margin: 0 0 0.2rem;
       }
 
       .os-comp-sub {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
+        line-height: 1.35;
         color: var(--text-muted, #94a3b8);
         margin: 0;
       }
 
       .os-sim-btn {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.72rem;
+        font-size: 0.68rem;
         font-weight: 700;
-        padding: 0.45rem 0.8rem;
-        border-radius: 8px;
+        padding: 0.38rem 0.75rem;
+        border-radius: 6px;
         border: 1px solid var(--border-glow, rgba(59, 130, 246, 0.4));
         background: var(--bg-surface, rgba(15, 23, 42, 0.8));
         color: var(--primary, #3b82f6);
@@ -1227,26 +1228,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1rem;
-        padding: 0.55rem 0.85rem;
-        border-radius: 8px;
+        gap: 0.75rem;
+        padding: 0.4rem 0.75rem;
+        border-radius: 6px;
         background: var(--bg-deep, rgba(2, 6, 23, 0.55));
-        margin-bottom: 1rem;
-        font-size: 0.75rem;
+        margin-bottom: 0.65rem;
+        font-size: 0.72rem;
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
       }
 
       .os-legend-item {
         display: inline-flex;
         align-items: center;
-        gap: 0.45rem;
+        gap: 0.4rem;
         color: var(--text-muted, #94a3b8);
       }
 
       .os-legend-swatch {
-        width: 10px;
-        height: 10px;
-        border-radius: 3px;
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
       }
 
       .os-legend-swatch.stock {
@@ -1263,12 +1264,12 @@
       .os-gauges-stack {
         display: flex;
         flex-direction: column;
-        gap: 0.9rem;
+        gap: 0.45rem;
       }
 
       .os-gauge-card {
-        padding: 0.9rem 1rem;
-        border-radius: 12px;
+        padding: 0.55rem 0.85rem;
+        border-radius: 10px;
         background: var(--bg-surface, rgba(15, 23, 42, 0.62));
         border: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.14));
       }
@@ -1277,26 +1278,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 0.5rem;
-        margin-bottom: 0.65rem;
+        gap: 0.4rem;
+        margin-bottom: 0.35rem;
       }
 
       .os-gauge-title {
-        font-size: 0.86rem;
+        font-size: 0.80rem;
         font-weight: 700;
         color: var(--text-main, #f8fafc);
       }
 
       .os-gauge-sub {
-        font-size: 0.72rem;
+        font-size: 0.68rem;
         color: var(--text-muted, #94a3b8);
       }
 
       .os-gauge-delta {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.74rem;
+        font-size: 0.68rem;
         font-weight: 700;
-        padding: 0.18rem 0.55rem;
+        padding: 0.14rem 0.5rem;
         border-radius: 999px;
         background: rgba(16, 185, 129, 0.15);
         color: var(--accent-emerald, #10b981);
@@ -1308,13 +1309,13 @@
         display: grid;
         grid-template-columns: 1fr auto 1fr;
         align-items: center;
-        gap: 0.65rem;
+        gap: 0.5rem;
       }
 
       .os-gauge-col {
         background: var(--bg-deep, rgba(2, 6, 23, 0.55));
-        padding: 0.55rem 0.7rem;
-        border-radius: 8px;
+        padding: 0.38rem 0.65rem;
+        border-radius: 6px;
         border: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.12));
       }
 
@@ -1327,20 +1328,20 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        gap: 0.35rem;
-        margin-bottom: 0.38rem;
+        gap: 0.25rem;
+        margin-bottom: 0.25rem;
       }
 
       .os-gauge-tag {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.62rem;
+        font-size: 0.60rem;
         text-transform: uppercase;
         color: var(--text-muted, #94a3b8);
       }
 
       .os-gauge-val {
         font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.84rem;
+        font-size: 0.80rem;
         font-weight: 700;
         color: var(--text-main, #f8fafc);
         font-variant-numeric: tabular-nums;
@@ -1352,7 +1353,7 @@
 
       .os-gauge-track {
         width: 100%;
-        height: 7px;
+        height: 5px;
         border-radius: 999px;
         background: rgba(148, 163, 184, 0.14);
         overflow: hidden;
