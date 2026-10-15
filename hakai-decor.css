@@ -686,25 +686,42 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
    7. SEAMLESS LUXURY COLOR TRANSITIONS & SOFT AMBIENT SOMBREADO
    Eliminates all harsh dividing lines and muddy color jumps.
    -------------------------------------------------------------------------- */
+#security {
+  position: relative !important;
+  overflow: visible !important;
+  contain: none !important;
+  content-visibility: visible !important;
+  border: none !important;
+  border-bottom: none !important;
+  padding-bottom: 50px !important;
+}
+
+#downloads,
 .download-section {
   background: transparent !important;
+  border: none !important;
   border-top: none !important;
   border-bottom: none !important;
   position: relative !important;
-  padding: 70px 0 60px 0 !important;
+  padding: 60px 0 60px 0 !important;
+  overflow: visible !important;
+  contain: none !important;
+  content-visibility: visible !important;
 }
 
-/* Beautiful soft ambient radial sombreado transition behind the downloads section */
+/* Seamless atmospheric cyber transition bridge between Security and Downloads */
 .download-section::before {
   content: '' !important;
   position: absolute !important;
-  top: -40px !important;
+  top: -140px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  width: min(100%, 1050px) !important;
-  height: 380px !important;
-  background: radial-gradient(ellipse at 50% 35%, rgba(245, 158, 11, 0.16) 0%, rgba(251, 191, 36, 0.05) 45%, rgba(8, 8, 8, 0) 72%) !important;
-  filter: blur(55px) !important;
+  width: min(100vw, 1200px) !important;
+  height: 560px !important;
+  background: radial-gradient(ellipse at 50% 38%, rgba(245, 158, 11, 0.16) 0%, rgba(251, 191, 36, 0.05) 45%, rgba(8, 8, 8, 0) 72%) !important;
+  filter: blur(60px) !important;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 25%, transparent 72%) !important;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 25%, transparent 72%) !important;
   z-index: 0 !important;
   pointer-events: none !important;
 }
