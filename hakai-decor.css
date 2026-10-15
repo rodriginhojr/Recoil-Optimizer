@@ -812,6 +812,34 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   margin-right: 2px !important;
 }
 
+@media (max-width: 768px) {
+  .window-titlebar {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    height: auto !important;
+    padding: 8px 12px !important;
+  }
+  .wpf-titlebar-left {
+    min-width: 0 !important;
+  }
+  .wpf-titlebar-right {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+  .wpf-header-telemetry {
+    flex-grow: 1 !important;
+    justify-content: space-between !important;
+  }
+  .wpf-profile-switcher {
+    display: inline-flex !important;
+    flex-shrink: 0 !important;
+  }
+  .wpf-profile-btn {
+    padding: 3px 7px !important;
+    font-size: 0.60rem !important;
+  }
+}
+
 @media (max-width: 680px) {
   .mock-stat-cards {
     grid-template-columns: 1fr !important;
@@ -819,8 +847,18 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   .osc-quick-action-strip {
     grid-template-columns: 1fr !important;
   }
-  .wpf-profile-switcher {
+}
+
+@media (max-width: 480px) {
+  .wpf-title-stack .wpf-admin-pill {
     display: none !important;
+  }
+  .wpf-status-pill {
+    display: none !important;
+  }
+  .wpf-profile-btn {
+    padding: 3px 5px !important;
+    font-size: 0.56rem !important;
   }
 }
 

@@ -200,7 +200,7 @@
               <div class="wpf-title-stack">
                 <div class="wpf-app-emblem" aria-hidden="true">⚡</div>
                 <span class="window-title" data-i18n="wpfWindowTitle">Recoil Studio · RecoilOptimizer.exe</span>
-                <span class="wpf-admin-pill" data-i18n="wpfAdminBadge">🛡️ RING-3 SEGURO</span>
+                <span class="wpf-admin-pill" data-i18n="wpfAdminBadge">🛡️ RING-3</span>
               </div>
             </div>
 
@@ -267,14 +267,14 @@
                     </div>
                     <div class="mock-stat-num-row">
                       <span class="mock-stat-value timer-val" id="hud-val-timer">0.500 ms</span>
-                      <span class="mock-stat-trend">⚡ 100% FIJO</span>
+                      <span class="mock-stat-trend">⚡ FIJO</span>
                     </div>
                     <div class="mock-stat-bar-track">
-                      <div class="mock-stat-bar-fill fill-emerald" style="width: 100%;"></div>
+                      <div class="mock-stat-bar-fill fill-emerald" id="hud-bar-timer" style="width: 100%;"></div>
                     </div>
                     <div class="mock-stat-sub-clean">
-                      <span>Precisión Máxima NTAPI</span>
-                      <span class="mono-clean">0 Jitter</span>
+                      <span>Precisión NTAPI</span>
+                      <span class="mono-clean">Sincronizado</span>
                     </div>
                   </div>
 
@@ -292,20 +292,20 @@
                       <span class="mock-stat-trend">🔥 MÍNIMO</span>
                     </div>
                     <div class="mock-stat-bar-track">
-                      <div class="mock-stat-bar-fill fill-amber" style="width: 95%;"></div>
+                      <div class="mock-stat-bar-fill fill-amber" id="hud-bar-dpc" style="width: 95%;"></div>
                     </div>
                     <div class="mock-stat-sub-clean">
-                      <span>vs 1000 µs Stock</span>
-                      <span class="mono-clean">ISR Óptimo</span>
+                      <span>Sub-milisegundo</span>
+                      <span class="mono-clean">Sin Retardo</span>
                     </div>
                   </div>
 
-                  <!-- Metric 3: Estabilidad 1% Lows -->
+                  <!-- Metric 3: Estabilidad FPS -->
                   <div class="mock-stat-card">
                     <div class="mock-stat-top">
                       <div class="mock-stat-title-wrap">
                         <span class="mock-stat-icon">🚀</span>
-                        <span class="mock-stat-title" data-i18n="mockStatHealthTitle">Estabilidad FPS</span>
+                        <span class="mock-stat-title" data-i18n="mockStatHealthTitle">FPS Boost</span>
                       </div>
                       <span class="mock-stat-badge badge-primary">+44% FPS</span>
                     </div>
@@ -314,11 +314,11 @@
                       <span class="mock-stat-trend">💎 ESTABLE</span>
                     </div>
                     <div class="mock-stat-bar-track">
-                      <div class="mock-stat-bar-fill fill-primary" style="width: 100%;"></div>
+                      <div class="mock-stat-bar-fill fill-primary" id="hud-bar-boost" style="width: 100%;"></div>
                     </div>
                     <div class="mock-stat-sub-clean">
-                      <span>117 Tweaks Activos</span>
-                      <span class="mono-clean">100% Reversible</span>
+                      <span>1% Lows Suaves</span>
+                      <span class="mono-clean">Sin Tirones</span>
                     </div>
                   </div>
                 </div>
@@ -331,17 +331,16 @@
                       <span class="oscilloscope-title" data-i18n="oscilloscopeTitle">Telemetría de Kernel en Vivo (60 FPS)</span>
                     </div>
                     <div class="osc-controls-wrap">
-                      <span id="osc-dom-readout" class="mono-readout">⏱️ 0.500 ms · 🎯 DPC 18 µs</span>
-                      <button type="button" class="btn-osc-stress" onclick="window.RecoilCanvasFX &amp;&amp; window.RecoilCanvasFX.triggerStressTest()" data-i18n="btnOscStress">⚡ Probar Resiliencia DPC</button>
+                      <button type="button" class="btn-osc-stress" onclick="window.RecoilCanvasFX &amp;&amp; window.RecoilCanvasFX.triggerStressTest()" data-i18n="btnOscStress">⚡ Probar Carga DPC</button>
                     </div>
                   </div>
                   <canvas id="dpc-oscilloscope-canvas" width="680" height="110"></canvas>
                   <div class="osc-quick-action-strip">
                     <button type="button" class="btn-osc-action primary" id="btn-quick-smarttune" onclick="executeMockSmartTune()" data-i18n="btnRunSmartTune">
-                      ⚡ EJECUTAR SMART TUNE (1 CLIC)
+                      ⚡ APLICAR SMART TUNE (117 TWEAKS)
                     </button>
                     <button type="button" class="btn-osc-action secondary" onclick="executeMockRollback()">
-                      🔄 Valores de Fábrica
+                      🔄 Revertir a Fábrica
                     </button>
                   </div>
                 </div>
@@ -549,15 +548,15 @@
             <div class="statusbar-left">
               <div class="statusbar-item">
                 <span class="statusbar-dot"></span>
-                <span id="wpf-statusbar-msg" class="mono-readout" data-i18n="wpfStatusReady">ESTADO: SISTEMA PROTEGIDO · RING-3 SEGURO</span>
+                <span id="wpf-statusbar-msg" class="mono-readout" data-i18n="wpfStatusReady">ESTADO: PERFIL ESPORTS ACTIVO · 117 AJUSTES</span>
               </div>
             </div>
             <div class="statusbar-right">
               <div class="statusbar-item">
-                <span class="mono-readout">⏱️ TIMER RESOLUTION: <strong id="wpf-live-timer-footer" style="color:var(--accent-emerald);">0.500 ms</strong></span>
+                <span class="mono-readout">⏱️ TIMER: <strong id="wpf-live-timer-footer" style="color:var(--accent-emerald);">0.500 ms</strong></span>
               </div>
               <div class="statusbar-item">
-                <span class="mono-readout" style="color:var(--text-dim);">💎 CERO SERVICIOS RESIDENTES</span>
+                <span class="mono-readout" style="color:var(--text-dim);">💎 0 MB EN SEGUNDO PLANO</span>
               </div>
             </div>
           </div>

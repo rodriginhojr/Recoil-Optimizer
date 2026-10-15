@@ -19,30 +19,30 @@ let isRollbackActive = false;
 // Comprehensive Bilingual Strings Dictionary (ES / EN)
 const i18n = {
   es: {
-    navBenchmarks: 'Telemetría',
-    navTweaks: '117 Tweaks',
-    navArchitecture: 'AutoDriver & Hardware',
-    navOsMatrix: 'Multi-Windows',
-    navTrust: 'Garantía',
-    navDownloads: 'Descargas',
-    navFaq: 'FAQ',
-    navFeatures: 'Características',
-    btnDownloadNav: 'Descargar Gratis',
-    heroTag: 'SUITE DE KERNEL & BAJA LATENCIA // WINDOWS 7 A WINDOWS 11',
+    navBenchmarks: '📊 Telemetría',
+    navTweaks: '⚙️ 117 Tweaks',
+    navArchitecture: '🎮 AutoDriver',
+    navOsMatrix: '💻 Multi-Windows',
+    navTrust: '🛡️ Seguridad',
+    navDownloads: '📦 Descargas',
+    navFaq: '❓ FAQ',
+    navFeatures: '✨ Características',
+    btnDownloadNav: '🚀 Descargar',
+    heroTag: '⚡ SUITE DE KERNEL & BAJA LATENCIA // WINDOWS 7 A WINDOWS 11',
     heroTitle: 'Exprime cada gota de FPS y elimina el stutter en tu Windows.',
-    heroSubtitle: 'Optimización de kernel y baja latencia para esports. Windows 7, 8.1, 10 y 11. Cero servicios residentes y 100% reversible.',
-    btnDownloadHero: 'Descargar para Windows',
-    btnExploreTweaks: 'Ver los 117 Tweaks',
-    microTrust1: '100% Seguro con Vanguard / EAC / FACEIT',
-    microTrust2: 'Rollback Total en 1 Clic (VSS + Registro)',
-    microTrust3: '0 MB RAM en Segundo Plano',
-    microTrust4: '100% Gratis & Open Source (MIT)',
-    osDetectedPrefix: 'Sistema detectado:',
-    osRecommendedPrefix: 'Recomendamos:',
-    passkeyTag: 'PIN OFICIAL DE SEGURIDAD:',
+    heroSubtitle: '⚡ Optimización de kernel y baja latencia para esports. Windows 7, 8.1, 10 y 11. Cero servicios residentes y 100% reversible.',
+    btnDownloadHero: '🚀 DESCARGAR X64 (64 BITS)',
+    btnExploreTweaks: '⚙️ Ver los 117 Tweaks',
+    microTrust1: '🛡️ 100% Seguro con Vanguard / EAC / FACEIT',
+    microTrust2: '🔄 Rollback Total en 1 Clic (VSS + Registro)',
+    microTrust3: '💎 0 MB RAM en Segundo Plano',
+    microTrust4: '✨ 100% Gratis & Open Source (MIT)',
+    osDetectedPrefix: '💻 Sistema detectado:',
+    osRecommendedPrefix: '🏆 Recomendamos:',
+    passkeyTag: '🔑 PIN OFICIAL DE SEGURIDAD:',
     passkeySub: 'Requerida al abrir la app antes de la detección',
-    btnCopyPin: 'Copiar PIN',
-    btnCopyPinFull: 'Copiar PIN: 3910',
+    btnCopyPin: '📋 Copiar PIN',
+    btnCopyPinFull: '📋 Copiar PIN: 3910',
     passkeyExpl: 'Introduce 3910 al abrir la app para desbloquear la detección de hardware. Clave 100% gratuita para la comunidad.',
     passkeyCopied: '¡PIN oficial 3910 copiado al portapapeles!',
     downloadStartedPinCopied: '¡Descarga iniciada! El PIN gratuito 3910 fue copiado a tu portapapeles.',
@@ -51,12 +51,12 @@ const i18n = {
     statFpsLabel: 'FPS / 1% Low Boost',
     statRamLabel: 'RAM Residual en Fondo',
     wpfWindowTitle: 'Recoil Studio · RecoilOptimizer.exe',
-    wpfAdminBadge: '🛡️ RING-3 SEGURO',
+    wpfAdminBadge: '🛡️ RING-3',
     wpfProfilePill: 'PERFIL:',
     wpfScoreLabel: '❤ SALUD:',
-    wpfStatusReady: 'ESTADO: SISTEMA PROTEGIDO · RING-3 SEGURO',
-    wpfStatusStock: 'ESTADO: VALORES DE FÁBRICA WINDOWS RESTAURADOS // DPC STOCK',
-    btnOscStress: '⚡ Probar Resiliencia DPC',
+    wpfStatusReady: 'ESTADO: PERFIL ESPORTS ACTIVO · 117 AJUSTES',
+    wpfStatusStock: 'ESTADO: VALORES DE FÁBRICA WINDOWS RESTAURADOS',
+    btnOscStress: '⚡ Probar Carga DPC',
     mockTabDashboard: 'Dashboard',
     mockTabSmartTune: 'Smart Tune',
     mockTabTweaks: 'Optimizaciones',
@@ -66,8 +66,8 @@ const i18n = {
     mockStatTimerSub: '0.500 ms fijo',
     mockStatActiveTitle: 'Latencia DPC',
     mockStatActiveSub: '18 µs ultra-baja',
-    mockStatHealthTitle: 'Estabilidad FPS',
-    mockStatHealthSub: '+44% 1% Low boost',
+    mockStatHealthTitle: 'FPS Boost',
+    mockStatHealthSub: '+44% 1% Lows',
     oscilloscopeTitle: 'Telemetría de Kernel en Vivo (60 FPS)',
     mockTweak1Sub: 'Elimina el límite del 10% de paquetes de Windows durante sesiones de juego',
     mockTweak2Sub: 'Reduce la latencia de interrupciones de la GPU a la CPU a submilisegundos',
@@ -129,26 +129,26 @@ const i18n = {
     labelRecoilWin: 'Con Recoil Optimizer',
     metricLatTitle: 'Latencia del Sistema (Input Lag)',
     badgeLowerBetter: 'Menos es Mejor',
-    downloadsTag: 'DISTRIBUCIÓN OFICIAL COMPLETA',
-    downloadsTitle: 'Descargas Oficiales y Verificadas',
+    downloadsTag: '📦 DISTRIBUCIÓN OFICIAL COMPLETA',
+    downloadsTitle: '📦 Descargas Oficiales y Verificadas',
     downloadsDesc: 'Arquitectura dual nativa para equipos modernos y computadoras legacy.',
-    dpkBadge: 'PIN PÚBLICO OFICIAL // 3910 (GRATUITO)',
+    dpkBadge: '🔑 PIN PÚBLICO OFICIAL // 3910 (GRATUITO)',
     dpkText: 'Al ejecutar la aplicación por primera vez se te solicitará este PIN de 4 dígitos (3910). Es un interruptor de seguridad gratuito para garantizar que descargaste de la fuente oficial y conozcas la reversibilidad en 1 clic.',
-    cardX64Title: 'Windows 64 bits (x64)',
+    cardX64Title: '💻 Windows 64 bits (x64)',
     cardX64Desc: 'Para equipos modernos de 64 bits.',
-    cardX64Spec1: 'Windows 7, 8.1, 10 y 11 (64-bit)',
-    cardX64Spec2: 'Optimizado para Intel Core Ultra y AMD Ryzen X3D',
-    cardX64Spec3: 'Soporte multinúcleo y latencia ultra-baja de kernel',
-    cardX86Title: 'Windows 32 bits (x86)',
+    cardX64Spec1: '✨ Windows 7, 8.1, 10 y 11 (64-bit)',
+    cardX64Spec2: '⚡ Optimizado para Intel Core Ultra y AMD Ryzen X3D',
+    cardX64Spec3: '🎯 Soporte multinúcleo y latencia ultra-baja de kernel',
+    cardX86Title: '💻 Windows 32 bits (x86)',
     cardX86Desc: 'Para PCs de 32 bits y recursos reducidos.',
-    cardX86Spec1: 'Windows 7, 8.1 y 10 (32-bit)',
-    cardX86Spec2: 'Ejecución nativa PE32 sin errores de compatibilidad',
-    cardX86Spec3: 'Mismos 117 tweaks y reversibilidad total en 1 clic',
+    cardX86Spec1: '✨ Windows 7, 8.1 y 10 (32-bit)',
+    cardX86Spec2: '⚡ Ejecución nativa PE32 sin errores de compatibilidad',
+    cardX86Spec3: '🎯 Mismos 117 tweaks y reversibilidad total en 1 clic',
     btnVerifyHash: '🔍 Validar ↓',
-    btnDownloadX64: 'Descargar RecoilOptimizer_x64.exe',
-    btnDownloadX86: 'Descargar RecoilOptimizer_x86.exe',
-    recommendedRibbon: 'RECOMENDADO PARA TU PC',
-    copyHash: 'Copiar SHA-256',
+    btnDownloadX64: '🚀 Descargar RecoilOptimizer_x64.exe',
+    btnDownloadX86: '🚀 Descargar RecoilOptimizer_x86.exe',
+    recommendedRibbon: '🏆 RECOMENDADO PARA TU PC',
+    copyHash: '📋 Copiar SHA-256',
     hashCopied: '¡Hash SHA-256 copiado al portapapeles!',
     qsStep1Title: 'Descarga la Versión Detectada',
     qsStep1Desc: 'Tu navegador seleccionará automáticamente x64 o x86 según tu arquitectura nativa de Windows.',
@@ -202,30 +202,30 @@ const i18n = {
     footerStatus: 'Todos los Sistemas Operativos Soportados (Windows 7 — Windows 11)'
   },
   en: {
-    navBenchmarks: 'Telemetry',
-    navTweaks: '117 Tweaks',
-    navArchitecture: 'AutoDriver & Hardware',
-    navOsMatrix: 'Multi-Windows',
-    navTrust: 'Safety & Trust',
-    navDownloads: 'Downloads',
-    navFaq: 'FAQ',
-    navFeatures: 'Features',
-    btnDownloadNav: 'Download Free',
-    heroTag: 'KERNEL LOW-LATENCY SUITE // WINDOWS 7 TO WINDOWS 11',
+    navBenchmarks: '📊 Telemetry',
+    navTweaks: '⚙️ 117 Tweaks',
+    navArchitecture: '🎮 AutoDriver',
+    navOsMatrix: '💻 Multi-Windows',
+    navTrust: '🛡️ Security',
+    navDownloads: '📦 Downloads',
+    navFaq: '❓ FAQ',
+    navFeatures: '✨ Features',
+    btnDownloadNav: '🚀 Download',
+    heroTag: '⚡ KERNEL LOW-LATENCY SUITE // WINDOWS 7 TO WINDOWS 11',
     heroTitle: 'Squeeze every drop of FPS and eliminate Windows micro-stutter.',
-    heroSubtitle: 'Kernel optimization and ultra-low latency for esports. Windows 7, 8.1, 10, and 11. Zero resident services and 100% reversible.',
-    btnDownloadHero: 'Download for Windows',
-    btnExploreTweaks: 'Explore all 117 Tweaks',
-    microTrust1: '100% Safe with Vanguard / EAC / FACEIT',
-    microTrust2: 'Total 1-Click Rollback (VSS + Registry)',
-    microTrust3: '0 MB Resident Background RAM',
-    microTrust4: '100% Free & Open Source (MIT)',
-    osDetectedPrefix: 'Detected System:',
-    osRecommendedPrefix: 'Recommended:',
-    passkeyTag: 'OFFICIAL SAFETY PIN:',
+    heroSubtitle: '⚡ Kernel optimization and ultra-low latency for esports. Windows 7, 8.1, 10, and 11. Zero resident services and 100% reversible.',
+    btnDownloadHero: '🚀 DOWNLOAD X64 (64-BIT)',
+    btnExploreTweaks: '⚙️ Explore all 117 Tweaks',
+    microTrust1: '🛡️ 100% Safe with Vanguard / EAC / FACEIT',
+    microTrust2: '🔄 Total 1-Click Rollback (VSS + Registry)',
+    microTrust3: '💎 0 MB Resident Background RAM',
+    microTrust4: '✨ 100% Free & Open Source (MIT)',
+    osDetectedPrefix: '💻 Detected System:',
+    osRecommendedPrefix: '🏆 Recommended:',
+    passkeyTag: '🔑 OFFICIAL SAFETY PIN:',
     passkeySub: 'Prompted upon initial launch before hardware scan',
-    btnCopyPin: 'Copy PIN',
-    btnCopyPinFull: 'Copy PIN: 3910',
+    btnCopyPin: '📋 Copy PIN',
+    btnCopyPinFull: '📋 Copy PIN: 3910',
     passkeyExpl: 'Enter 3910 upon launching the application to unlock hardware detection. 100% free community safety interlock.',
     passkeyCopied: 'Official PIN 3910 copied to clipboard!',
     downloadStartedPinCopied: 'Download started! Free PIN 3910 has been copied to your clipboard.',
@@ -234,12 +234,12 @@ const i18n = {
     statFpsLabel: 'FPS / 1% Low Boost',
     statRamLabel: 'Resident Background RAM',
     wpfWindowTitle: 'Recoil Studio · RecoilOptimizer.exe',
-    wpfAdminBadge: '🛡️ RING-3 SECURE',
+    wpfAdminBadge: '🛡️ RING-3',
     wpfProfilePill: 'PROFILE:',
     wpfScoreLabel: '❤ HEALTH:',
-    wpfStatusReady: 'STATUS: SYSTEM PROTECTED · RING-3 SECURE',
-    wpfStatusStock: 'STATUS: STOCK WINDOWS DEFAULTS RESTORED // STOCK DPC',
-    btnOscStress: '⚡ Test DPC Resilience',
+    wpfStatusReady: 'STATUS: ESPORTS PROFILE ACTIVE · 117 TWEAKS',
+    wpfStatusStock: 'STATUS: FACTORY DEFAULTS RESTORED',
+    btnOscStress: '⚡ Test DPC Load',
     mockTabDashboard: 'Dashboard',
     mockTabSmartTune: 'Smart Tune',
     mockTabTweaks: 'Optimizations',
@@ -249,8 +249,8 @@ const i18n = {
     mockStatTimerSub: '0.500 ms locked',
     mockStatActiveTitle: 'DPC Latency',
     mockStatActiveSub: '18 µs ultra-low',
-    mockStatHealthTitle: 'FPS Stability',
-    mockStatHealthSub: '+44% 1% Low boost',
+    mockStatHealthTitle: 'FPS Boost',
+    mockStatHealthSub: '+44% 1% Lows',
     oscilloscopeTitle: 'Live Kernel Telemetry (60 FPS)',
     mockTweak1Sub: 'Bypasses Windows 10% packet throttling during intense gaming sessions',
     mockTweak2Sub: 'Reduces GPU-to-CPU interrupt latency to sub-millisecond precision',
@@ -328,10 +328,10 @@ const i18n = {
     cardX86Spec2: '⚡ Native PE32 execution without compatibility errors',
     cardX86Spec3: '🎯 Same 117 tweaks and full rollback protection',
     btnVerifyHash: '🔍 Verify ↓',
-    btnDownloadX64: 'Download RecoilOptimizer_x64.exe',
-    btnDownloadX86: 'Download RecoilOptimizer_x86.exe',
-    recommendedRibbon: 'RECOMMENDED FOR YOUR PC',
-    copyHash: 'Copy SHA-256',
+    btnDownloadX64: '🚀 Download RecoilOptimizer_x64.exe',
+    btnDownloadX86: '🚀 Download RecoilOptimizer_x86.exe',
+    recommendedRibbon: '🏆 RECOMMENDED FOR YOUR PC',
+    copyHash: '📋 Copy SHA-256',
     hashCopied: 'SHA-256 hash copied to clipboard!',
     qsStep1Title: 'Download Detected Architecture',
     qsStep1Desc: 'Your browser automatically selects x64 or x86 according to your native Windows architecture.',
@@ -687,8 +687,11 @@ const MOCK_PROFILES = {
     boost: '+44%',
     tweaks: 117,
     health: '100% ÓPTIMO',
-    statusEs: 'ESTADO: SISTEMA PROTEGIDO · RING-3 SEGURO',
-    statusEn: 'STATUS: SYSTEM PROTECTED · RING-3 SECURE',
+    barTimer: '100%',
+    barDpc: '95%',
+    barBoost: '100%',
+    statusEs: 'ESTADO: PERFIL ESPORTS ACTIVO · 117 AJUSTES',
+    statusEn: 'STATUS: ESPORTS PROFILE ACTIVE · 117 TWEAKS',
     toastEs: '¡Perfil Esports Pro activo: 117 optimizaciones al máximo rendimiento!',
     toastEn: 'Esports Pro Profile active: 117 optimizations deployed at peak precision!'
   },
@@ -698,8 +701,11 @@ const MOCK_PROFILES = {
     boost: '+38%',
     tweaks: 94,
     health: '98% ESTABLE',
-    statusEs: 'ESTADO: PERFIL RANKED // LATENCIA EQUILIBRADA',
-    statusEn: 'STATUS: RANKED PROFILE // BALANCED LOW LATENCY',
+    barTimer: '100%',
+    barDpc: '88%',
+    barBoost: '86%',
+    statusEs: 'ESTADO: PERFIL RANKED ACTIVO · 94 AJUSTES',
+    statusEn: 'STATUS: RANKED PROFILE ACTIVE · 94 TWEAKS',
     toastEs: '¡Perfil Ranked activo: balance competitivo con máxima estabilidad!',
     toastEn: 'Ranked Profile active: competitive balance with rock-solid stability!'
   },
@@ -709,8 +715,11 @@ const MOCK_PROFILES = {
     boost: '+52%',
     tweaks: 117,
     health: '100% ULTRA-LOW',
-    statusEs: 'ESTADO: PERFIL ULTRA-LOW // JITTER CERO ABSOLUTO',
-    statusEn: 'STATUS: ULTRA-LOW PROFILE // ZERO ABSOLUTE JITTER',
+    barTimer: '100%',
+    barDpc: '99%',
+    barBoost: '100%',
+    statusEs: 'ESTADO: PERFIL ULTRA-LOW ACTIVO · 117 AJUSTES',
+    statusEn: 'STATUS: ULTRA-LOW PROFILE ACTIVE · 117 TWEAKS',
     toastEs: '¡Perfil Ultra-Low Latency activo: DPC a 12 µs y polling rate extremo!',
     toastEn: 'Ultra-Low Latency Profile active: 12 µs DPC and peak polling rate!'
   }
@@ -733,12 +742,19 @@ function setMockProfile(profileId) {
   const healthEl = document.getElementById('wpf-live-health-val');
   const statusMsg = document.getElementById('wpf-statusbar-msg');
   const oscReadout = document.getElementById('osc-dom-readout');
+  const barTimer = document.getElementById('hud-bar-timer');
+  const barDpc = document.getElementById('hud-bar-dpc');
+  const barBoost = document.getElementById('hud-bar-boost');
 
   if (timerEl) timerEl.textContent = p.timer;
   if (dpcEl) dpcEl.textContent = p.dpc;
   if (boostEl) boostEl.textContent = p.boost;
   if (badgeEl) badgeEl.textContent = p.tweaks;
   if (healthEl) healthEl.textContent = p.health;
+  if (barTimer) barTimer.style.width = p.barTimer;
+  if (barDpc) barDpc.style.width = p.barDpc;
+  if (barBoost) barBoost.style.width = p.barBoost;
+
   if (statusMsg) {
     statusMsg.textContent = window.currentLang === 'es' ? p.statusEs : p.statusEn;
   }
@@ -803,17 +819,23 @@ function executeMockSmartTune() {
     const timerEl = document.getElementById('hud-val-timer');
     const dpcEl = document.getElementById('hud-val-dpc');
     const boostEl = document.getElementById('hud-val-boost');
+    const barTimer = document.getElementById('hud-bar-timer');
+    const barDpc = document.getElementById('hud-bar-dpc');
+    const barBoost = document.getElementById('hud-bar-boost');
 
     if (healthVal) healthVal.textContent = '100% ÓPTIMO';
     if (timerFooter) timerFooter.textContent = '0.500 ms';
     if (timerEl) timerEl.textContent = '0.500 ms';
     if (dpcEl) dpcEl.textContent = '18 µs';
     if (boostEl) boostEl.textContent = '+44%';
+    if (barTimer) barTimer.style.width = '100%';
+    if (barDpc) barDpc.style.width = '95%';
+    if (barBoost) barBoost.style.width = '100%';
 
     if (statusMsg) {
       statusMsg.textContent = window.currentLang === 'es'
-        ? 'ESTADO: SISTEMA PROTEGIDO · RING-3 SEGURO'
-        : 'STATUS: SYSTEM PROTECTED · RING-3 SECURE';
+        ? 'ESTADO: PERFIL ESPORTS ACTIVO · 117 AJUSTES'
+        : 'STATUS: ESPORTS PROFILE ACTIVE · 117 TWEAKS';
     }
 
     isRollbackActive = false;
@@ -899,10 +921,17 @@ function executeMockRollback() {
     if (dpcEl) dpcEl.textContent = '260 µs';
     if (boostEl) boostEl.textContent = '+0%';
 
+    const barTimer = document.getElementById('hud-bar-timer');
+    const barDpc = document.getElementById('hud-bar-dpc');
+    const barBoost = document.getElementById('hud-bar-boost');
+    if (barTimer) barTimer.style.width = '12%';
+    if (barDpc) barDpc.style.width = '20%';
+    if (barBoost) barBoost.style.width = '0%';
+
     if (statusMsg) {
       statusMsg.textContent = window.currentLang === 'es'
-        ? 'ESTADO: VALORES DE FÁBRICA RESTAURADOS // DPC STOCK 15.625 ms'
-        : 'STATUS: STOCK WINDOWS DEFAULTS RESTORED // STOCK DPC 15.625 ms';
+        ? 'ESTADO: VALORES DE FÁBRICA RESTAURADOS'
+        : 'STATUS: FACTORY DEFAULTS RESTORED';
     }
 
     window.RecoilCanvasFX && window.RecoilCanvasFX.setOptimizationEnabled(false);
