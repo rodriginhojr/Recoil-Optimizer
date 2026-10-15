@@ -847,15 +847,15 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 0.45rem;
-        padding: 1.05rem 1.15rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1.1rem 1.25rem;
         border-radius: 14px;
         background: var(--bg-card, rgba(15, 23, 42, 0.7));
         border: 1px solid var(--border-subtle, rgba(148, 163, 184, 0.16));
         color: var(--text-main, #f8fafc);
         cursor: pointer;
-        text-align: left;
+        text-align: center;
         transition: all 0.24s cubic-bezier(0.16, 1, 0.3, 1);
         overflow: hidden;
       }
@@ -886,63 +886,18 @@
         opacity: 1;
       }
 
-      .os-tab-top {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.5rem;
-      }
-
-      .os-tab-ntcode {
-        font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.06em;
-        color: var(--text-muted, #94a3b8);
-      }
-
-      .os-tab-arch-pill {
-        font-family: var(--font-mono, 'JetBrains Mono', monospace);
-        font-size: 0.66rem;
-        font-weight: 700;
-        padding: 0.15rem 0.5rem;
-        border-radius: 999px;
-        background: rgba(59, 130, 246, 0.14);
-        color: var(--primary, #3b82f6);
-        border: 1px solid var(--border-glow, rgba(59, 130, 246, 0.35));
-      }
-
-      .os-tab-btn[data-os="win7"] .os-tab-arch-pill {
-        background: rgba(245, 158, 11, 0.16);
-        color: var(--accent-amber, #f59e0b);
-        border-color: rgba(245, 158, 11, 0.4);
-      }
-
-      .os-tab-btn[data-os="win11"] .os-tab-arch-pill {
-        background: rgba(16, 185, 129, 0.16);
-        color: var(--accent-emerald, #10b981);
-        border-color: rgba(16, 185, 129, 0.4);
+      .os-matrix-detected-bar,
+      .os-tab-top,
+      .os-tab-edition {
+        display: none;
       }
 
       .os-tab-name {
         font-family: var(--font-display, var(--font-sans, 'Inter', sans-serif));
-        font-size: 1rem;
+        font-size: 1.05rem;
         font-weight: 700;
         color: var(--text-main, #f8fafc);
-      }
-
-      .os-tab-edition {
-        font-size: 0.78rem;
-        color: var(--text-muted, #94a3b8);
-        display: flex;
-        align-items: center;
-        gap: 0.35rem;
-      }
-
-      .os-tab-btn.active .os-tab-edition {
-        color: var(--primary, #3b82f6);
-        font-weight: 600;
+        text-align: center;
       }
 
       /* Main 2-Column Technical Cockpit */
@@ -1649,7 +1604,6 @@
     const tabsHtml = Object.keys(OS_MATRIX_DATA)
       .map((key) => {
         const item = OS_MATRIX_DATA[key];
-        const itemCopy = item[lang];
         const isActive = key === activeOsKey;
         return `
           <button
@@ -1659,14 +1613,7 @@
             role="tab"
             aria-selected="${isActive ? 'true' : 'false'}"
           >
-            <div class="os-tab-top">
-              <span class="os-tab-arch-pill">${item.archBadge}</span>
-            </div>
             <div class="os-tab-name">${item.shortTab}</div>
-            <div class="os-tab-edition">
-              <span>●</span>
-              <span>${itemCopy.editionTag}</span>
-            </div>
           </button>
         `;
       })
@@ -1712,12 +1659,6 @@
       <div class="os-matrix-wrap">
         <div class="os-matrix-header">
           <h2 class="os-matrix-title">${copy.sectionTitle}</h2>
-          <div class="os-matrix-detected-bar">
-            <div class="os-detected-pill client-pill">
-              <span>${copy.detectedPillPrefix}</span>
-              <strong>${lang === 'en' ? detectedOsSummary.labelEn : detectedOsSummary.labelEs}</strong>
-            </div>
-          </div>
         </div>
 
         <!-- 4 Interactive OS Selector Tabs -->

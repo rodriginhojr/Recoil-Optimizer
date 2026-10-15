@@ -1027,42 +1027,10 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 .os-matrix-detected-bar {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  gap: 12px !important;
-  margin-top: 14px !important;
+  display: none !important;
 }
 
 .os-detected-pill {
-  background: rgba(16, 18, 24, 0.78) !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 999px !important;
-  padding: 6px 16px !important;
-  font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.76rem !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-  color: #94a3b8 !important;
-  transition: all 0.3s ease !important;
-}
-
-.os-detected-pill strong {
-  font-weight: 800 !important;
-  letter-spacing: 0.8px !important;
-}
-
-.os-detected-pill.client-pill {
-  border-color: rgba(16, 185, 129, 0.3) !important;
-}
-
-.os-detected-pill.client-pill strong {
-  color: #10b981 !important;
-  text-shadow: 0 0 10px rgba(16, 185, 129, 0.45) !important;
-}
-
-.os-detected-pill.inspect-pill {
   display: none !important;
 }
 
@@ -1078,9 +1046,10 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   position: relative !important;
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important;
-  gap: 8px !important;
-  padding: 1.2rem 1.25rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  padding: 1.15rem 1.25rem !important;
   border-radius: 12px !important;
   background: rgba(14, 17, 24, 0.8) !important;
   backdrop-filter: blur(16px) !important;
@@ -1088,7 +1057,7 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   border: 1px solid rgba(255, 255, 255, 0.09) !important;
   color: #f8fafc !important;
   cursor: pointer !important;
-  text-align: left !important;
+  text-align: center !important;
   overflow: hidden !important;
   box-shadow:
     0 10px 24px -4px rgba(0, 0, 0, 0.7),
@@ -1127,85 +1096,25 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   pointer-events: none !important;
   transition: left 0.75s cubic-bezier(0.16, 1, 0.3, 1) !important;
   z-index: 4 !important;
-}
-
-/* Tab Top Row */
-.os-tab-top {
-  width: 100% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  gap: 8px !important;
-}
-
+/* Tab Sub-elements Purged for Pure Direct UI */
+.os-tab-top,
+.os-tab-arch-pill,
+.os-tab-edition,
 .os-tab-ntcode {
   display: none !important;
-}
-
-/* Architecture Badge */
-.os-tab-arch-pill {
-  font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.65rem !important;
-  font-weight: 800 !important;
-  letter-spacing: 1px !important;
-  padding: 3px 9px !important;
-  border-radius: 999px !important;
-  background: rgba(245, 158, 11, 0.12) !important;
-  color: #f59e0b !important;
-  border: 1px solid rgba(245, 158, 11, 0.4) !important;
-  box-shadow: 0 0 10px rgba(245, 158, 11, 0.15) !important;
-  transition: all 0.3s ease !important;
-}
-
-.os-tab-btn[data-os="win11"] .os-tab-arch-pill {
-  background: rgba(16, 185, 129, 0.14) !important;
-  color: #10b981 !important;
-  border-color: rgba(16, 185, 129, 0.45) !important;
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.18) !important;
-}
-
-.os-tab-btn[data-os="win10"] .os-tab-arch-pill {
-  background: rgba(59, 130, 246, 0.14) !important;
-  color: #60a5fa !important;
-  border-color: rgba(59, 130, 246, 0.45) !important;
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.18) !important;
 }
 
 /* OS Title */
 .os-tab-name {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.98rem !important;
+  font-size: 1.05rem !important;
   font-weight: 800 !important;
-  letter-spacing: 1.2px !important;
+  letter-spacing: 1.4px !important;
   color: #f8fafc !important;
-  margin: 2px 0 !important;
+  margin: 0 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
   transition: all 0.3s ease !important;
-}
-
-/* Edition Tag */
-.os-tab-edition {
-  font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.74rem !important;
-  font-weight: 600 !important;
-  color: #94a3b8 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  transition: all 0.3s ease !important;
-}
-
-.os-tab-edition span:first-child {
-  display: inline-block !important;
-  width: 6px !important;
-  height: 6px !important;
-  border-radius: 50% !important;
-  background: #f59e0b !important;
-  box-shadow: 0 0 8px rgba(245, 158, 11, 0.7) !important;
-}
-
-.os-tab-btn[data-os="win11"] .os-tab-edition span:first-child {
-  background: #10b981 !important;
-  box-shadow: 0 0 8px rgba(16, 185, 129, 0.7) !important;
 }
 
 /* ==========================================================================
