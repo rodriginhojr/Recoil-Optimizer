@@ -2084,6 +2084,155 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   left: 160% !important;
 }
 
+/* --------------------------------------------------------------------------
+   NAVBAR ACTIONS: LUXURY CYBER HUD LANGUAGE TOGGLE & DISCORD PILL
+   -------------------------------------------------------------------------- */
+.nav-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-shrink: 0 !important;
+  flex-wrap: nowrap !important;
+}
+
+.lang-toggle {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+  padding: 6px 14px !important;
+  min-height: 36px !important;
+  border-radius: 999px !important;
+  background: rgba(14, 17, 24, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(245, 158, 11, 0.45) !important;
+  color: #fbbf24 !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.5px !important;
+  cursor: pointer !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 12px rgba(245, 158, 11, 0.15) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.5) !important;
+  flex-shrink: 0 !important;
+  z-index: 5 !important;
+  outline: none !important;
+}
+
+/* Specular diagonal sweep on hover */
+.lang-toggle::after {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -130% !important;
+  width: 55% !important;
+  height: 200% !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%) !important;
+  transform: rotate(25deg) !important;
+  pointer-events: none !important;
+  transition: left 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  z-index: 3 !important;
+}
+
+.lang-toggle:hover {
+  transform: translateY(-2px) scale(1.04) !important;
+  border-color: #fbbf24 !important;
+  background: rgba(26, 30, 42, 0.95) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 8px 24px -2px rgba(245, 158, 11, 0.5),
+    0 0 25px rgba(251, 191, 36, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  text-shadow: 0 0 14px rgba(251, 191, 36, 0.8) !important;
+}
+
+.lang-toggle:hover::after {
+  left: 160% !important;
+}
+
+.lang-toggle:active {
+  transform: translateY(0) scale(0.98) !important;
+}
+
+/* Matching Discord Contact Pill */
+.nav-discord-contact {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 6px 14px !important;
+  min-height: 36px !important;
+  border-radius: 999px !important;
+  background: rgba(14, 18, 30, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(88, 101, 242, 0.45) !important;
+  color: #a5b4fc !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.76rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 0 12px rgba(88, 101, 242, 0.15) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  z-index: 5 !important;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+.nav-discord-contact::after {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -130% !important;
+  width: 55% !important;
+  height: 200% !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%) !important;
+  transform: rotate(25deg) !important;
+  pointer-events: none !important;
+  transition: left 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  z-index: 3 !important;
+}
+
+.nav-discord-contact:hover {
+  transform: translateY(-2px) scale(1.03) !important;
+  border-color: #818cf8 !important;
+  background: rgba(30, 40, 70, 0.95) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 8px 24px -2px rgba(88, 101, 242, 0.45),
+    0 0 25px rgba(88, 101, 242, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+.nav-discord-contact:hover::after {
+  left: 160% !important;
+}
+
+.nav-discord-contact svg {
+  color: #818cf8 !important;
+  filter: drop-shadow(0 0 6px rgba(129, 140, 248, 0.6)) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.nav-discord-contact:hover svg {
+  transform: rotate(-8deg) scale(1.15) !important;
+  color: #c7d2fe !important;
+}
+
+
 
 
 
