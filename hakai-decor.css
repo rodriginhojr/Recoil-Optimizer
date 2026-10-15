@@ -54,27 +54,39 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
    3. SINGLE-LINE HEADER & NAVBAR (Hakai Cyberpunk Minimalist)
    -------------------------------------------------------------------------- */
 .site-header {
-  background: rgba(8, 8, 8, 0.94) !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  border-bottom: none !important;
+  position: sticky !important;
+  top: 10px !important;
+  z-index: 1000 !important;
+  max-width: 1240px !important;
+  width: calc(100% - 32px) !important;
+  margin: 0 auto 12px auto !important;
+  padding: 0 !important;
+  background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  width: 100% !important;
-  padding: 0 !important;
 }
 
 .navbar {
-  max-width: 1200px !important;
+  max-width: 1240px !important;
+  width: 100% !important;
   margin: 0 auto !important;
-  padding: 12px 24px !important;
+  padding: 7px 18px !important;
+  min-height: 50px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  gap: 20px !important;
-  width: 100% !important;
+  gap: 16px !important;
   box-sizing: border-box !important;
-  overflow: visible !important;
+  border-radius: 9999px !important;
+  background: rgba(10, 11, 16, 0.90) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  box-shadow:
+    0 16px 36px -8px rgba(0, 0, 0, 0.75),
+    0 0 20px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  overflow: hidden !important;
 }
 
 .nav-logo,
@@ -85,17 +97,19 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 .nav-brand {
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 8px !important;
   text-decoration: none !important;
+  flex-shrink: 0 !important;
 }
 
 .nav-brand-title {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 1.35rem !important;
+  font-size: 1.15rem !important;
   font-weight: 900 !important;
-  letter-spacing: 4px !important;
+  letter-spacing: 2px !important;
   color: #ffffff !important;
   text-transform: uppercase !important;
+  white-space: nowrap !important;
   transition: text-shadow 0.3s ease !important;
 }
 
@@ -118,20 +132,25 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 
 .nav-links {
   display: flex !important;
-  gap: 28px !important;
+  align-items: center !important;
+  gap: 18px !important;
   list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-shrink: 1 !important;
 }
 
 .nav-links a {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.75rem !important;
+  font-size: 0.70rem !important;
   font-weight: 700 !important;
-  letter-spacing: 2px !important;
+  letter-spacing: 1px !important;
   color: var(--hakai-white) !important;
   text-decoration: none !important;
   text-transform: uppercase !important;
   position: relative !important;
-  padding: 6px 0 !important;
+  padding: 5px 2px !important;
+  white-space: nowrap !important;
   transition: color 0.25s ease !important;
 }
 
@@ -2492,35 +2511,38 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   transform: translateY(0) scale(0.98) !important;
 }
 
-/* Matching Discord Contact Pill */
+/* Matching Discord Contact Pill - Ergonomically Scaled to Fit 100% Inside Navbar */
 .nav-discord-contact {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 8px !important;
-  padding: 6px 14px !important;
-  min-height: 36px !important;
-  border-radius: 999px !important;
+  gap: 7px !important;
+  padding: 4px 12px !important;
+  min-height: 32px !important;
+  height: 32px !important;
+  border-radius: 9999px !important;
   background: rgba(14, 18, 30, 0.85) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
   border: 1px solid rgba(88, 101, 242, 0.45) !important;
   color: #a5b4fc !important;
   font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.76rem !important;
+  font-size: 0.72rem !important;
   font-weight: 800 !important;
-  letter-spacing: 0.5px !important;
+  letter-spacing: 0.3px !important;
   box-shadow:
     0 4px 14px rgba(0, 0, 0, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 0 12px rgba(88, 101, 242, 0.15) !important;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    0 0 10px rgba(88, 101, 242, 0.15) !important;
+  transition: all 0.25s ease !important;
   flex-shrink: 0 !important;
   position: relative !important;
   overflow: hidden !important;
   z-index: 5 !important;
   outline: none !important;
   text-decoration: none !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
 }
 
 .nav-discord-contact::after {
@@ -2538,13 +2560,13 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
 }
 
 .nav-discord-contact:hover {
-  transform: translateY(-2px) scale(1.03) !important;
+  transform: translateY(-1px) !important;
   border-color: #818cf8 !important;
   background: rgba(30, 40, 70, 0.95) !important;
   color: #ffffff !important;
   box-shadow:
-    0 8px 24px -2px rgba(88, 101, 242, 0.45),
-    0 0 25px rgba(88, 101, 242, 0.35),
+    0 6px 18px -2px rgba(88, 101, 242, 0.45),
+    0 0 20px rgba(88, 101, 242, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
 }
 
@@ -2556,11 +2578,49 @@ a, button, .btn, .btn-hakai, nav a, input, select, .toggle-switch, .faq-question
   color: #818cf8 !important;
   filter: drop-shadow(0 0 6px rgba(129, 140, 248, 0.6)) !important;
   transition: transform 0.3s ease !important;
+  flex-shrink: 0 !important;
 }
 
 .nav-discord-contact:hover svg {
-  transform: rotate(-8deg) scale(1.15) !important;
+  transform: rotate(-8deg) scale(1.1) !important;
   color: #c7d2fe !important;
+}
+
+/* Responsive Media Queries for Navbar */
+@media (max-width: 992px) {
+  .nav-links {
+    display: none !important;
+  }
+  .nav-hamburger {
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 993px) {
+  .nav-hamburger {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    width: calc(100% - 16px) !important;
+    top: 6px !important;
+  }
+  .navbar {
+    padding: 6px 12px !important;
+    min-height: 44px !important;
+  }
+  .nav-brand-title {
+    font-size: 0.95rem !important;
+    letter-spacing: 1px !important;
+  }
+  .nav-discord-contact {
+    padding: 3px 8px !important;
+    font-size: 0.65rem !important;
+    min-height: 28px !important;
+    height: 28px !important;
+  }
 }
 
 /* Eliminate top scroll progress laser bar per user directive */
